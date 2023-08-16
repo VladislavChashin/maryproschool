@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'InterMed';
+    src:url('Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InterReg';
+    src:url('Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InterSemBold';
+    src:url('Inter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ManroMed';
+    src:url('Manrope-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ManroReg';
+    src:url('Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ManroSemBold';
+    src:url('Manrope-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
