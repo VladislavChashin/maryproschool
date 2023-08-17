@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/maryproschool/static/css/main.99ddde1d.css",
+    "main.js": "/maryproschool/static/js/main.0839e853.js",
+    "static/js/787.55ba843b.chunk.js": "/maryproschool/static/js/787.55ba843b.chunk.js",
+    "static/media/shutterstoc.png": "/maryproschool/static/media/shutterstoc.bfb0eb47509929552430.png",
+    "static/media/Inter-SemiBold.ttf": "/maryproschool/static/media/Inter-SemiBold.4d56bb21f2399db8ad48.ttf",
+    "static/media/Inter-Medium.ttf": "/maryproschool/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
+    "static/media/Inter-Regular.ttf": "/maryproschool/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/Manrope-SemiBold.ttf": "/maryproschool/static/media/Manrope-SemiBold.310f108cc524df0e5ffc.ttf",
+    "static/media/Manrope-Medium.ttf": "/maryproschool/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
+    "static/media/Manrope-Regular.ttf": "/maryproschool/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
+    "static/media/right_men2.png": "/maryproschool/static/media/right_men2.d534035f019172f64332.png",
+    "static/media/right_women1.png": "/maryproschool/static/media/right_women1.091614ad79cc449904bf.png",
+    "static/media/left_women2.png": "/maryproschool/static/media/left_women2.a2992f9caab2600b4a3e.png",
+    "static/media/left_women1.png": "/maryproschool/static/media/left_women1.fabf0a68dfdaf8b889b8.png",
+    "static/media/logo.svg": "/maryproschool/static/media/logo.1bee342397be64e94bba929cf174f8bf.svg",
+    "index.html": "/maryproschool/index.html",
+    "static/media/strelka_big.svg": "/maryproschool/static/media/strelka_big.c71d504aa3ae8ba6195ca3f9f9a1a3ab.svg",
+    "main.99ddde1d.css.map": "/maryproschool/static/css/main.99ddde1d.css.map",
+    "main.0839e853.js.map": "/maryproschool/static/js/main.0839e853.js.map",
+    "787.55ba843b.chunk.js.map": "/maryproschool/static/js/787.55ba843b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99ddde1d.css",
+    "static/js/main.0839e853.js"
+  ]
+}
