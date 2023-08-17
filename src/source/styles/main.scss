@@ -6,7 +6,7 @@ main{
         justify-content: space-between;
         margin: 0 20px 20px;
         .flex_metodolog_one{
-            max-width: 40%;
+            max-width: 45%;
             height: 560px;
             padding: 30px;
             border-radius: 32px;
@@ -53,7 +53,8 @@ main{
         .flex_metodolog_column{
             display: flex;
             flex-wrap: wrap;
-            max-width: 50%;
+            max-width: 55%;
+            justify-content: center;
             .block{
                 width: 241px;
                 height: 240px;
