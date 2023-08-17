@@ -1,0 +1,87 @@
+main{
+    width: 100%;
+    margin: 0 auto;
+    .flex_metodolog{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px 20px;
+        .flex_metodolog_one{
+            max-width: 40%;
+            height: 560px;
+            padding: 30px;
+            border-radius: 32px;
+            background: #819DD6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 10px;
+            h3{
+                flex-grow: 2;
+                color: #FFF;
+                /* Headline/H3 */
+                font-family: ManroReg;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%; /* 52.8px */
+                letter-spacing: -0.96px;
+            }
+            p{
+                color: #FFF;
+                font-family: InterMed;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 21.6px */
+                max-width: 88%;
+            }
+            a{
+                width: 95%;
+                padding: 16px 10px;
+                text-align: center;
+                border-radius: 100px;
+                background: #FFF;
+                text-decoration: none;
+                color: var(--color-blue, #3F89F0);
+                font-family: InterReg;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        .flex_metodolog_column{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 50%;
+            .block{
+                width: 241px;
+                height: 240px;
+                padding: 30px 104px 30px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                border-radius: 32px;
+                background: #FFF;
+                margin: 10px;
+                p{
+                    color: #3F89F0;
+                    font-family: InterMed;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    &:nth-child(2){
+                    font-family: ManroReg;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    
+                    }
+                }
+            }
+        }
+    }
+}

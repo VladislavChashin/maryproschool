@@ -6,7 +6,10 @@ import Main from './components/main/index.js'
 import Footer from './components/footer/index.js'
 function App() {
   return (
-    <Header></Header>
+    <> 
+      <Header></Header>
+      <Main></Main>
+    </>
   );
 }
 
