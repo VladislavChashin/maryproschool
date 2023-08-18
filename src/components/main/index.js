@@ -7,7 +7,7 @@ export default function Main(){
         <main>
             <FlexMethod/>
             <Learning/>
-            {/* <Banner/> */}
+            <Banner/>
         </main>
     )
 }
