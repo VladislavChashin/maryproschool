@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/maryproschool/static/css/main.33d7c60c.css",
+    "main.css": "/maryproschool/static/css/main.c3e3e44c.css",
     "main.js": "/maryproschool/static/js/main.25763158.js",
     "static/js/787.55ba843b.chunk.js": "/maryproschool/static/js/787.55ba843b.chunk.js",
     "static/media/shutterstoc.png": "/maryproschool/static/media/shutterstoc.bfb0eb47509929552430.png",
@@ -18,12 +18,12 @@
     "static/media/logo.svg": "/maryproschool/static/media/logo.1bee342397be64e94bba929cf174f8bf.svg",
     "index.html": "/maryproschool/index.html",
     "static/media/strelka_big.svg": "/maryproschool/static/media/strelka_big.c71d504aa3ae8ba6195ca3f9f9a1a3ab.svg",
-    "main.33d7c60c.css.map": "/maryproschool/static/css/main.33d7c60c.css.map",
+    "main.c3e3e44c.css.map": "/maryproschool/static/css/main.c3e3e44c.css.map",
     "main.25763158.js.map": "/maryproschool/static/js/main.25763158.js.map",
     "787.55ba843b.chunk.js.map": "/maryproschool/static/js/787.55ba843b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33d7c60c.css",
+    "static/css/main.c3e3e44c.css",
     "static/js/main.25763158.js"
   ]
 }
