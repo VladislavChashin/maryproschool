@@ -7,7 +7,7 @@ main{
         justify-content: space-between;
         margin: 0 20px 20px;
         .flex_metodolog_one{
-            max-width: 44.5%;
+            max-width: 45%;
             height: 560px;
             padding: 30px;
             border-radius: 32px;
@@ -15,7 +15,7 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin: 10px 10px 0 0 ;
+            margin: 10px 20px 0 0 ;
             h3{
                 flex-grow: 2;
                 color: #FFF;
@@ -58,7 +58,7 @@ main{
             max-width: 55%;
             justify-content: center;
             .block{
-                width: 241px;
+                width: 245px;
                 height: 240px;
                 padding: 30px 104px 30px 30px;
                 display: flex;
@@ -67,7 +67,10 @@ main{
                 align-items: flex-start;
                 border-radius: 32px;
                 background: #FFF;
-                margin: 10px;
+                margin: 10px 10px 10px 0;
+                &:nth-child(even){
+                    margin: 10px 0 10px 10px ;
+                }
                 p{
                     color: #3F89F0;
                     font-family: InterReg;
