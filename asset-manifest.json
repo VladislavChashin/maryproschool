@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/maryproschool/static/css/main.e61ed2f8.css",
-    "main.js": "/maryproschool/static/js/main.b7ba05b9.js",
+    "main.css": "/maryproschool/static/css/main.33d7c60c.css",
+    "main.js": "/maryproschool/static/js/main.25763158.js",
     "static/js/787.55ba843b.chunk.js": "/maryproschool/static/js/787.55ba843b.chunk.js",
     "static/media/shutterstoc.png": "/maryproschool/static/media/shutterstoc.bfb0eb47509929552430.png",
     "static/media/Inter-SemiBold.ttf": "/maryproschool/static/media/Inter-SemiBold.4d56bb21f2399db8ad48.ttf",
     "static/media/Inter-Medium.ttf": "/maryproschool/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
     "static/media/Inter-Regular.ttf": "/maryproschool/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/womenWary.png": "/maryproschool/static/media/womenWary.2ad1bf82011acc29c9e6.png",
     "static/media/Manrope-SemiBold.ttf": "/maryproschool/static/media/Manrope-SemiBold.310f108cc524df0e5ffc.ttf",
     "static/media/Manrope-Medium.ttf": "/maryproschool/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
     "static/media/Manrope-Regular.ttf": "/maryproschool/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
@@ -17,12 +18,12 @@
     "static/media/logo.svg": "/maryproschool/static/media/logo.1bee342397be64e94bba929cf174f8bf.svg",
     "index.html": "/maryproschool/index.html",
     "static/media/strelka_big.svg": "/maryproschool/static/media/strelka_big.c71d504aa3ae8ba6195ca3f9f9a1a3ab.svg",
-    "main.e61ed2f8.css.map": "/maryproschool/static/css/main.e61ed2f8.css.map",
-    "main.b7ba05b9.js.map": "/maryproschool/static/js/main.b7ba05b9.js.map",
+    "main.33d7c60c.css.map": "/maryproschool/static/css/main.33d7c60c.css.map",
+    "main.25763158.js.map": "/maryproschool/static/js/main.25763158.js.map",
     "787.55ba843b.chunk.js.map": "/maryproschool/static/js/787.55ba843b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e61ed2f8.css",
-    "static/js/main.b7ba05b9.js"
+    "static/css/main.33d7c60c.css",
+    "static/js/main.25763158.js"
   ]
 }
