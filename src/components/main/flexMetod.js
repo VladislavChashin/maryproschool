@@ -5,7 +5,7 @@ export default function FlexMethod(){
                 <div className="flex_metodolog_one">
                     <h3>
                         Наша гибкая методика позволяет 
-                        ученикам быстро достигать целей 
+                        ученикам <br/> быстро достигать целей 
                         в изучении языков
                     </h3>
                     <p>
