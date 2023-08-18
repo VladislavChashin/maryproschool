@@ -14,7 +14,9 @@ export default function FlexMethod(){
                         начинаем сразу же говорить, слушать,
                         писать — и все это вне зависимости от возраста 
                     </p>
-                    <a href="">Записаться на пробное занятие</a>
+                    <div className="button">
+                        <a href="">Записаться на пробное занятие</a>
+                    </div>
                 </div>
                 <div className="flex_metodolog_column">
                     <div className="one_ block">

@@ -37,19 +37,30 @@ main{
                 line-height: 120%; /* 21.6px */
                 max-width: 88%;
             }
-            a{
-                width: 95%;
-                padding: 16px 10px;
-                text-align: center;
-                border-radius: 100px;
-                background: #FFF;
-                text-decoration: none;
-                color: var(--color-blue, #3F89F0);
-                font-family: InterReg;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
+            .button{
+                height: 56px;
+                display: flex;
+                a{
+                    width: 95%;
+                    padding: 16px 10px;
+                    text-align: center;
+                    border-radius: 100px;
+                    background: #FFF;
+                    text-decoration: none;
+                    color: var(--color-blue, #3F89F0);
+                    font-family: InterReg;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    transition: 0.3s;
+                    &:hover{
+                        padding: 15px 9px;
+                        border: 1px solid #FFF;
+                        background: #ffffff00;
+                        color: #FFF;
+                    }
+                }
             }
         }
         .flex_metodolog_column{
@@ -126,20 +137,17 @@ main{
                 letter-spacing: -2.52px;
                 width: 10%;
                 opacity: 0.5;
+                margin: 0;
                 &:nth-child(2){
                     padding: 0;
-                    color: #282D35;
-                    font-family: InterMed;
-                    font-size: 24px;
+                    font-size: 21px;
                     letter-spacing: -1.68px;
                     opacity: 1;
                     width: 17%;
                 }
                 &:nth-child(3){
                     padding: 0 42px 0 0;
-                    width: 25%;
-                    color: #282D35;
-                    font-family: InterMed;
+                    width: 26%;
                     font-size: 16px;
                     line-height: 120%; /* 19.2px */
                     letter-spacing: -0.96px;

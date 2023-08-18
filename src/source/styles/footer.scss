@@ -1,0 +1,66 @@
+footer{
+    width: 100%;
+    max-width: 1500px;
+    height: 589px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #303030;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    .footer_nav{
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 2;
+        p{
+            color: #FFF;
+            font-family: InterSemBold;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -1px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            li{
+                list-style-type: none;
+                padding: 0;
+                margin: 15px 0 0 0;
+            }
+        }
+        
+        a{
+            text-decoration: none;
+            color: #FFF;
+            font-family: InterReg;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .nav_contact_text{
+            ul{
+                li{
+                    margin: 0 0 15px 0;
+                    img{
+                        margin: 0 16px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        margin: 0;
+        color: #FFF;
+        font-family: InterMed;
+        font-size: 175.541px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -12.498px;
+    }
+}
