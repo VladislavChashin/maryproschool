@@ -2,6 +2,7 @@ import FlexMethod from "./flexMetod.js"
 import Learning from "./learning.js"
 import Banner from "./banner.js"
 import ChooseCourse from "./chooseСourse.js"
+import SchoolImage from "./schoolImage.js"
 // import {course} from "./data/course.js"
 
 export default function Main(){
@@ -11,6 +12,7 @@ export default function Main(){
             <Learning/>
             <ChooseCourse/>
             <Banner/>  
+            <SchoolImage/>
         </main>
     )
 }

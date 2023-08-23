@@ -1,3 +1,8 @@
+import classChildren from '../../../source/images/main/classChildren.jpg'
+import dorinclass from '../../../source/images/main/dorinclass.jpg'
+import classes from '../../../source/images/main/class.jpg'
+import womenClass from '../../../source/images/main/womenClass.jpg'
+
 export const course = [
     {
         id: 1,
@@ -52,5 +57,23 @@ export const course = [
         tag: 'экзамены', 
         image: true,
         class: 'cils'
+    },
+]
+export const schoolImage = [
+    {
+        id: 1,
+        src: classChildren,
+    },
+    {
+        id: 2,
+        src: dorinclass,
+    },
+    {
+        id: 3,
+        src: classes,
+    },
+    {
+        id: 4,
+        src: womenClass,
     },
 ]
