@@ -310,42 +310,19 @@ main{
                 background: #E2E8F3;
                 max-width: 283px;
                 height: 353px;
-                transition: 0.5s;
-                &:hover{
-                    cursor: pointer;
-                    background: var(--gradient-gradient-blue, linear-gradient(148deg, #417BE9 0%, #3B9BF8 100%));
-                    .course_textBlock{
-                        p{
-                            color: var(--color-white, #FFF);
-                            border: 1px solid var(--color-white, #FFF);
-                        }
-                        .course_description{
-                            p{
-                                color: #FFF;
-                            }
-                            h5{
-                                color: #FFF;
-                            }
-                        }
-                        a{
-                            background: var(--color-blue, #ffffff);
-                            color: var(--color-white, #000000);
-                            img{
-                                filter: brightness(0%);
-                            }
-                        }
-                    }
+                // &:hover{
+                //     cursor: pointer;
+                //     
+                //     
                     
 
-                }
+                // }
                 .course_textBlock{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: flex-start;
-                    transition: 0.5s;
                     p{
-                        transition: 0.5s;
                         margin: 0;
                         color: var(--color-blue, #3F89F0);
                         font-family: InterSemBold;
@@ -361,9 +338,7 @@ main{
                     }
                     .course_description{
                         margin-top: auto;
-                        transition: 0.5s;
                         h5{
-                            transition: 0.5s;
                             margin: 0;
                             color: #303030;
                             font-family: InterSemBold;
@@ -376,7 +351,6 @@ main{
                             
                         }
                         p{
-                            transition: 0.5s;
                             margin: 0;
                             color: #303030;
                             font-family: InterMed;
@@ -393,7 +367,6 @@ main{
                         }
                     }
                     a{
-                        transition: 0.5s;
                         padding: 10px 25px 10px 30px;
                         align-items: center;    
                         text-decoration: none;
@@ -410,7 +383,6 @@ main{
                         margin: 20px 0 0;
                         cursor: pointer;
                         img{
-                            transition: 0.5s;
                             max-height: 24px;
                             margin-left: 10px;
                         }
@@ -419,10 +391,37 @@ main{
                 &:nth-child(3){
                     max-width: 740px;
                 }
+                &.indiv{
+                    background: var(--gradient-gradient-blue, linear-gradient(148deg, #417BE9 0%, #3B9BF8 100%));
+                    .course_textBlock{
+                        p{
+                            color: var(--color-white, #FFF);
+                            border: 1px solid var(--color-white, #FFF);
+                        }
+                        .course_description{
+                            p{
+                                color: #FFF;
+                                border: 0;
+                            }
+                            h5{
+                                color: #FFF;
+                            }
+                        }
+                        a{
+                            background: var(--color-blue, #ffffff);
+                            color: var(--color-white, #000000);
+                            img{
+                                filter: brightness(0%);
+                            }
+                        }
+                    }
+                }
                 
             }
             .course_imageBlock{
-                img{}
+                img{
+                    height: 373px;
+                }
             }
         }
         

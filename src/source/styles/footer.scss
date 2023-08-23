@@ -30,6 +30,7 @@ footer{
                 list-style-type: none;
                 padding: 0;
                 margin: 15px 0 0 0;
+                width: fit-content;
             }
         }
         
@@ -41,6 +42,18 @@ footer{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            &:after{
+                display: block;
+                content:" ";
+                height: 2px;
+                background-color: #ffffff;
+                width: 0%; 
+                transition: width 0.4s ease-in-out;
+            }
+            &:hover:after,
+            &:focus:after {
+                width: 100%;
+            }
         }
         .nav_contact_text{
             ul{
