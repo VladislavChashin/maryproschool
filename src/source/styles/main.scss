@@ -382,9 +382,15 @@ main{
                         display: flex;
                         margin: 20px 0 0;
                         cursor: pointer;
+                        &:hover{
+                            img{
+                                transform: translateX(8px);
+                            }
+                        }
                         img{
                             max-height: 24px;
                             margin-left: 10px;
+                            transition: 0.7s;
                         }
                     }
                 }
