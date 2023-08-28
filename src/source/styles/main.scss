@@ -517,7 +517,7 @@ main{
     .teachers{
         display: flex;
         flex-direction: column;
-        margin: 100px 20px;
+        margin: 100px 20px 134px;
         h2{
             color: #424344;
             font-family: InterMed;
@@ -597,6 +597,93 @@ main{
                 flex-wrap: wrap;
                 justify-content: space-between;
                 max-width: 740px;
+            }
+        }
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 20px;
+        overflow: hidden;
+        .reviews_header{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                color: #424344;
+                font-family: InterMed;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%; /* 54px */
+                letter-spacing: -3.78px;
+                margin: 0 0 30px;
+            }
+            .reviews_navigate{
+
+                img{
+                    margin: 0 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .reviews_content{
+            display: flex;
+            justify-content: space-between;
+            .reviews_reviewBlock{
+                width: 710px;
+                border-radius: 16px;
+                background: #FFF;
+                padding: 30px;
+                .reviewBlock_info{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 71px;
+                        height:71px;
+                    }
+                    .info_name{
+                        p{
+                            margin: 0 0 5px 20px;
+                            color: #303030;
+                            font-family: InterMed;
+                            font-size: 25px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 110%; /* 27.5px */
+                            letter-spacing: -1.25px;
+                            &:nth-child(2){
+                                font-family: InterReg;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                letter-spacing: -0.9px;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+                .reviewBlock_description{
+                    h5{
+                        color: #303030;
+                        font-family: InterSemBold;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -1.4px;
+                        margin: 30px 0 20px;
+                    }
+                    p{
+                        color: #303030;
+                        font-family: InterReg;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.8px;
+                        margin: 0;
+                    }
+                }
             }
         }
     }

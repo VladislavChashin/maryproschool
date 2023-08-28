@@ -4,6 +4,7 @@ import Banner from "./banner.js"
 import ChooseCourse from "./chooseСourse.js"
 import SchoolImage from "./schoolImage.js"
 import Teachers from "./teachers.js"
+import Reviews from "./reviews.js"
 // import {course} from "./data/course.js"
 
 export default function Main(){
@@ -15,6 +16,8 @@ export default function Main(){
             <Banner/>  
             <SchoolImage/>
             <Teachers/>
+            <Reviews/>
+            <Banner/>
         </main>
     )
 }
