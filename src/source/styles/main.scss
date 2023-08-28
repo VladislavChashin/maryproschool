@@ -514,4 +514,90 @@ main{
             }
         }
     }
+    .teachers{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 20px;
+        h2{
+            color: #424344;
+            font-family: InterMed;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 54px */
+            letter-spacing: -3.78px;
+            margin: 0 0 20px;
+        }
+        .teachers_allTeachers{
+            display: flex;
+            justify-content: space-between;
+            .imageBlock{
+                max-width: 360px;
+                margin: 0 0 30px 0;
+                img{border-radius: 16px;}
+                p{
+                    color: var(--color-black, #303030);
+                    font-family: InterSemBold;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 130%; /* 26px */
+                    letter-spacing: -0.6px;
+                    margin: 10px 0 0;
+                    &:nth-child(3){
+                        color: #303030;
+                        font-family: InterMed;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%; /* 23.4px */
+                        letter-spacing: -0.36px;
+                        opacity: 0.8;
+                        margin: 5px 0 0;
+                    }
+                }
+            }
+            .teachers_headTeacher{
+                display: flex;
+                width: 50%;
+                .headTeacher_description{
+                    margin-left: 20px;
+                    p{
+                        color: #424344;
+                        font-family: InterMed;
+                        font-size: 27px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 110%; /* 29.7px */
+                        letter-spacing: -1.89px;
+                        margin: 0 0 30px;
+                    }
+                    a{
+                        text-decoration: none;
+                        border-radius: 16px;
+                        border: 1px solid #4084EE;
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        padding: 16px 10px;
+                        color: var(--color-blue, #3F89F0);
+                        font-family: InterSemBold;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        img{
+                            margin: 0 0 1px 10px;
+                        }
+                    }
+                }
+            }
+            .teachers_otherTeacher{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 740px;
+            }
+        }
+    }
 }

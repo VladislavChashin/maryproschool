@@ -2,6 +2,10 @@ import classChildren from '../../../source/images/main/classChildren.jpg'
 import dorinclass from '../../../source/images/main/dorinclass.jpg'
 import classes from '../../../source/images/main/class.jpg'
 import womenClass from '../../../source/images/main/womenClass.jpg'
+import man1 from '../../../source/images/main/man1.jpg'
+import women1 from '../../../source/images/main/women1.jpg'
+import women2 from '../../../source/images/main/women2.jpg'
+import women3 from '../../../source/images/main/women3.jpg'
 
 export const course = [
     {
@@ -77,3 +81,27 @@ export const schoolImage = [
         src: womenClass,
     },
 ]
+
+export const teachers = {
+    one:{
+        src: women2,
+        name: 'Мария Кричевская',
+        description: 'Преподаватель трех языков'
+    },
+    two:{
+        src: women3,
+        name: 'Ксения Лагутина',
+        description: `Преподаватель английского и французского языка`
+    },
+    three:{
+        src: women1,
+        name: 'Анастасия Болотова',
+        description: `Преподаватель английского и французского языка`
+    },
+    four:{
+        src: man1,
+        name: 'Павел Кричевский',
+        description: 'Преподаватель английского языка'
+    },
+
+}
