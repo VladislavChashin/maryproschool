@@ -616,6 +616,16 @@ main{
                 flex-wrap: wrap;
                 justify-content: space-between;
                 max-width: 740px;
+                .imageBlock{
+                    p{
+                        max-width: 259px;
+                    }
+                    &:nth-child(3){
+                        p{
+                            max-width: fit-content;
+                        }
+                    }
+                }
             }
         }
     }
