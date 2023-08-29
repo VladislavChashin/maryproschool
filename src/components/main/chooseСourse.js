@@ -2,6 +2,8 @@ import { course } from "./data/course";
 import {useState} from "react"
 import strelka from '../../source/images/main/arrow-right.svg'
 import classrom from '../../source/images/main/Digitalclassroom.png'
+import indivFranch from '../../source/images/main/indivFranch.png'
+import speackFranch from '../../source/images/main/speckFranch.png'
 
 export default function ChooseCourse(){
     const [lenguage, setLenguage] = useState('eng')
@@ -41,8 +43,8 @@ function Course(props){
                     </div>
                     <a href="#">Выбрать <img src={strelka} alt="" /> </a>
                 </div>
-                <div className="course_imageBlock" style={courseData.image == true ? {display: 'inline-block'} : {display: 'none'}}>
-                    <img src={classrom} alt="" />
+                <div className="course_imageBlock" style={courseData.image == true || (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak')) ? {display: 'inline-block'} : {display: 'none'}}>
+                    <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : classrom} alt="" />
                 </div>
             </div>
         : <></>}  
