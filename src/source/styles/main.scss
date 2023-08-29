@@ -593,7 +593,7 @@ main{
                     }
                     a{
                         text-decoration: none;
-                        border-radius: 16px;
+                        border-radius: 1000px;
                         border: 1px solid #4084EE;
                         width: 100%;
                         display: block;
@@ -605,8 +605,18 @@ main{
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+                        transition: 0.3s;
                         img{
                             margin: 0 0 1px 10px;
+                            transition: 0.3s;
+                        }
+                        &:hover{
+                            background-color: #4084EE;
+                            color: var(--color-blue, #ffffff);
+                            img{
+                                filter: brightness(300%);
+                                transform: translateX(8px);
+                            }
                         }
                     }
                 }
