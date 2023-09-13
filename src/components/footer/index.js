@@ -1,6 +1,6 @@
 import vk from '../../source/images/footer/vk.svg'
 import inst from '../../source/images/footer/inst.svg'
-
+import './styles/footer.scss'
 export default function Footer(){
     return(
         <>

@@ -1,5 +1,6 @@
-import women from '../../source/images/main/womenWary.png'
-import strelka from '../../source/images/index/strelka_big.svg'
+import women from '../../../source/images/main/womenWary.png'
+import strelka from '../../../source/images/index/strelka_big.svg'
+import './styles/banner.scss';
 
 export default function Banner(){
     return(

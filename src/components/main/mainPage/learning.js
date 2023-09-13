@@ -1,3 +1,5 @@
+import './styles/learning.scss';
+
 export default function Learning(){
     return(
         <>

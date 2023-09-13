@@ -1,13 +1,15 @@
-import { course } from "./data/course";
-import {useState} from "react"
-import strelka from '../../source/images/main/arrow-right.svg'
-import classrom from '../../source/images/main/Digitalclassroom.png'
-import indivFranch from '../../source/images/main/indivFranch.png'
-import speackFranch from '../../source/images/main/speckFranch.png'
+import { course } from "../data/course";
+import {useState, useEffect} from "react"
+import strelka from '../../../source/images/main/arrow-right.svg'
+import classrom from '../../../source/images/main/Digitalclassroom.png'
+import indivFranch from '../../../source/images/main/indivFranch.png'
+import speackFranch from '../../../source/images/main/speckFranch.png'
+import './styles/chooseCourse.scss';
 
 export default function ChooseCourse(){
     const [lenguage, setLenguage] = useState('eng')
     const [count, setCount] = useState(1)
+
     let lang = lenguage
     return(
         <>
@@ -31,6 +33,18 @@ export default function ChooseCourse(){
 
 function Course(props){
     let courseData = props.courses
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = (event) => {
+        setWidth(event.target.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
     return(
         <> 
         {courseData.categories.includes(props.lang) ? 
@@ -43,7 +57,12 @@ function Course(props){
                     </div>
                     <a href="#">Выбрать <img src={strelka} alt="" /> </a>
                 </div>
-                <div className="course_imageBlock" style={courseData.image == true || (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak')) ? {display: 'inline-block'} : {display: 'none'}}>
+                <div className="course_imageBlock" 
+                style={courseData.image == true || 
+                (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
+                ? width > 1024 ? {display: 'inline-block'} : {display: 'none'} 
+                : {display: 'none'}}>
+
                     <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : classrom} alt="" />
                 </div>
             </div>

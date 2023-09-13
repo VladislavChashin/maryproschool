@@ -1,0 +1,51 @@
+.schoolImage{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20px;
+    overflow: hidden;
+    @media (max-width: 768px){
+        margin: 100px 10px;
+    }
+    .schoolImage_header{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            color: #424344;
+            font-family: InterMed;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 54px */
+            letter-spacing: -3.78px;
+            margin: 0 0 20px;
+            @media (max-width: 768px){
+                font-size: 24px;
+                letter-spacing: -1.6px;
+            }
+        }
+        .schoolImage_navigate{
+
+            img{
+                margin: 0 10px;
+                cursor: pointer;
+                @media (max-width: 768px){
+                    max-width: 32px;
+                }
+            }
+        }
+    }
+    .schoolImage_content{
+        display: flex;
+        transition: 0.7s;
+        width: fit-content;
+        img{
+            border-radius: 17px;
+            @media (max-width: 1024px){
+                height: 300px;
+            }
+            &:nth-child(even){
+                margin: 0 20px;
+            }
+        }
+    }
+}

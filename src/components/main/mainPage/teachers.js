@@ -1,5 +1,6 @@
-import { teachers } from "./data/course";
-import strelka from '../../source/images/index/strelka_big.svg'
+import { teachers } from "../data/course";
+import strelka from '../../../source/images/index/strelka_big.svg'
+import './styles/teacers.scss';
 
 export default function Teachers(){
     return(

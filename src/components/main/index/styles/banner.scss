@@ -1,0 +1,127 @@
+.banner{
+    margin: 20px;
+    background-image: url('../../../../source/images/header/shutterstoc.png');
+    background-size: 100% 878px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 30px;
+    height: 540px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 1024px){
+        height: auto;
+    }
+    @media (max-width: 768px){
+        margin: 10px;
+    }
+    @media (max-width: 425px){
+        padding: 20px 10px;
+    }
+    .banner_content{
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 2;
+        .banner_text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 70%;
+            @media (max-width: 1410px){
+                width: auto;
+            }
+            h4{
+                color: #FFF;
+                font-family: InterMed;
+                font-size: 140px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 90%; /* 126px */
+                letter-spacing: -9.8px;
+                margin: 0;
+                @media (max-width: 1599px){
+                    font-size: 130px;
+                }
+                @media (max-width: 1024px){
+                    font-size: 95px;
+                 }
+                @media (max-width: 768px){
+                    font-size: 60px;
+                    letter-spacing: -3.3px;
+                }
+                @media (max-width: 530px){
+                    font-size: 48px;
+                    letter-spacing: -3.3px;
+                }
+            }
+            p{
+                color: #FFF;
+                font-family: ManroReg;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 28.8px */
+                letter-spacing: 0.48px;
+                width: 60%;
+                text-align: start;
+                @media (max-width: 1024px){
+                    font-size: 19px;
+                    margin: 60px 0 15px;
+                 }
+                @media (max-width: 768px){
+                    width: auto ;
+                }
+                @media (max-width: 425px){
+                    font-size: 14px;
+                 }
+            }
+        }
+        .banner_images{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: 1410px){
+                display: none;
+            }
+            img{
+                max-width: 325px;
+                @media (max-width: 1599px){
+                    max-width: 259px;
+                }
+            }
+            p{
+                color: #FFF;
+                text-align: center;
+                font-family: ManroReg;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 23.4px */
+                width: 62%;
+                text-align: center;
+                
+            }
+        }
+    }
+    a{
+        padding: 15px 30px;
+        border-radius: 1000px;
+        border: 1px solid #FFF;
+        background: #FFF;
+        text-align: center;
+        text-decoration: none;
+        color: #3F89F0;
+        font-family: InterReg;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @media (max-width: 768px){
+            font-size: 14px;
+        }
+        @media (max-width: 425px){
+            padding: 15px;
+         }
+    }
+}

@@ -1,15 +1,29 @@
-import strelkaRight from '../../source/images/index/arrowRight.svg'
-import strelkaLeft from '../../source/images/index/arrowLeft.svg'
-import women from '../../source/images/main/otzivWomen.png'
-import { useState } from "react";
+import strelkaRight from '../../../source/images/index/arrowRight.svg'
+import strelkaLeft from '../../../source/images/index/arrowLeft.svg'
+import women from '../../../source/images/main/otzivWomen.png'
+import './styles/reviews.scss';
+import { useState, useEffect } from "react";
 
 export default function Reviews(){
+    const [width, setWidth] = useState(window.innerWidth);
     const [rotate, setRotate] = useState(0)
+
+    useEffect(() => {
+      const handleResize = (event) => {
+        setWidth(event.target.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+
     const updateIndex = (counter) => {
-        if (rotate >= 0){
-            setRotate(-1)
+        if (counter >= 3 ){
+            setRotate(0)
         }else{
-            setRotate(-1)
+            setRotate(counter)
         }
     }
     const remuveIndex = (counter) => {
@@ -28,7 +42,8 @@ export default function Reviews(){
                         <img onClick={()=> remuveIndex(rotate - 1)} src={strelkaLeft} alt="" /><img onClick={()=> updateIndex(rotate + 1)} src={strelkaRight} alt="" />
                     </div>
                 </div>
-                <div className="reviews_content">
+                <div className="reviews_content" style={width <= 810 ?{transform: `translateX(-${rotate * width}px)`}: {transform: `translateX(-${rotate * 790}px)`}}>
+                    <ReviewBlocks/>
                     <ReviewBlocks/>
                     <ReviewBlocks/>
                 </div>
@@ -38,9 +53,20 @@ export default function Reviews(){
 }
 
 function ReviewBlocks(){
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = (event) => {
+        setWidth(event.target.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     return(
         <>
-            <div className="reviews_reviewBlock">
+            <div className="reviews_reviewBlock" style={width <= 810 ? {minWidth: width-80}: {width: '710px'}}>
                 <div className="reviewBlock_info">
                     <img src={women} alt="" />
                     <div className="info_name">

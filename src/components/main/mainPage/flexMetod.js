@@ -1,3 +1,5 @@
+import './styles/flexMetod.scss';
+
 export default function FlexMethod(){
     return(
         <>
