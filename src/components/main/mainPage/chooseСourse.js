@@ -1,10 +1,13 @@
 import { course } from "../data/course";
-import {useState, useEffect} from "react"
+import {useState, useEffect, useCallback} from "react"
 import strelka from '../../../source/images/main/arrow-right.svg'
 import classrom from '../../../source/images/main/Digitalclassroom.png'
 import indivFranch from '../../../source/images/main/indivFranch.png'
 import speackFranch from '../../../source/images/main/speckFranch.png'
 import './styles/chooseCourse.scss';
+import {useDispatch } from 'react-redux'
+import {increment } from '../../header/modalReduser'
+
 
 export default function ChooseCourse(){
     const [lenguage, setLenguage] = useState('eng')
@@ -34,6 +37,11 @@ export default function ChooseCourse(){
 function Course(props){
     let courseData = props.courses
     const [width, setWidth] = useState(window.innerWidth);
+    const dispatch = useDispatch()
+
+    const lockScroll = useCallback(() => {
+        document.body.style.overflow = "hidden"
+    }, [])
 
     useEffect(() => {
       const handleResize = (event) => {
@@ -55,7 +63,7 @@ function Course(props){
                         <h5>{courseData.title}</h5>
                         <p>{courseData.text}</p>
                     </div>
-                    <a href="#">Выбрать <img src={strelka} alt="" /> </a>
+                    <a onClick={() => {dispatch(increment()); lockScroll()}}>Выбрать <img src={strelka} alt="" /> </a>
                 </div>
                 <div className="course_imageBlock" 
                 style={courseData.image == true || 
