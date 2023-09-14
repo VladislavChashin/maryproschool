@@ -7,6 +7,7 @@ header{
     .navbar_container{
         width: 95%;
         margin: 0 auto;
+        
         .navbar_content{
             display: flex;
             justify-content: space-between;
@@ -55,7 +56,7 @@ header{
                     justify-content: space-between;
                     li{
                         list-style-type: none;
-                        padding: 15px;
+                        padding: 0;
                         margin: 0;
                         color: #000;
                         font-family: InterReg;
@@ -64,15 +65,31 @@ header{
                         font-weight: 400;
                         line-height: normal;
                         border-radius: 500px;
-                        transition: 0.3s;
-                        &:hover{
-                            background: #417CEA;    
+                        a{  
+                            display: inline-block;
+                            padding: 15px;
+                            width: auto;
+                            text-align: center;
+                            border-radius: 500px;
+                            border: 0;
+                            background: none;
+                            color: #000;
+                            font-family: InterReg;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-decoration: none;
                             cursor: pointer;
-                            color: #FFF;
-                        }
-
-                        @media (max-width: 1599px){
-                            padding: 9.5px;
+                            transition: 0.3s;
+                            @media (max-width: 1599px){
+                                padding: 9.5px;
+                            }
+                            &:hover{
+                                background: #417CEA;    
+                                cursor: pointer;
+                                color: #FFF;
+                            }
                         }
                     }
                 }
@@ -126,6 +143,52 @@ header{
         border-radius: 32px;
         display: flex;
         flex-direction: column;
+        &.teach{
+            height: auto;
+            .header_content{
+                align-items: flex-start;
+                justify-content: flex-end;
+                h1{
+                    color: #FFF;
+                    font-family: InterMed;
+                    font-size: 140px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 90%; /* 126px */
+                    letter-spacing: -9.8px;
+                    text-transform: none;
+                    margin: 40px 30px 40px;
+                }
+                .nav{
+                    margin: 100px 0 0 40px;
+                    width: 170px;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        padding: 0;
+                        width: 50px;
+                        text-align: center;
+                        border-radius: 0;
+                        border: none;
+                        background: none;
+                        color: rgba(255, 255, 255, 0.502);
+                        font-family: InterMed;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 90%;
+                        letter-spacing: 0;
+                        text-decoration: none;
+                        cursor: pointer;
+                        &:nth-child(3){
+                            color: rgb(255, 255, 255);
+                            width: 95px;
+                        }
+                    }
+                }
+            }
+            
+        }
         @media (max-width: 1024px){
             height: auto;
          }

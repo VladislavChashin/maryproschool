@@ -6,10 +6,12 @@ import right_men2 from '../../source/images/header/right_men2.png'
 import right_women1 from '../../source/images/header/right_women1.png'
 import group_people from '../../source/images/header/group.png'
 import strelka from '../../source/images/index/strelka_big.svg'
+import strelkaRight from '../../source/images/header/Vector.svg'
 import { useState, useEffect, useCallback } from 'react';
-
+import { Link, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './modalReduser'
+
 
 export default function Header(){
     const [width, setWidth] = useState(window.innerWidth);
@@ -54,6 +56,38 @@ export default function Header(){
                         <img className='people_group' src={group_people} alt="" style={width <= 1024 ? {display:'inline-block'}: {display: 'none'}}/>
                         <p>Мы влюбляем в язык <br/>с самого первого занятия</p>
                         <a onClick={() => {dispatch(increment()); lockScroll()}}>Записаться на пробное занятие <img src={strelka} alt="" /></a>
+                    </div>
+                </div>
+            </header>
+        </>
+        
+    )
+}
+
+export function HeaderTeach(){
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = (event) => {
+        setWidth(event.target.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []); 
+
+    return(
+        <>
+        {/* {count === true ? <HeaderPopAp/>: <></>} */}
+            <header>
+                <div className="header_container teach">
+                    <div className="navbar_container">
+                        <Navbar/>
+                    </div>
+                    <div className="header_content ">
+                        <div className="nav"><Link to={'/maryproschool'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>Преподаватели</Link></div>
+                        <h1>Преподаватели</h1>
                     </div>
                 </div>
             </header>

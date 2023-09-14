@@ -1,17 +1,20 @@
 import './components/header/styles/header.scss';
 import './components/main/main.scss';
 import './components/footer/styles/footer.scss';
-import Header from './components/header/index.js'
-import Main from './components/main/index.js'
-import Footer from './components/footer/index.js'
-import PopApCourse from "./components/pop-ap/PopApCourse"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from './components/main/index.js'
+import Header from './components/header';
+import TeachersPage from './components/main/teachersPage';
 function App() {
   return (
     <> 
-      <PopApCourse/>
-      <Header></Header>
-      <Main></Main>
-      <Footer/>
+    <Router>
+      <Routes>
+        <Route path='/maryproschool' element={<MainPage/>} />
+        <Route path='/teacher' element={<TeachersPage/>} />
+      </Routes>
+    </Router>
+      
     </>
   );
 }

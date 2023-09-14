@@ -1,6 +1,8 @@
 import logo from '../../source/images/header/logo.svg'
 import call from '../../source/images/header/call.svg'
 import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { NavLink as Link } from "react-router-dom";
 
 export default function Navbar(){
     const [width, setWidth] = useState(window.innerWidth);
@@ -22,14 +24,14 @@ export default function Navbar(){
             </div>
             <nav>
                 <ul>
-                    <li>О нас</li>
-                    <li>Преподаватели</li>
-                    <li>Занятия для детей</li>
-                    <li>Занятия для взрослых</li>
-                    <li>Цены</li>
-                    <li>Отзывы</li>
-                    <li>Блог</li>
-                    <li>Контакты</li>
+                    <li><NavLink to="/maryproschool">О нас</NavLink></li>
+                    <li><NavLink to="/teacher">Преподаватели</NavLink></li>
+                    <li><NavLink to="/child">Занятия для детей</NavLink></li>
+                    <li><NavLink to="/people">Занятия для взрослых</NavLink></li>
+                    <li><NavLink to="/price">Цены</NavLink></li>
+                    <li><NavLink to="/revews">Отзывы</NavLink></li>
+                    <li><NavLink to="/blog">Блог</NavLink></li>
+                    <li><NavLink to="/contacts">Контакты</NavLink></li>
                 </ul>
             </nav>
             <div className="phone backgroundFon">

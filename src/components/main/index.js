@@ -5,19 +5,29 @@ import ChooseCourse from "./mainPage/chooseСourse.js"
 import SchoolImage from "./mainPage/schoolImage.js"
 import Teachers from "./mainPage/teachers.js"
 import Reviews from "./index/reviews.js"
+import Header from '../header/index.js'
+import Footer from '../footer/index.js'
+import PopApCourse from "../pop-ap/PopUpCourse"
+
 // import {course} from "./data/course.js"
 
-export default function Main(){
+export default function MainPage(){
     return(
-        <main>
-            <FlexMethod/>
-            <Learning/>
-            <ChooseCourse/>
-            <Banner/>  
-            <SchoolImage/>
-            <Teachers/>
-            <Reviews/>
-            <Banner/>
-        </main>
+        <>
+            <PopApCourse/>
+            <Header/>
+            <main>
+                <FlexMethod/>
+                <Learning/>
+                <ChooseCourse/>
+                <Banner/>  
+                <SchoolImage/>
+                <Teachers/>
+                <Reviews/>
+                <Banner/>
+            </main>
+            <Footer/>
+        </>
+        
     )
 }

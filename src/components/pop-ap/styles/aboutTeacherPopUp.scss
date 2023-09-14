@@ -1,0 +1,180 @@
+.modalWraper_teacher{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; /* см. ниже */
+    align-items: flex-end;
+    z-index: 99;
+    background-color: #00000096;
+    backdrop-filter: blur(1px);
+    .TeacherPopAp{
+        flex-shrink:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgba(255, 255, 255, 1);
+        width: 626px;
+        height: 100%;
+        border-radius: 16px;
+        padding: 30px;
+        .TeacherPopAp_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: var(--light-mode-label-primary, #222);
+                font-family: InterMed;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%; /* 32px */
+                letter-spacing: -0.96px;
+                margin: 0;
+            }
+            img{
+                display: flex;
+                height: 16px;
+                width: 16px;
+                padding: 16px 16px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border-radius: 16px;
+                background: rgba(58, 58, 60, 1);
+                cursor: pointer;
+            }
+        }
+        .TeacherPopAp_about{
+            display: flex;
+            justify-content: flex-start;
+            gap: 33px;
+            img{
+                width: 240px;
+                height: 240px;
+        }   } 
+        .description{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-height: 240px;
+            h4{
+                color: var(--light-mode-label-primary, #222);
+                font-family: ManroMed;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%; /* 32px */
+                letter-spacing: -0.96px;
+                margin: 0 ;
+            }
+            .tags{
+                display: flex;
+                max-width: 353px;
+                max-height: 240px;
+                gap: 12px;
+                flex-wrap: wrap;
+                .tags_block{
+                    display: flex;
+                    padding: 16px 15px;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    max-width: 138.4px;
+                    gap: 5px;
+                    border-radius: 16px;
+                    border: 1px solid #F3F6FB;
+                    background: var(--color-gray, #819DD6);
+                    &:nth-child(1){
+                        flex-grow: 3;
+                        width: 100%;
+                        max-width: none;
+                        border-radius: 16px;
+                        border: 1px solid var(--color-blue, #3F89F0);
+                        background: var(--color-blue, #3F89F0);
+                    }
+                    p{
+                        color: var(--color-white, #FFF);
+                        font-family: InterReg;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 110%; /* 15.4px */
+                        letter-spacing: -0.28px;
+                        margin: 0;
+                        &:nth-child(1){
+                            font-family: ManroSemBold;
+                            font-size: 24px;
+                            font-weight: 600;
+                            letter-spacing: -0.48px;
+                        }
+                    }
+                }
+            }
+        }
+        .block_info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            .sersertificate{
+                flex-grow: 2;
+            }
+            h5{
+                color: var(--color-black, #303030);
+                font-family: ManroMed;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 26.4px */
+                letter-spacing: -0.48px;
+                margin: 0 0 10px 0;
+            }
+            p{
+                color: var(--color-black, #303030);
+                font-family: ManroMed;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 19.8px */
+                letter-spacing: -0.36px;
+                padding: 20px 30px;
+                align-items: center;
+                margin: 0;
+                border-radius: 16px;
+                background: var(--color-light-blue, #F3F6FB);
+            }
+        }
+        .TeacherPopUp_footer{
+            display: flex;
+            padding: 16px 0px;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 16px;
+            align-self: stretch;
+            a{
+                display: flex;
+                width: 100%;
+                padding: 16px 36px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                background: var(--color-blue, #3F89F0);
+                color: var(--color-white, #FFF);
+                text-align: center;
+                font-family: InterSemBold;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
