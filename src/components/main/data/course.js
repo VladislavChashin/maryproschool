@@ -14,8 +14,8 @@ export const course = [
         title: 'Занятия в группе',
         text: 'Занятия проводятся в группах от 6 человек',
         tag: 'для детей и взрослых',
-        image: false,
-        class: ''
+        image: true,
+        class: 'group'
     },
     {
         id: 2,

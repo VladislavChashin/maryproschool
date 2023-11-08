@@ -26,8 +26,6 @@ export default function Navbar(){
                 <ul>
                     <li><NavLink to="/maryproschool">О нас</NavLink></li>
                     <li><NavLink to="/teacher">Преподаватели</NavLink></li>
-                    <li><NavLink to="/child">Занятия для детей</NavLink></li>
-                    <li><NavLink to="/people">Занятия для взрослых</NavLink></li>
                     <li><NavLink to="/price">Цены</NavLink></li>
                     <li><NavLink to="/revews">Отзывы</NavLink></li>
                     <li><NavLink to="/blog">Блог</NavLink></li>

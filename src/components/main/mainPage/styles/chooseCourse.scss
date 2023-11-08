@@ -72,9 +72,9 @@
             width: 487px;
             padding: 15px 20px;
             border-radius: 500px;
-            border: 1px solid var(--color-blue, #3F89F0);
+            border: 1px solid var(--color-blue, #60BFE1);
             background: #3f89f000;
-            color: var(--color-blue, #3F89F0);
+            color: var(--color-blue, #60BFE1);
             font-family: ManroSemBold;
             font-size: 18px;
             font-style: normal;
@@ -87,13 +87,13 @@
                 width: 100%;
             }
             &:hover{
-                background: #3f89f0;
+                background: #60BFE1;
                 cursor: pointer;
                 color: #FFF;
             }
         }
         .active{
-            background: #3f89f0;
+            background: #60BFE1;
             color: #FFF;
         }
     }
@@ -115,6 +115,9 @@
             background: #E2E8F3;
             max-width: 283px;
             height: 353px;
+            @media (max-width: 768px){
+                flex-direction: column;
+            }
             @media (max-width: 425px){
                 padding: 20px 15px;
             }
@@ -135,7 +138,7 @@
                 }
                 p{
                     margin: 0;
-                    color: var(--color-blue, #3F89F0);
+                    color: var(--color-blue, #60BFE1);
                     font-family: InterSemBold;
                     padding: 9px 14px;
                     font-size: 14px;
@@ -145,7 +148,7 @@
                     letter-spacing: -0.28px;
                     text-transform: uppercase;
                     border-radius: 62px;
-                    border: 1px solid var(--color-blue, #3F89F0);
+                    border: 1px solid var(--color-blue, #60BFE1);
                     @media (max-width: 425px){
                         font-size: 10px;
                     }
@@ -190,7 +193,7 @@
                     align-items: center;    
                     text-decoration: none;
                     border-radius: 150px;
-                    background: var(--color-blue, #3F89F0);
+                    background: var(--color-blue, #60BFE1);
                     color: var(--color-white, #FFF);
                     font-family: InterReg;
                     font-size: 18px;
@@ -224,7 +227,7 @@
                 
             }
             &.indiv{
-                background: var(--gradient-gradient-blue, linear-gradient(148deg, #417BE9 0%, #3B9BF8 100%));
+                background: linear-gradient(106deg, #FF6D82 0%, #EB3C56 100%);
                 .course_textBlock{
                     p{
                         color: var(--color-white, #FFF);
@@ -253,6 +256,10 @@
         .course_imageBlock{
             img{
                 height: 373px;
+                @media (max-width: 1024px){
+                    max-width: 270px;
+                    height: auto;
+                }
             }
         }
     }
@@ -325,7 +332,10 @@
                         max-width: 400px;
                     }
                     img{
-                        max-width: 585px;
+                        max-width: max-content;
+                        @media(max-width: 1024px) {
+                            max-width: 270px;
+                        }
                     }
                 }
                 @media (max-width: 1600px){
@@ -384,6 +394,9 @@
             height: 1300px;
         }
         .chooseCourse_course{
+            &.indiv{
+                background: linear-gradient(106deg, #61C0E1 0%, #7FDEFF 100%);
+            }
             @media (max-width: 1576px){
                 flex-grow: 2;
                 max-width: 100%;
@@ -418,10 +431,14 @@
                     max-width: 400px;
                 }
                 img{
-                    max-width: 585px;
-                    margin-right: 187px;
+                    max-width: max-content;
+                    margin-right: 100px;
                     @media(max-width: 1300px) {
                         margin-right: 0;
+
+                    }
+                    @media(max-width: 1024px) {
+                        max-width: 270px;
                     }
                 }
                 .course_textBlock a img{
@@ -498,12 +515,17 @@
                 img{
                     max-width: 418px;
                     max-height: 279px;
+                    @media(max-width: 1024px) {
+                        max-width: 270px;
+                        height: auto;
+                    }
                 }
             }
             &.indiv{
                 max-width: 100%;
                 flex-grow: 2;
                 order: 4;
+                background: linear-gradient(94deg, #60BFE0 0%, #7FDEFF 100%);
                 p{
                     max-width: 615px;
                 }

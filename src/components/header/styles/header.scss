@@ -45,6 +45,7 @@ header{
                 border-radius: 500px;
                 flex-grow: 2;
                 margin: 0 15px 0;
+                max-width: 643px;
                 padding: 10px;
                 @media (max-width: 1359px){
                     display: none;
@@ -86,7 +87,7 @@ header{
                                 padding: 9.5px;
                             }
                             &:hover{
-                                background: #417CEA;    
+                                background: #60BFE1;    
                                 cursor: pointer;
                                 color: #FFF;
                             }
@@ -97,7 +98,7 @@ header{
             .phone{
                 p{
                     margin: 5px 0;
-                    color: var(--color-blue, #3F89F0);
+                    color: var(--color-blue, #60BFE1);
                     font-family: InterReg;
                     font-size: 18px;
                     font-style: normal;
@@ -272,7 +273,7 @@ header{
                         align-items: flex-start;
                         gap: 8.619px;
                         border-radius: 53.438px;
-                        background: #8EF3CE;
+                        background: #FFDF0E;
                         margin: 0;
                         max-width: 240px;}
                 }
@@ -319,8 +320,8 @@ header{
                         z-index: 3;
                         bottom: 25px;
                         right: 55px;
-                        color: var(--unnamed, #F8F8F8);
-                        font-family: InterReg;
+                        color: var(--unnamed, #FFF);
+                        font-family: InterSemBold;
                         font-size: 19.035px;
                         font-style: normal;
                         font-weight: 600;
@@ -332,7 +333,7 @@ header{
                         align-items: flex-start;
                         gap: 9.518px;
                         border-radius: 59.009px;
-                        background: var(--unnamed, #D528F1);
+                        background: var(--unnamed, #DB1F35);
                         margin: 0;
                         max-width: 250px;
                     }
@@ -353,7 +354,7 @@ header{
             border-radius: 1000px;
             border: 1px solid #FFF;
             background: #FFF;
-            color: #3F89F0;
+            color: #000;
             font-family: InterReg;
             font-size: 18px;
             font-style: normal;

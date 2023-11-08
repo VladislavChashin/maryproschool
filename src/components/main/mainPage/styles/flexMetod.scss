@@ -13,7 +13,7 @@
             height: 560px;
             padding: 30px;
             border-radius: 32px;
-            background: #819DD6;
+            background: #60BFE1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -80,7 +80,7 @@
                     border-radius: 100px;
                     background: #FFF;
                     text-decoration: none;
-                    color: var(--color-blue, #3F89F0);
+                    color: var(--color-blue, #000);
                     font-family: InterReg;
                     font-size: 18px;
                     font-style: normal;
@@ -144,7 +144,7 @@
                     padding: 20px 104px 20px 10px;
                 }
                 p{
-                    color: #3F89F0;
+                    color: #60BFE1;
                     font-family: InterReg;
                     font-size: 64px;
                     font-style: normal;

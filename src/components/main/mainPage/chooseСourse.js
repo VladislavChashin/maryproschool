@@ -4,6 +4,7 @@ import strelka from '../../../source/images/main/arrow-right.svg'
 import classrom from '../../../source/images/main/Digitalclassroom.png'
 import indivFranch from '../../../source/images/main/indivFranch.png'
 import speackFranch from '../../../source/images/main/speckFranch.png'
+import group from '../../../source/images/main/twoClassroom.png'
 import './styles/chooseCourse.scss';
 import {useDispatch } from 'react-redux'
 import {increment } from '../../header/modalReduser'
@@ -59,6 +60,14 @@ function Course(props){
             <div className={`chooseCourse_course ${courseData.class}`}>
                 <div className="course_textBlock">
                     <p>{courseData.tag}</p>
+                    <div className="course_imageBlock" 
+                        style={courseData.image == true || 
+                        (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
+                        ? width < 768 ? {display: 'inline-block'} : {display: 'none'} 
+                        : {display: 'none'}}>
+
+                            <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : courseData.class == 'group' ? group : classrom} alt="" />
+                    </div>
                     <div className="course_description">
                         <h5>{courseData.title}</h5>
                         <p>{courseData.text}</p>
@@ -68,10 +77,10 @@ function Course(props){
                 <div className="course_imageBlock" 
                 style={courseData.image == true || 
                 (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
-                ? width > 1024 ? {display: 'inline-block'} : {display: 'none'} 
+                ? width > 768 ? {display: 'inline-block'} : {display: 'none'} 
                 : {display: 'none'}}>
 
-                    <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : classrom} alt="" />
+                    <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : courseData.class == 'group' ? group : classrom} alt="" />
                 </div>
             </div>
         : <></>}  

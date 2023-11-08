@@ -1,4 +1,18 @@
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-y: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
+}  
 body{
     margin: 0px;
     background: #F3F3F3;
+   
+}
+#app{
+
 }

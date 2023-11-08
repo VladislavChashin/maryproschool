@@ -34,6 +34,42 @@
             }
         }
     }
+    .bottom_block{
+        display: flex;
+        gap: 20px;
+        padding: 10px 0 30px;
+        @media (max-width: 768px){
+            flex-wrap: wrap;   
+        }
+        a{
+            border-radius: 500px;
+            padding: 15px 20px;
+            width: 100%;
+            text-align: center;
+            background: var(--color-light-blue-main, #ffffff00);
+            color: var(--color-light-blue-main, #60BFE1);;
+            font-family: ManroSemBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 19.8px */
+            letter-spacing: -0.36px;
+            border: 1px solid var(--color-light-blue-main, #60BFE1);
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                background: var(--color-light-blue-main, #60BFE1);
+            color: #FFF;
+            }
+
+        }
+        a.active{
+            background: var(--color-light-blue-main, #60BFE1);
+            color: #FFF;
+        }
+        
+        
+    }
     .schoolImage_content{
         display: flex;
         transition: 0.7s;
