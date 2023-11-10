@@ -2,11 +2,29 @@ import strelkaRight from '../../../source/images/index/arrowRight.svg'
 import strelkaLeft from '../../../source/images/index/arrowLeft.svg'
 import women from '../../../source/images/main/otzivWomen.png'
 import './styles/reviews.scss';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import {useSwiper} from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import Swiper from "react-id-swiper";
+import 'swiper/css';
 
 export default function Reviews(){
     const [width, setWidth] = useState(window.innerWidth);
     const [rotate, setRotate] = useState(0)
+    const swiper = useSwiper();
+    const ref = useRef(null);
+
+    const goNext = () => {
+        if (ref.current !== null && ref.current.swiper !== null) {
+        ref.current.swiper.slideNext();
+        }
+    };
+
+    const goPrev = () => {
+        if (ref.current !== null && ref.current.swiper !== null) {
+        ref.current.swiper.slidePrev();
+        }
+    };
 
     useEffect(() => {
       const handleResize = (event) => {
@@ -18,6 +36,7 @@ export default function Reviews(){
       };
     }, []);
 
+ 
 
     const updateIndex = (counter) => {
         if (counter >= 3 ){
@@ -33,20 +52,46 @@ export default function Reviews(){
             setRotate(counter)
         }
     }
+    const params = {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        slidesPerView: 1.1,
+        modules: Navigation,
+        // autoHeight: true,
+        breakpoints: {
+            500: {
+                slidesPerView: 1.3,
+            },
+            700: {
+                slidesPerView: 1.6,
+                spaceBetween: 15,
+            },
+            1000: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        }
+      };
+
+
     return(
         <>
-            <div className="reviews">
+            <div className="reviews wow animate__animated animate__fadeIn">
                 <div className="reviews_header">
                     <h2>Отзывы</h2>
                     <div className="reviews_navigate">
-                        <img onClick={()=> remuveIndex(rotate - 1)} src={strelkaLeft} alt="" /><img onClick={()=> updateIndex(rotate + 1)} src={strelkaRight} alt="" />
+                        <img onClick={() => goPrev()} src={strelkaLeft} alt="" /><img onClick={()=> goNext()} src={strelkaRight} alt="" />
                     </div>
                 </div>
-                <div className="reviews_content" style={width <= 810 ?{transform: `translateX(-${rotate * width}px)`}: {transform: `translateX(-${rotate * 790}px)`}}>
-                    <ReviewBlocks/>
-                    <ReviewBlocks/>
-                    <ReviewBlocks/>
+                
+                <div className="reviews_content" >
+                    <Swiper {...params} ref={ref}>
+                        <div><ReviewBlocks/></div> 
+                        <div><ReviewBlocks/></div> 
+                        <div><ReviewBlocks/></div> 
+                    </Swiper>
                 </div>
+                <a>Читать все отзывы</a>
             </div>
         </>
     )
@@ -66,7 +111,7 @@ function ReviewBlocks(){
     }, []);
     return(
         <>
-            <div className="reviews_reviewBlock" style={width <= 810 ? {minWidth: width-80}: {width: '710px'}}>
+            <div className="reviews_reviewBlock" >
                 <div className="reviewBlock_info">
                     <img src={women} alt="" />
                     <div className="info_name">

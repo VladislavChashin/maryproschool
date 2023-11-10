@@ -4,7 +4,21 @@
     margin: 100px 20px;
     overflow: hidden;
     @media (max-width: 768px){
-        margin: 100px 10px;
+        margin: 100px 20px;
+    }
+    .swiper-container{
+        .swiper-wrapper{
+            // @media (max-width:840px){
+            //     max-width: 280px;
+            // }
+            .swiper-slide{
+                width: max-content;
+                @media (max-width:425px){
+                    max-width: 280px;
+                    height: 310px;
+                }
+            }
+        }
     }
     .schoolImage_header{
         display: flex;
@@ -57,6 +71,9 @@
             border: 1px solid var(--color-light-blue-main, #60BFE1);
             text-decoration: none;
             cursor: pointer;
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
             &:hover{
                 background: var(--color-light-blue-main, #60BFE1);
             color: #FFF;
@@ -83,5 +100,7 @@
                 margin: 0 20px;
             }
         }
+        
+            
     }
 }

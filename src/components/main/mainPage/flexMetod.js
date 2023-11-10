@@ -3,7 +3,7 @@ import './styles/flexMetod.scss';
 export default function FlexMethod(){
     return(
         <>
-            <div className="flex_metodolog">
+            <div className="flex_metodolog wow animate__animated animate__fadeIn">
                 <div className="flex_metodolog_one">
                     <h3>
                         Наша гибкая методика позволяет 

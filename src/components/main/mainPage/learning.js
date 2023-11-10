@@ -3,7 +3,7 @@ import './styles/learning.scss';
 export default function Learning(){
     return(
         <>
-        <div className="learning">
+        <div className="learning wow animate__animated animate__fadeIn">
             <h2>
                 Как проходит обучение?
             </h2>
@@ -19,11 +19,6 @@ export default function Learning(){
             </div>
             <div className="block">
                 <p>03</p>
-                <p>Встречаетесь <br/> с преподавателем</p>
-                <p>Узнаете друг друга получше, чтобы вместе развиваться <br/>и достигать поставленных целей</p>
-            </div>
-            <div className="block">
-                <p>04</p>
                 <p>Занимаетесь <br/> по персональному плану</p>
                 <p>Вы устанавливаете цели,<br/> а преподаватель корректирует <br/>под них ваш учебный план. </p>
             </div>  

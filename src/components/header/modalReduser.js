@@ -3,7 +3,10 @@ import { createSlice } from '@reduxjs/toolkit'
 export const counterSlice = createSlice({
   name: 'modalWindow',
   initialState: {
-    value: false
+    value: false,
+    dataLang: NaN,
+    dataLess: NaN,
+    dataTeach: NaN
   },
   reducers: {
     increment: state => {
@@ -13,16 +16,16 @@ export const counterSlice = createSlice({
       // immutable state based off those changes
       state.value = !state.value
     },
-    decrement: state => {
-      state.value = false
+    dataIncrement: (state, action) => {
+      state.value = state.value
+      state.dataLang = action.payload.dataLang
+      state.dataLess = action.payload.dataLess
+      state.dataTeach = action.payload.dataTeach
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, dataIncrement, incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer

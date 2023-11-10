@@ -35,7 +35,7 @@ export default function Header(){
     return(
         <>
         {/* {count === true ? <HeaderPopAp/>: <></>} */}
-            <header>
+            <header className="wow animate__animated animate__fadeIn">
                 <div className="header_container">
                     <div className="navbar_container">
                         <Navbar/>
@@ -55,7 +55,7 @@ export default function Header(){
                         </div>
                         <img className='people_group' src={group_people} alt="" style={width <= 1024 ? {display:'inline-block'}: {display: 'none'}}/>
                         <p>Мы влюбляем в язык <br/>с самого первого занятия</p>
-                        <a onClick={() => {dispatch(increment()); lockScroll()}}>Записаться на пробное занятие <img src={strelka} alt="" /></a>
+                        <a onClick={() => {dispatch(increment(NaN)); lockScroll()}}>Записаться на пробное занятие <img src={strelka} alt="" /></a>
                     </div>
                 </div>
             </header>

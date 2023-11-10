@@ -4,8 +4,25 @@
     margin: 100px 20px;
     overflow: hidden;
     @media (max-width: 768px){
-        margin: 80px 10px;
+        margin: 80px 20px;
      }
+    a{
+        display: flex;
+        margin-top: 20px;
+        padding: 16px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 123px;
+        border: 1px solid var(--color-light-blue-main, #60BFE1);
+        color: var(--color-light-blue-main, #60BFE1);
+        font-family: InterSemBold;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor:pointer;
+    }
     .reviews_header{
         display: flex;
         justify-content: space-between;
@@ -35,11 +52,18 @@
         }
     }
     .reviews_content{
-        display: flex;
-        justify-content: space-between;
-        transition: 0.5s;
+        .swiper-container{
+            .swiper-wrapper{
+                // @media (max-width:840px){
+                //     max-width: 280px;
+                // }
+                .swiper-slide{
+                    width: max-content;
+                }
+            }
+        }
         .reviews_reviewBlock{
-            min-width: 710px;
+            min-width: -webkit-fill-available;
             border-radius: 16px;
             background: #FFF;
             padding: 30px;

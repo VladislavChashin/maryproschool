@@ -5,7 +5,7 @@ import './styles/banner.scss';
 export default function Banner(){
     return(
         <>
-            <div className="banner">
+            <div className="banner wow animate__animated animate__fadeIn">
                 <div className="banner_content">
                     <div className="banner_text">
                         <h4>

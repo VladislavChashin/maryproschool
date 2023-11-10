@@ -7,7 +7,7 @@ import speackFranch from '../../../source/images/main/speckFranch.png'
 import group from '../../../source/images/main/twoClassroom.png'
 import './styles/chooseCourse.scss';
 import {useDispatch } from 'react-redux'
-import {increment } from '../../header/modalReduser'
+import {increment, dataIncrement } from '../../header/modalReduser'
 
 
 export default function ChooseCourse(){
@@ -17,7 +17,7 @@ export default function ChooseCourse(){
     let lang = lenguage
     return(
         <>
-            <div className={`chooseCourse ${lang}`} >
+            <div className={`chooseCourse ${lang} wow animate__animated animate__fadeIn`} >
                 <div className="chooseCourse_text">
                     <h2>Выбери курс, <br/>который тебе подходит!</h2>
                     <p>Поможем вам достичь целей в изучении <br/> выбранного иностранного языка!</p>
@@ -37,6 +37,7 @@ export default function ChooseCourse(){
 
 function Course(props){
     let courseData = props.courses
+    // const dataPopUp = [props.lang, courseData.title]
     const [width, setWidth] = useState(window.innerWidth);
     const dispatch = useDispatch()
 
@@ -57,7 +58,7 @@ function Course(props){
     return(
         <> 
         {courseData.categories.includes(props.lang) ? 
-            <div className={`chooseCourse_course ${courseData.class}`}>
+            <div className={`chooseCourse_course ${courseData.class}` }>
                 <div className="course_textBlock">
                     <p>{courseData.tag}</p>
                     <div className="course_imageBlock" 
@@ -72,7 +73,7 @@ function Course(props){
                         <h5>{courseData.title}</h5>
                         <p>{courseData.text}</p>
                     </div>
-                    <a onClick={() => {dispatch(increment()); lockScroll()}}>Выбрать <img src={strelka} alt="" /> </a>
+                    <a onClick={() => {dispatch(increment()); dispatch(dataIncrement({ dataLang: props.lang, dataLess: courseData.title })); lockScroll()}}>Выбрать <img src={strelka} alt="" /> </a>
                 </div>
                 <div className="course_imageBlock" 
                 style={courseData.image == true || 
@@ -80,7 +81,7 @@ function Course(props){
                 ? width > 768 ? {display: 'inline-block'} : {display: 'none'} 
                 : {display: 'none'}}>
 
-                    <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : courseData.class == 'group' ? group : classrom} alt="" />
+                    <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : (courseData.class == 'group' && width < 768) ? group : courseData.class == 'cils' ? classrom : courseData.class == 'ege' ? classrom: ''} alt="" />
                 </div>
             </div>
         : <></>}  

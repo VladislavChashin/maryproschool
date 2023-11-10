@@ -31,7 +31,7 @@
             justify-content: space-between;
             align-items: center;
             p{
-                color: var(--color-blue, #3F89F0);
+                color: var(--color-blue, #60BFE1);
                 font-family: InterSemBold;
                 font-size: 24px;
                 font-style: normal;
@@ -56,7 +56,7 @@
                 align-items: center;
                 gap: 8px;
                 border-radius: 16px;
-                background: var(--color-blue, #3F89F0);
+                background: var(--color-blue, #60BFE1);
                 cursor: pointer;
                 @media (max-width: 425px){
                     padding: 10px;
@@ -66,7 +66,54 @@
         .choose{
             display: flex;
             flex-direction: column;
-            
+            .dropdown {
+                position: relative;
+                
+              }
+            .dropdown-content_one {
+                display: none;
+                position: absolute;
+                background-color: rgba(96, 191, 225, 0);
+                width: -webkit-fill-available;
+                z-index: 1;
+                &.active{
+                    display: flex;
+                    flex-direction: column;
+                }
+              }
+              .dropdown-content_two {
+                display: none;
+                position: absolute;
+                background-color: rgba(96, 191, 225, 0);
+                width: -webkit-fill-available;
+                z-index: 1;
+                &.active{
+                    display: flex;
+                    flex-direction: column;
+                }
+              }
+              .dropdown-content_three {
+                display: none;
+                position: absolute;
+                background-color: rgba(96, 191, 225, 0);
+                width: -webkit-fill-available;
+                z-index: 1;
+                &.active{
+                    display: flex;
+                    flex-direction: column;
+                }
+              }
+              
+              /* Links inside the dropdown */
+              .dropdown-content a {
+                color: #FFF;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                background-color: #60BFE1;
+                margin: 5px 0 0 0;
+              }
+                
             button{
                 display: flex;
                 padding: 13px 20px;
@@ -74,19 +121,24 @@
                 align-items: center;
                 align-self: stretch;
                 border-radius: 16px;
-                border: 1px solid var(--color-blue, #3F89F0);
+                border: 1px solid var(--color-blue, #60BFE1);
                 margin: 12px 0;
                 background-color: #ffffff00;
-                color: var(--color-blue, #3F89F0);
+                color: var(--color-blue, #60BFE1);
                 font-family: InterReg;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                width: -webkit-fill-available;
                 cursor: pointer;
                 @media (max-width: 425px){
                     font-size: 14px;
                     padding: 10px;
+                }
+                &.active{
+                    background-color: #60BFE1;
+                    color: #FFF;
                 }
             }
             input{
@@ -96,14 +148,14 @@
                 gap: 10px;
                 align-self: stretch;
                 border-radius: 16px;
-                border: 1px solid var(--color-blue, #3F89F0);
+                border: 1px solid var(--color-blue, #60BFE1);
                 margin: 12px 0;
                 font-family: InterReg;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                &::placeholder { color: var(--color-blue, #3F89F0);}
+                &::placeholder { color: var(--color-blue, #60BFE1);}
                 @media (max-width: 425px){
                     font-size: 14px;;
                 }
@@ -116,7 +168,7 @@
             align-items: baseline;
             gap: 13px;
             border-radius: 1000px;
-            background: var(--color-blue, #3F89F0);
+            background: var(--color-blue, #60BFE1);
             color: var(--color-white, #FFF);
             font-family: InterSemBold;
             font-size: 18px;
@@ -124,6 +176,7 @@
             font-weight: 600;
             line-height: normal;
             margin: 0;
+            text-decoration: none;
             @media (max-width: 425px){
                 font-size: 14px;
                 padding: 10px;

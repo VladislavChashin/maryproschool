@@ -5,7 +5,7 @@ import './styles/teacers.scss';
 export default function Teachers(){
     return(
         <>
-            <div className="teachers">
+            <div className="teachers wow animate__animated animate__fadeIn">
                 <h2>Преподаватели</h2>
                 <div className="teachers_allTeachers">
                     <div className="teachers_headTeacher">

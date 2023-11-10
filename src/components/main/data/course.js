@@ -2,6 +2,8 @@ import classChildren from '../../../source/images/main/classChildren.jpg'
 import dorinclass from '../../../source/images/main/dorinclass.jpg'
 import classes from '../../../source/images/main/class.jpg'
 import womenClass from '../../../source/images/main/womenClass.jpg'
+import  komnata1 from '../../../source/images/main/komnata1.png'
+import komnata2 from '../../../source/images/main/komnata2.png'
 import man1 from '../../../source/images/main/man1.jpg'
 import women1 from '../../../source/images/main/women1.jpg'
 import women2 from '../../../source/images/main/women2.jpg'
@@ -75,6 +77,24 @@ export const schoolImage = [
     {
         id: 3,
         src: classes,
+    },
+    {
+        id: 4,
+        src: womenClass,
+    },
+]
+export const schoolImage_two = [
+    {
+        id: 1,
+        src: komnata1,
+    },
+    {
+        id: 2,
+        src: dorinclass,
+    },
+    {
+        id: 3,
+        src: komnata2,
     },
     {
         id: 4,

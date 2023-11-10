@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <>
             <footer>
-                <div className="footer_nav">
+                <div className="footer_nav wow animate__animated animate__fadeIn">
                     <div className="nav_home">
                         <p>Главная</p>
                         <ul>
