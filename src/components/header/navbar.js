@@ -28,7 +28,6 @@ export default function Navbar(){
                     <li><NavLink to="/teacher">Преподаватели</NavLink></li>
                     <li><NavLink to="/price">Цены</NavLink></li>
                     <li><NavLink to="/revews">Отзывы</NavLink></li>
-                    <li><NavLink to="/blog">Блог</NavLink></li>
                     <li><NavLink to="/contacts">Контакты</NavLink></li>
                 </ul>
             </nav>

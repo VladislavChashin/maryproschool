@@ -117,6 +117,17 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        transition: .3s;
+            img{
+                transition: .3s;
+            }
+            &:hover{
+                background: #60bfe100;
+                color: #FFF;
+                img{
+                    transform: translateX(8px);
+                }
+            }
         @media (max-width: 768px){
             font-size: 14px;
         }

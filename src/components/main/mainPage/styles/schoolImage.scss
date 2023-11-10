@@ -71,6 +71,7 @@
             border: 1px solid var(--color-light-blue-main, #60BFE1);
             text-decoration: none;
             cursor: pointer;
+            transition: 0.3s;
             @media (max-width: 768px){
                 font-size: 14px;
             }

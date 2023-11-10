@@ -29,6 +29,7 @@
                 margin: 10px 0 ;
             }
             @media (max-width: 425px){
+                border-radius: 8px;
                 padding: 20px;
             }
             h3{
@@ -93,7 +94,6 @@
 
                      }
                     &:hover{
-                        padding: 15px 9px;
                         border: 1px solid #FFF;
                         background: #ffffff00;
                         color: #FFF;
@@ -139,6 +139,7 @@
                 }
                 @media (max-width: 437px){
                     height: 145px;
+                    border-radius: 8px;
                 }
                 @media (max-width: 425px){
                     padding: 20px 104px 20px 10px;

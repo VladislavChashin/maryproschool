@@ -20,7 +20,6 @@ export default function Footer(){
                         <ul>
                             <li><a href="">Цены</a></li>
                             <li><a href="">Отзывы</a></li>
-                            <li><a href="">Блог</a></li>
                         </ul>
                     </div>
                     <div className="nav_contact_text">
@@ -28,6 +27,7 @@ export default function Footer(){
                             <li><a href="">+7 (977) 541-16-33</a></li>
                             <li><a href="">marypro.school@yandex.ru</a></li>
                             <li><a href="">г. Чехов, ул. Полиграфистов 1с2</a></li>
+                            <li><a href="">г. Чехов, мкр. Губернский, ул. Земская, д.3</a></li>
                             <li> <img src={vk} alt="" /><img src={inst} alt="" /> </li>
                         </ul>
                     </div>

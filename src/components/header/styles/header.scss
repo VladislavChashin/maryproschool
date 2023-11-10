@@ -362,6 +362,17 @@ header{
             line-height: normal;
             text-decoration: none;
             cursor: pointer;
+            transition: .3s;
+            img{
+                transition: .3s;
+            }
+            &:hover{
+                background: #60bfe100;
+                color: #FFF;
+                img{
+                    transform: translateX(8px);
+                }
+            }
             @media (max-width: 768px){
                 width: 82%;
                 font-size: 14px;

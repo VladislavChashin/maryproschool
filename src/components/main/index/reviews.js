@@ -54,13 +54,14 @@ export default function Reviews(){
     }
     const params = {
         slidesPerView: 'auto',
-        spaceBetween: 10,
+        spaceBetween: 5,
         slidesPerView: 1.1,
         modules: Navigation,
         // autoHeight: true,
         breakpoints: {
             500: {
                 slidesPerView: 1.3,
+                spaceBetween: 10,
             },
             700: {
                 slidesPerView: 1.6,

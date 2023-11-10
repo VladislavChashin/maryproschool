@@ -6,6 +6,9 @@
     @media (max-width: 768px){
         margin: 80px 20px;
      }
+    //  @media (max-width: 450px){
+    //     overflow: visible;
+    //  }
     a{
         display: flex;
         margin-top: 20px;
@@ -22,6 +25,14 @@
         font-weight: 600;
         line-height: normal;
         cursor:pointer;
+        transition: .3s;
+            &:hover{
+                background: #60BFE1;
+                color: #FFF;
+                img{
+                    transform: translateX(8px);
+                }
+            }
     }
     .reviews_header{
         display: flex;
@@ -67,7 +78,6 @@
             border-radius: 16px;
             background: #FFF;
             padding: 30px;
-            margin-right: 20px;
             
             .reviewBlock_info{
                 display: flex;
