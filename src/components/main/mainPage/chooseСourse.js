@@ -20,7 +20,7 @@ export default function ChooseCourse(){
             <div className={`chooseCourse ${lang} wow animate__animated animate__fadeIn`} >
                 <div className="chooseCourse_text">
                     <h2>Выбери курс, <br/>который тебе подходит!</h2>
-                    <p>Поможем вам достичь целей в изучении <br/> выбранного иностранного языка!</p>
+                    <p>Поможем влюбиться в иностранный язык <br />и начать разговаривать уже через 10 месяцев</p>
                 </div>
                 <div className="chooseCourse_tabs">
                     <button className={count === 1 ? 'active': ''} onClick={() => {setLenguage('eng'); setCount(1)}}>Английский</button>
@@ -64,7 +64,7 @@ function Course(props){
                     <div className="course_imageBlock" 
                         style={courseData.image == true || 
                         (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
-                        ? width < 768 ? {display: 'inline-block'} : {display: 'none'} 
+                        ? width < 768 ? {display: 'flex'} : {display: 'none'} 
                         : {display: 'none'}}>
 
                             <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : courseData.class == 'group' ? group : classrom} alt="" />
@@ -78,7 +78,7 @@ function Course(props){
                 <div className="course_imageBlock" 
                 style={courseData.image == true || 
                 (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
-                ? width > 768 ? {display: 'inline-block'} : {display: 'none'} 
+                ? width > 768 ? {display: 'flex'} : {display: 'none'} 
                 : {display: 'none'}}>
 
                     <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : (courseData.class == 'group' && width < 768) ? group : courseData.class == 'cils' ? classrom : courseData.class == 'ege' ? classrom: ''} alt="" />

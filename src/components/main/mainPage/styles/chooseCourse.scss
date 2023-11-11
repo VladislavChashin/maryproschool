@@ -36,6 +36,7 @@
             @media (max-width: 425px){
                 margin-bottom: 20px;
                 width: auto;
+                letter-spacing: -1.68px;
             }
         }
         p{
@@ -54,7 +55,11 @@
             @media(max-width: 768px){
                 font-size: 16px;
                 letter-spacing: -1.12px;
+                br{
+                    display: none;
+                }
             }
+
         }
     }
     .chooseCourse_tabs{
@@ -85,6 +90,7 @@
             @media (max-width: 768px){
                 margin: 5px 0 5px 0;
                 width: 100%;
+                padding: 10px 20px;
             }
             &:hover{
                 background: #60BFE1;
@@ -260,10 +266,16 @@
             
         }
         .course_imageBlock{
+            justify-content: center;
+            width: -webkit-fill-available;
             img{
                 height: 373px;
                 @media (max-width: 1024px){
                     max-width: 270px;
+                    height: auto;
+                }
+                @media (max-width: 425px){
+                    max-width: 250px;
                     height: auto;
                 }
             }
@@ -332,6 +344,9 @@
                         max-width: max-content;
                         @media(max-width: 1024px) {
                             max-width: 270px;
+                        }
+                        @media(max-width: 425px) {
+                            max-width: 250px;
                         }
                     }
                 }
@@ -402,8 +417,14 @@
             &:nth-last-child(1){
                 max-width: 100%;
                 flex-grow: 2;
+                .course_imageBlock{
+                    justify-content: end;
+                    @media(max-width: 425px) {
+                        justify-content: center;
+                    }
+                }
                 p{
-                    max-width: 400px;
+                    max-width: 477px;
                 }
                 img{
                     max-width: max-content;
@@ -414,6 +435,9 @@
                     }
                     @media(max-width: 1024px) {
                         max-width: 270px;
+                    }
+                    @media(max-width: 425px) {
+                        max-width: 250px;
                     }
                 }
                 .course_textBlock a img{
