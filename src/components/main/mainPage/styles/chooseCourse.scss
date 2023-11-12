@@ -121,6 +121,15 @@
             background: #E2E8F3;
             max-width: 283px;
             height: 353px;
+            &.group{
+                .course_imageBlock{
+                    display: none;
+                    @media (max-width: 425px){
+                    display: flex;
+                }
+                }
+                
+            }
             @media (max-width: 768px){
                 flex-direction: column;
             }
