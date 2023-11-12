@@ -124,9 +124,10 @@
             }
             &:hover{
                 background: #60bfe100;
-                color: #FFF;
+                color: #ffffff;
                 img{
                     transform: translateX(8px);
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(0%) hue-rotate(289deg) brightness(103%) contrast(102%);
                 }
             }
         @media (max-width: 768px){

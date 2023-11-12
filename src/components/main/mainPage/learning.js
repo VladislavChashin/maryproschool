@@ -3,7 +3,7 @@ import './styles/learning.scss';
 export default function Learning(){
     return(
         <>
-        <div className="learning wow animate__animated animate__fadeIn">
+        <div className="wow animate__animated animate__fadeIn learning ">
             <h2>
                 Как начать занятия?
             </h2>

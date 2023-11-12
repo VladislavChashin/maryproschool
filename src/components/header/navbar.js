@@ -1,5 +1,6 @@
 import logo from '../../source/images/header/logo.svg'
 import call from '../../source/images/header/call.svg'
+import menu from '../../source/images/header/Menu.svg'
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavLink as Link } from "react-router-dom";
@@ -35,7 +36,7 @@ export default function Navbar(){
                 {width >= 1600 ? <p>+7 (977) 541-16-33 </p>: <img src={call} alt="" />}
             </div>
             <div className="mobile_nav backgroundFon">
-
+                <img src={menu} alt="" />
             </div>
         </div>
         

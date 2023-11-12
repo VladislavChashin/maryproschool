@@ -17,7 +17,7 @@ export default function ChooseCourse(){
     let lang = lenguage
     return(
         <>
-            <div className={`chooseCourse ${lang} wow animate__animated animate__fadeIn`} >
+            <div className={`wow animate__animated animate__fadeIn chooseCourse ${lang} `} >
                 <div className="chooseCourse_text">
                     <h2>Выбери курс, <br/>который тебе подходит!</h2>
                     <p>Поможем влюбиться в иностранный язык <br />и начать разговаривать уже через 10 месяцев</p>

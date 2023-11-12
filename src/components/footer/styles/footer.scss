@@ -15,6 +15,7 @@ footer{
     }
     @media (max-width: 425px){
         padding: 20px;
+        margin: 0 auto;
     }
     .footer_nav{
         display: flex;
@@ -149,9 +150,18 @@ footer{
             font-size: 115px;
         }
         @media (max-width: 768px){
+            font-size: 68px;
+            letter-spacing: -4.7px;
+            line-height: 85%;
+            leading-trim: both;
+            text-edge: cap;
+        }
+        @media (max-width: 330px){
             font-size: 62px;
             letter-spacing: -4.7px;
-            
+            line-height: 85%;
+            leading-trim: both;
+            text-edge: cap;
         }
     }
 }

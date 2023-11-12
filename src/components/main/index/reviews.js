@@ -1,5 +1,4 @@
-import strelkaRight from '../../../source/images/index/arrowRight.svg'
-import strelkaLeft from '../../../source/images/index/arrowLeft.svg'
+import strelka from '../../../source/images/index/Arrow.svg'
 import women from '../../../source/images/main/otzivWomen.png'
 import './styles/reviews.scss';
 import { useState, useEffect, useRef } from "react";
@@ -55,7 +54,7 @@ export default function Reviews(){
     const params = {
         slidesPerView: 'auto',
         spaceBetween: 5,
-        slidesPerView: 1.1,
+        slidesPerView: 1,
         modules: Navigation,
         // autoHeight: true,
         breakpoints: {
@@ -81,7 +80,7 @@ export default function Reviews(){
                 <div className="reviews_header">
                     <h2>Отзывы</h2>
                     <div className="reviews_navigate">
-                        <img onClick={() => goPrev()} src={strelkaLeft} alt="" /><img onClick={()=> goNext()} src={strelkaRight} alt="" />
+                        <div onClick={() => goPrev()}><img  src={strelka} alt="" /></div><div onClick={()=> goNext()}><img  src={strelka} alt="" /></div>
                     </div>
                 </div>
                 

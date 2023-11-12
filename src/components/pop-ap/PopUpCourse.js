@@ -80,8 +80,8 @@ export default  function PopApCourse(){
                         </div>
                     </div>
                     
-                    <input type="text" placeholder="Ваше имя"/>
-                    <input type="text" placeholder="Номер телефона"/>
+                    <input type="name" maxlength='11' placeholder="Ваше имя"/>
+                    <input type="tel" placeholder="Номер телефона"/>
                 </div>
                 <a href="">Записаться <img src={strelka} alt="" /></a>
             </div>

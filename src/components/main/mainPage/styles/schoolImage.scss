@@ -1,10 +1,12 @@
 .schoolImage{
     display: flex;
     flex-direction: column;
-    margin: 100px 20px;
+    margin: 100px 0;
+    padding:  0 20px;
     overflow: hidden;
     @media (max-width: 768px){
-        margin: 100px 20px;
+        margin: 60px 0px;
+        padding:  0 20px;
     }
     .swiper-container{
         .swiper-wrapper{
@@ -14,7 +16,7 @@
             .swiper-slide{
                 width: max-content;
                 @media (max-width:425px){
-                    max-width: 280px;
+                    // max-width: 280px;
                     height: 310px;
                 }
             }

@@ -35,6 +35,7 @@
                 display: none;
             }
             &.Mobile{
+                display: none;
                 @media (max-width: 425px){
                     display: flex;
                     min-height: 330px;

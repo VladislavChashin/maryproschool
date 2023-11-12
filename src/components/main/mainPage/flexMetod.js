@@ -3,7 +3,7 @@ import './styles/flexMetod.scss';
 export default function FlexMethod(){
     return(
         <>
-            <div className="flex_metodolog wow animate__animated animate__fadeIn">
+            <div className="wow animate__animated animate__fadeIn flex_metodolog ">
                 <div className="flex_metodolog_one">
                     <h3>
                     Занятия только <br /> на иностранном языке. <br /> Начиная с самого первого.  <br /> Вне зависимости от возраста
