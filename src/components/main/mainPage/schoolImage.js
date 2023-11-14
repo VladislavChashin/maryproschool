@@ -51,7 +51,7 @@ export default function SchoolImage(){
                     <h2>У нас 2 филиала</h2>
                 </div>
                 <div className="bottom_block">
-                        <a className = {activi == 1 ? 'active animate__animated animate__bounce' : 'animate__animated animate__pulse'} onClick={() => setActive(1)}>г. Чехов, ул. Полиграфистов 1с2</a><a className = {activi == 2 ? 'active animate__animated animate__bounce' : 'animate__animated animate__pulse'} onClick={() => setActive(2)}>г. Чехов, ул. Земская, д.3</a>
+                        <a className = {activi == 1 ? 'active animate__animated animate__fadeIn' : 'animate__animated animate__fadeIn'} onClick={() => setActive(1)}>г. Чехов, ул. Полиграфистов 1с2</a><a className = {activi == 2 ? 'active animate__animated animate__fadeIn' : 'animate__animated animate__fadeIn'} onClick={() => setActive(2)}>г. Чехов, ул. Земская, д.3</a>
                     </div>
                 {/* <div className="schoolImage_content" >
                         {schoolImage.map(array => <img src={array.src} alt="" key={array.id} /> )} 
@@ -59,13 +59,13 @@ export default function SchoolImage(){
                 <Swiper {...params}>
                         {activi == 1 ? schoolImage.map((item, idx) => (
                             // <div  key={idx} className="" style={{width: width}}>
-                                <img className="wow animate__animated animate__fadeInRightBig" ref={targetRef} src={item.src} key={idx} alt=""/>
+                                <img className="wow animate__animated animate__fadeIn" ref={targetRef} src={item.src} key={idx} alt=""/>
                             // </div>
                         ))
                         :   
                             schoolImage_two.map((item, idx) => (
                             // <div  key={idx} className="" style={{width: width}}>
-                                <img className='wow animate__animated animate__fadeInRightBig' ref={targetRef} src={item.src} key={idx} alt=""/>
+                                <img className='wow animate__animated animate__fadeIn' ref={targetRef} src={item.src} key={idx} alt=""/>
                             // </div>
                         ))
                         }

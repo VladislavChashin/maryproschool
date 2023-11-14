@@ -8,7 +8,7 @@ export default function Banner(){
     const dispatch = useDispatch() 
     return(
         <>
-            <div className="banner wow animate__animated animate__fadeInUp">
+            <div className="banner wow animate__animated animate__fadeIn">
                 <div className="banner_content">
                     <div className="banner_text">
                         <h4>
