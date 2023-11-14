@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/maryproschool/static/css/main.9356a808.css",
-    "main.js": "/maryproschool/static/js/main.6d5156bf.js",
+    "main.css": "/maryproschool/static/css/main.8b8b7487.css",
+    "main.js": "/maryproschool/static/js/main.bc920bba.js",
     "static/js/787.55ba843b.chunk.js": "/maryproschool/static/js/787.55ba843b.chunk.js",
     "static/media/shutterstoc.png": "/maryproschool/static/media/shutterstoc.ff82860d79c04a347d6b.png",
     "static/media/Inter-SemiBold.ttf": "/maryproschool/static/media/Inter-SemiBold.4d56bb21f2399db8ad48.ttf",
@@ -37,8 +37,8 @@
     "static/media/call.svg": "/maryproschool/static/media/call.55fcc012494e516a132b317211c6cfa7.svg",
     "static/media/vk.svg": "/maryproschool/static/media/vk.0921c66bcc9af989d4c26f2157c7901f.svg",
     "static/media/inst.svg": "/maryproschool/static/media/inst.be46cebfe5f59608e5a9da11447ed76b.svg",
-    "static/media/Close.svg": "/maryproschool/static/media/Close.16bf2070d705e3d58cd4610ad66a75a2.svg",
     "index.html": "/maryproschool/index.html",
+    "static/media/Close.svg": "/maryproschool/static/media/Close.16bf2070d705e3d58cd4610ad66a75a2.svg",
     "static/media/arrow-right.svg": "/maryproschool/static/media/arrow-right.a6533806b2e83cf70a099e677feb7ea9.svg",
     "static/media/arrow-down.svg": "/maryproschool/static/media/arrow-down.a9fb338ee0bca05735d589184c11de08.svg",
     "static/media/Vector.svg": "/maryproschool/static/media/Vector.890dc6d314fc1b16f2b3cd57bf7b3fce.svg",
@@ -50,12 +50,12 @@
     "static/media/galochka.svg": "/maryproschool/static/media/galochka.56c9fea9fe93d1f5fe0cc9982fbf61d1.svg",
     "static/media/arrowRight.svg": "/maryproschool/static/media/arrowRight.9e467a6f7ac80d19c23ce2bda410d067.svg",
     "static/media/Arrow.svg": "/maryproschool/static/media/Arrow.8d2e77db70658198bd3e95d97f8cd28e.svg",
-    "main.9356a808.css.map": "/maryproschool/static/css/main.9356a808.css.map",
-    "main.6d5156bf.js.map": "/maryproschool/static/js/main.6d5156bf.js.map",
+    "main.8b8b7487.css.map": "/maryproschool/static/css/main.8b8b7487.css.map",
+    "main.bc920bba.js.map": "/maryproschool/static/js/main.bc920bba.js.map",
     "787.55ba843b.chunk.js.map": "/maryproschool/static/js/787.55ba843b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9356a808.css",
-    "static/js/main.6d5156bf.js"
+    "static/css/main.8b8b7487.css",
+    "static/js/main.bc920bba.js"
   ]
 }
