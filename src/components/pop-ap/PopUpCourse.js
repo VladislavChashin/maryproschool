@@ -27,47 +27,48 @@ export default  function PopApCourse(){
             <div className="headerPopAp">
                 <div className="headerPopAp_header">
                     <p>Запись на пробное занятие</p>
-                    <img src={Close} alt="" onClick={()=> {dispatch(increment()); unlockScroll()}}/>
+                    <img src={Close} alt="" onClick={()=> {dispatch(increment()); dispatch(dataIncrement({ dataLang: NaN, dataLess: NaN, dataTeach: NaN})); unlockScroll()}}/>
                 </div>
                 <div className="choose">
-                    {/* <Dropdown data = {dataLang ? dataLang: 'Выберите язык' } stat={dataLang ? 'active' : ''} count={['Английский', 'Итальянский', 'французкий']}/>
-                    <Dropdown data = {'Выберете преподавателя'} count={['Английский', 'Итальянский', 'французкий', 'французкий']}/>
-                    <Dropdown data = {dataLess ? dataLess: 'Выберите занятие' } stat={dataLess ? 'active' : ''} count={['Английский', 'Итальянский', 'французкий','французкий','французкий']}/>  */}
                     <div className="dropdown">
-                        <button className = {(dataLang && dropdown == 1) ? 'active focus_two': dataLang ? 'active' : dropdown == 1 ? 'focus_one': ''} 
-                                onClick={()=>setDropdown(dropdown == 1 ? 0 : 1)}>
-
+                        <div className = {`button ${(dataLang && dropdown == 1) ? 'active focus_one': dataLang ? 'active' : dropdown == 1 ? 'focus_one': ''}`} >
+                            <a onClick={()=>{setDropdown(dropdown == 1 ? 0 : 1)}}> 
                                 {dataLang=='eng' ? 'Английский' : dataLang=='italy'? 'Итальянский': dataLang=='franch'? 'Французкий': 'Выберите язык'}
+                            </a>
+                            <img onClick={() => {dispatch(dataIncrement({ dataLang: NaN, dataLess: dataLess, dataTeach: dataTeach})); setDropdown(0)}}src={dataLang ? Close :arrowDown} alt="" />
+                        </div>
                                 
-                                <img onClick={() => (dispatch(dataIncrement({ dataLang: NaN, dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}src={dataLang ? Close :arrowDown} alt="" /></button>
-                        <div className={`dropdown-content_one ${dropdown == 1 ? 'active' : ''}`}>
+                                
+                        <div className={`wow animate__animated animate__fadeIn dropdown-content_one ${dropdown == 1 ? 'active' : ''}`}>
                             <a onClick={() => (dispatch(dataIncrement({ dataLang: 'eng', dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}>Английский</a>
                             <a onClick={() => (dispatch(dataIncrement({ dataLang: 'italy', dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}>Итальянский</a>
                             <a onClick={() => (dispatch(dataIncrement({ dataLang: 'franch', dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}>Французкий</a>
                         </div>
                     </div>
                     <div className="dropdown">
-                        <button className = {(dataTeach && dropdown == 2) ? 'active focus_two': dataTeach ? 'active' : dropdown == 2 ? 'focus_two': ''} 
-                                onClick={()=>setDropdown(dropdown == 2 ? 0 : 2)}>
-
-                                {dataTeach ? dataTeach : 'Выберите преподавателя'}
-                                
-                                <img onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: NaN})), setDropdown(0))} src={dataTeach ? Close :arrowDown} alt="" /></button>
-                        <div className={`dropdown-content_two ${dropdown == 2 ? 'active' : ''}`}>
+                        <div className = {`button ${(dataTeach && dropdown == 2) ? 'active focus_two': dataTeach ? 'active' : dropdown == 2 ? 'focus_two': ''}`} >
+                            <a onClick={()=>{setDropdown(dropdown == 2 ? 0 : 2)}}> 
+                                {dataTeach ? dataTeach: 'Выберите преподавателя'}
+                            </a>
+                            <img onClick={() => {dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: NaN})); setDropdown(0)}}src={dataTeach ? Close :arrowDown} alt="" />
+                        </div>
+                        <div className={`wow animate__animated animate__fadeIn dropdown-content_two ${dropdown == 2 ? 'active' : ''}`}>
                             <a onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Мария Павловна Кричевская'})), setDropdown(0))}>Мария Павловна Кричевская</a>
-                            <a onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Ксения Александровна Лагутина'})), setDropdown(0))}>Ксения Александровна Лагутина</a>
-                            <a onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Анастасия Юрьевна Болотова'})), setDropdown(0))}>Анастасия Юрьевна Болотова</a>
-                            <a onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Павел Зиновьевич Кричевский'})), setDropdown(0))}>Павел Зиновьевич Кричевский</a>
+                            <a style={dataLang === 'italy'? {display: 'none'} : {}} onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Ксения Александровна Лагутина'})), setDropdown(0))}>Ксения Александровна Лагутина</a>
+                            <a style={dataLang === 'franch'? {display: 'none'} : {}} onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Анастасия Юрьевна Болотова'})), setDropdown(0))}>Анастасия Юрьевна Болотова</a>
+                            <a style={dataLang === 'franch' || dataLang === 'italy'? {display: 'none'} : {}} onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Павел Зиновьевич Кричевский'})), setDropdown(0))}>Павел Зиновьевич Кричевский</a>
+                            <a style={dataLang === 'franch' || dataLang === 'italy'? {display: 'none'} : {}} onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Джамиля Аслановна Иванова'})), setDropdown(0))}>Джамиля Аслановна Иванова</a>
+                            <a style={dataLang === 'franch' || dataLang === 'italy'? {display: 'none'} : {}} onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: dataLess, dataTeach: 'Юлия Дмитриевна Колобова'})), setDropdown(0))}>Юлия Дмитриевна Колобова</a>
                         </div>
                     </div>
                     <div className="dropdown">
-                        <button className = {(dataLess && dropdown == 3) ? 'active focus_two': dataLess ? 'active' : dropdown == 3 ? 'focus_three': ''} 
-                                onClick={()=>setDropdown(dropdown == 3 ? 0 : 3)}>
-
+                        <div className = {`button ${(dataLess && dropdown == 3) ? 'active focus_three': dataLess ? 'active' : dropdown == 3 ? 'focus_three': ''}`} >
+                            <a onClick={()=>{setDropdown(dropdown == 3 ? 0 : 3)}}> 
                                 {dataLess ? dataLess : 'Выберите занятие'}
-                                
-                                <img onClick={() => (dispatch(dataIncrement({ dataLang: dataLang, dataLess: NaN, dataTeach: dataTeach})), setDropdown(0))} src={dataLess ? Close :arrowDown} alt="" /></button>
-                        <div className={`dropdown-content_three ${dropdown == 3 ? 'active' : ''}`}>
+                            </a>
+                            <img onClick={() => {dispatch(dataIncrement({ dataLang: dataLang, dataLess: NaN, dataTeach: dataTeach})); setDropdown(0)}}src={dataLess ? Close :arrowDown} alt="" />
+                        </div>
+                        <div className={`wow animate__animated animate__fadeIn dropdown-content_three ${dropdown == 3 ? 'active' : ''}`}>
                             <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Занятия в групе', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Занятия в группе</a>
                             <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Для путешествий', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Для путешествий</a>
                             <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Индивидуальные занятия', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Индивидуальные занятия</a>

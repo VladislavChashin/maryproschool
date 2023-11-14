@@ -76,7 +76,7 @@ export default function Reviews(){
 
     return(
         <>
-            <div className="reviews wow animate__animated animate__fadeIn">
+            <div className="reviews ">
                 <div className="reviews_header">
                     <h2>Отзывы</h2>
                     <div className="reviews_navigate">

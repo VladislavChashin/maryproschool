@@ -58,7 +58,7 @@ function Course(props){
     return(
         <> 
         {courseData.categories.includes(props.lang) ? 
-            <div className={`chooseCourse_course ${courseData.class}` }>
+            <div className={`wow animate__animated animate__flipInX chooseCourse_course ${courseData.class}` }>
                 <div className="course_textBlock">
                     <p>{courseData.tag}</p>
                     <div className="course_imageBlock" 

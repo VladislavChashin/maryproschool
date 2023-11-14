@@ -5,13 +5,10 @@ import { decrement, increment } from '../../header/modalReduser'
 import { useSelector, useDispatch } from 'react-redux'
 import { useCallback } from 'react';
 export default function Banner(){
-    // const dispatch = useDispatch() 
-    // const lockScroll = useCallback(() => {
-    //     document.body.style.overflow = 'hidden';
-    //   }, [])
+    const dispatch = useDispatch() 
     return(
         <>
-            <div className="banner wow animate__animated animate__fadeIn">
+            <div className="banner wow animate__animated animate__fadeInUp">
                 <div className="banner_content">
                     <div className="banner_text">
                         <h4>
@@ -24,7 +21,7 @@ export default function Banner(){
                         <p>Мария Павловна Кричевская — основатель центра <br/>MaryPro School </p>
                     </div>
                 </div>
-                <a >Записаться на пробное занятие <img src={strelka} alt="" /></a>
+                <a onClick={() => dispatch(increment())}>Записаться на пробное занятие <img src={strelka} alt="" /></a>
             </div>
         </>
     )

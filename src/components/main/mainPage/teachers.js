@@ -34,7 +34,7 @@ function ImageBlock(props){
     return(
         <>
             <div className="imageBlock">
-                <img src={data.src} alt="" />
+                <img className = "wow animate__animated  animate__flipInX" src={data.src} alt="" />
                 <p>{data.name}</p>
                 <p>{data.description}</p>
             </div>
