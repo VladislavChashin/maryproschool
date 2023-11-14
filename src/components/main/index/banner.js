@@ -1,8 +1,14 @@
 import women from '../../../source/images/main/womenWary.png'
 import strelka from '../../../source/images/index/strelka_big.svg'
 import './styles/banner.scss';
-
+import { decrement, increment } from '../../header/modalReduser'
+import { useSelector, useDispatch } from 'react-redux'
+import { useCallback } from 'react';
 export default function Banner(){
+    // const dispatch = useDispatch() 
+    // const lockScroll = useCallback(() => {
+    //     document.body.style.overflow = 'hidden';
+    //   }, [])
     return(
         <>
             <div className="banner wow animate__animated animate__fadeIn">
@@ -18,7 +24,7 @@ export default function Banner(){
                         <p>Мария Павловна Кричевская — основатель центра <br/>MaryPro School </p>
                     </div>
                 </div>
-                <a href="">Записаться на пробное занятие <img src={strelka} alt="" /></a>
+                <a >Записаться на пробное занятие <img src={strelka} alt="" /></a>
             </div>
         </>
     )

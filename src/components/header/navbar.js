@@ -4,6 +4,7 @@ import menu from '../../source/images/header/Menu.svg'
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavLink as Link } from "react-router-dom";
+import HamburgerMenu from './hamburgerMenu';
 
 export default function Navbar(){
     const [width, setWidth] = useState(window.innerWidth);
@@ -36,7 +37,7 @@ export default function Navbar(){
                 {width >= 1600 ? <p>+7 (977) 541-16-33 </p>: <img src={call} alt="" />}
             </div>
             <div className="mobile_nav backgroundFon">
-                <img src={menu} alt="" />
+                <HamburgerMenu/>
             </div>
         </div>
         

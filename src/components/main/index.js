@@ -9,17 +9,16 @@ import Header from '../header/index.js'
 import Footer from '../footer/index.js'
 import PopApCourse from "../pop-ap/PopUpCourse"
 import SucsesPopUp from "../pop-ap/sucsesPopUp.js"
-import {useSelector, useDispatch } from 'react-redux'
 
 // import {course} from "./data/course.js"
 
 export default function MainPage(){
-    const countSucses = useSelector(state => state.counter.valueSucses)
-    const count = useSelector(state => state.counter.value)
+    // const countSucses = useSelector(state => state.counter.valueSucses)
+    // const count = useSelector(state => state.counter.value)
     return(
         <>
-            {count ? <PopApCourse/>: <></>}
-            {countSucses ? <SucsesPopUp/> : <></>}
+            <PopApCourse/>
+            <SucsesPopUp/>
             <Header/>
             <main>
                 <FlexMethod/>

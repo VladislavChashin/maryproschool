@@ -77,7 +77,7 @@ export default  function PopApCourse(){
                         </div>
                     </div>
                     
-                    <input type="name" maxlength='11' placeholder="Ваше имя"/>
+                    <input type="name" maxLength='11' placeholder="Ваше имя"/>
                     <input type="tel" placeholder="Номер телефона"/>
                 </div>
                 <a className='but'onClick={()=> {dispatch(increment());   dispatch(incrementSucses())}}>Записаться <img src={strelka} alt="" /></a>

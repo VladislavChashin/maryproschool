@@ -128,13 +128,16 @@ header{
             .mobile_nav{
                 display: none;
                 max-height: 36px;
+                
                 &.backgroundFon{
                     padding: 0;
+                    
                 }
                 @media (max-width: 1359px){
                     display: inline-block;
 
                 }
+                
             }
         }
     }
