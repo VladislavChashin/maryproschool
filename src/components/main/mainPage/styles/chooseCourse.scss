@@ -148,6 +148,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
+                min-width: 240px;
                 @media (max-width: 425px){
                     width: 100%;
                 }

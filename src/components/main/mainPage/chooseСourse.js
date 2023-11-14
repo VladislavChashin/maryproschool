@@ -78,7 +78,7 @@ function Course(props){
                 <div className="course_imageBlock" 
                 style={courseData.image == true || 
                 (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
-                ? width > 768 ? {display: 'flex'} : {display: 'none'} 
+                ? width > 768 && courseData.class != 'group' ? {display: 'flex'} : {display: 'none'} 
                 : {display: 'none'}}>
 
                     <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : (courseData.class == 'group' && width < 768) ? group : courseData.class == 'cils' ? classrom : courseData.class == 'ege' ? classrom: ''} alt="" />

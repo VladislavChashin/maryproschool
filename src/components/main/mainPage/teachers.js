@@ -18,7 +18,7 @@ export default function Teachers(){
                             <a href="#">О преподавателях <img src={strelka} alt="" /></a>
                         </div>
                     </div>
-                    <div className="teachers_otherTeacher">
+                    <div className="teachers_otherTeacher ">
                         <ImageBlock props = {teachers.two} key = {2}/>
                         <ImageBlock props = {teachers.three} key = {3} />
                         <ImageBlock props = {teachers.four} key = {4}/>

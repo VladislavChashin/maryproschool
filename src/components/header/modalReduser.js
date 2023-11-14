@@ -6,7 +6,8 @@ export const counterSlice = createSlice({
     value: false,
     dataLang: NaN,
     dataLess: NaN,
-    dataTeach: NaN
+    dataTeach: NaN,
+    valueSucses: false
   },
   reducers: {
     increment: state => {
@@ -15,6 +16,9 @@ export const counterSlice = createSlice({
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
       state.value = !state.value
+    },
+    incrementSucses: state => {
+      state.valueSucses = !state.valueSucses
     },
     dataIncrement: (state, action) => {
       state.value = state.value
@@ -26,6 +30,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, dataIncrement, incrementByAmount } = counterSlice.actions
+export const { increment, dataIncrement, incrementByAmount, incrementSucses } = counterSlice.actions
 
 export default counterSlice.reducer

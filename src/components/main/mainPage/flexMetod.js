@@ -1,6 +1,9 @@
 import './styles/flexMetod.scss';
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment } from '../../header/modalReduser'
 
 export default function FlexMethod(){
+    const dispatch = useDispatch()
     return(
         <>
             <div className="wow animate__animated animate__fadeIn flex_metodolog ">
@@ -12,7 +15,7 @@ export default function FlexMethod(){
                     В основе работы каждого преподавателя нашего цента лежит коммуникативный подход. В MaryPro School каждый студент учится понимать, чувствовать язык и сразу же применять его на практике. С самого первого занятия мы максимально погружаем учеников в языковую среду: начинаем сразу же говорить, слушать, писать — и все это вне зависимости от возраста
                     </p>
                     <div className="button">
-                        <a href="">Записаться на пробное занятие</a>
+                        <a onClick={()=> dispatch(increment())}>Записаться на пробное занятие</a>
                     </div>
                 </div>
                 <div className="flex_metodolog_one Mobile">

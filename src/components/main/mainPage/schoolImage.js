@@ -59,13 +59,13 @@ export default function SchoolImage(){
                 <Swiper {...params}>
                         {activi == 1 ? schoolImage.map((item, idx) => (
                             // <div  key={idx} className="" style={{width: width}}>
-                                <img className="wow animate__animated animate__fadeIn" ref={targetRef} src={item.src} alt=""/>
+                                <img className="wow animate__animated animate__fadeInRightBig" ref={targetRef} src={item.src} key={idx} alt=""/>
                             // </div>
                         ))
                         :   
                             schoolImage_two.map((item, idx) => (
                             // <div  key={idx} className="" style={{width: width}}>
-                                <img className='wow animate__animated animate__fadeIn'ref={targetRef} src={item.src} alt=""/>
+                                <img className='wow animate__animated animate__fadeInRightBig' ref={targetRef} src={item.src} key={idx} alt=""/>
                             // </div>
                         ))
                         }

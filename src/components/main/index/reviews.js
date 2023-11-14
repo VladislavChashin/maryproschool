@@ -86,9 +86,9 @@ export default function Reviews(){
                 
                 <div className="reviews_content" >
                     <Swiper {...params} ref={ref}>
-                        <div><ReviewBlocks/></div> 
-                        <div><ReviewBlocks/></div> 
-                        <div><ReviewBlocks/></div> 
+                        <div className="wow animate__animated animate__fadeInRightBig"><ReviewBlocks/></div> 
+                        <div className="wow animate__animated animate__fadeInRightBig"><ReviewBlocks/></div> 
+                        <div className="wow animate__animated animate__fadeInRightBig"><ReviewBlocks/></div> 
                     </Swiper>
                 </div>
                 <a>Читать все отзывы</a>

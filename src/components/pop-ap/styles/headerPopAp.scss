@@ -260,6 +260,30 @@
                 &.active{
                     background-color: #60BFE1;
                     color: #FFF;
+                    &.focus_one{
+                        margin: 12px 0 0;
+                        border: 1px solid rgba(63, 137, 240, 0.20);
+                        border-radius: 16px 16px 0 0;
+                        img{
+                            transform: rotateX(180deg);
+                        }
+                    }
+                    &.focus_two{
+                        margin: 12px 0 0;
+                        border: 1px solid rgba(63, 137, 240, 0.20);
+                        border-radius: 16px 16px 0 0;
+                        img{
+                            transform: rotateX(180deg);
+                        }
+                    }
+                    &.focus_three{
+                        margin: 12px 0 0;
+                        border: 1px solid rgba(63, 137, 240, 0.20);
+                        border-radius: 16px 16px 0 0;
+                        img{
+                            transform: rotateX(180deg);
+                        }
+                    }
                 }
             }
             input{
@@ -298,6 +322,8 @@
             line-height: normal;
             margin: 0;
             text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
             @media (max-width: 425px){
                 font-size: 14px;
                 padding: 10px;
