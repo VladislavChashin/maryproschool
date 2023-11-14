@@ -18,7 +18,7 @@
         height: auto;
         border-radius: 16px;
         @media (max-width: 1024px){
-            width: 360px;
+            width: -webkit-fill-available;
             height: auto;
         }
         .headerPopAp_header{

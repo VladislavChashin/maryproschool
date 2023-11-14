@@ -8,6 +8,7 @@ import HamburgerMenu from './hamburgerMenu';
 
 export default function Navbar(){
     const [width, setWidth] = useState(window.innerWidth);
+    const [active, setActive] = useState(1)
 
     useEffect(() => {
       const handleResize = (event) => {
@@ -26,11 +27,11 @@ export default function Navbar(){
             </div>
             <nav>
                 <ul>
-                    <li><NavLink to="/maryproschool">О нас</NavLink></li>
-                    <li><NavLink to="/teacher">Преподаватели</NavLink></li>
-                    <li><NavLink to="/price">Цены</NavLink></li>
-                    <li><NavLink to="/revews">Отзывы</NavLink></li>
-                    <li><NavLink to="/contacts">Контакты</NavLink></li>
+                    <li className={active == 1 ? 'active' : ''} onClick={()=> setActive(1)}><NavLink to="/maryproschool">О нас</NavLink></li>
+                    <li className={active == 2 ? 'active' : ''} onClick={()=> setActive(2)}><NavLink to="/teacher">Преподаватели</NavLink></li>
+                    <li className={active == 3 ? 'active' : ''} onClick={()=> setActive(3)}><NavLink to="/price">Цены</NavLink></li>
+                    <li className={active == 4 ? 'active' : ''} onClick={()=> setActive(4)}><NavLink to="/revews">Отзывы</NavLink></li>
+                    <li className={active == 5 ? 'active' : ''} onClick={()=> setActive(5)}><NavLink to="/contacts">Контакты</NavLink></li>
                 </ul>
             </nav>
             <div className="phone backgroundFon">
