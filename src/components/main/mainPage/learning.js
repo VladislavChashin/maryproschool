@@ -9,7 +9,7 @@ export default function Learning(){
             </h2>
             <div className="wow animate__animated animate__fadeIn block">
                 <p>01</p>
-                <p>Определяем ваши цели и знания</p>
+                <p>Определяем ваши <br/>цели и уровень языка</p>
                 <p>Мы проводим тестирование. Оно необходимо <br /> для определения стратегий занятий в соответсвии <br /> с вашими целями</p>                   
             </div>
             <div className="wow animate__animated animate__fadeIn block">

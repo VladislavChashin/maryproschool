@@ -4,7 +4,7 @@ import left_women1 from '../../source/images/header/left_women1.png'
 import left_women2 from '../../source/images/header/left_women2.png'
 import right_men2 from '../../source/images/header/right_men2.png'
 import right_women1 from '../../source/images/header/right_women1.png'
-import group_people from '../../source/images/header/group.png'
+import group_people from '../../source/images/header/group.svg'
 import strelka from '../../source/images/index/strelka_big.svg'
 import strelkaRight from '../../source/images/header/Vector.svg'
 import { useState, useEffect, useCallback } from 'react';
