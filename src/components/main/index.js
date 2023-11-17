@@ -27,7 +27,9 @@ export default function MainPage(){
                 <Banner/>  
                 <SchoolImage/>
                 <Teachers/>
-                <Reviews/>
+            </main>
+            <Reviews/>
+            <main>
                 <Banner/>
             </main>
             <Footer/>

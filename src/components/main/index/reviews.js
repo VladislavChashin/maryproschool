@@ -55,9 +55,14 @@ export default function Reviews(){
         slidesPerView: 'auto',
         spaceBetween: 5,
         slidesPerView: 1,
+        slidesOffsetBefore: 0,
         modules: Navigation,
         // autoHeight: true,
         breakpoints: {
+            374: {
+                slidesPerView: 1.1,
+                spaceBetween: 10,
+            },
             500: {
                 slidesPerView: 1.3,
                 spaceBetween: 10,
@@ -67,8 +72,16 @@ export default function Reviews(){
                 spaceBetween: 15,
             },
             1000: {
-                slidesPerView: 2,
+                slidesPerView: 2.23,
                 spaceBetween: 20,
+                slidesOffsetBefore: 2 / 100 * width,
+
+            },
+            1599: {
+                slidesPerView: 2.23,
+                spaceBetween: 20,
+                slidesOffsetBefore: 8 / 100 * width,
+
             }
         }
       };

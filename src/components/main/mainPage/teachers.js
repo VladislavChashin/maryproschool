@@ -12,7 +12,7 @@ export default function Teachers(){
                         <ImageBlock props = {teachers.one} key = {1}/>
                         <div className="headTeacher_description">
                             <p>В составе нашей команды <br />
-                                4 сильнейших преподавателя, <br />
+                                6 сильнейших преподавателя, <br />
                                 которые доведут <br />
                                 вас до результатов</p>
                             <a href="#">О преподавателях <img src={strelka} alt="" /></a>
