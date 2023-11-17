@@ -35,7 +35,7 @@ export default function Header(){
     return(
         <>
         {/* {count === true ? <HeaderPopAp/>: <></>} */}
-            <header className="wow animate__animated animate__fadeIn">
+            <header className="wow animate__animated animate__fadeIn animate__slow">
                 <div className="header_container">
                     <div className="navbar_container">
                         <Navbar/>

@@ -7,7 +7,7 @@ export default function FlexMethod(){
     return(
         <>
             <div className="wow animate__animated animate__fadeIn flex_metodolog ">
-                <div className="wow animate__animated animate__fadeIn flex_metodolog_one">
+                <div className="wow animate__animated animate__fadeIn animate__slower flex_metodolog_one">
                     <h3>
                     Занятия только <br /> на иностранном языке. <br /> Начиная с самого первого.  <br /> Вне зависимости от возраста
                     </h3>
@@ -30,19 +30,19 @@ export default function FlexMethod(){
                     </div>
                 </div>
                 <div className="flex_metodolog_column">
-                    <div className="wow animate__animated animate__fadeIn one_ block">
+                    <div className="wow animate__animated animate__fadeIn animate__slow one_ block">
                         <p>600₽</p>
                         <p>Минимальная стоимость занятия</p>
                     </div>
-                    <div className="wow animate__animated animate__fadeIn two_ block">
+                    <div className="wow animate__animated animate__fadeIn animate__slow two_ block">
                         <p>{'>'}1000</p>
                         <p>Учеников прошло через нашу школу</p>
                     </div>
-                    <div className="wow animate__animated animate__fadeIn three_ block">
+                    <div className="wow animate__animated animate__fadeIn animate__slow three_ block">
                         <p>6</p>
                         <p>Сильных преподавателя</p>
                     </div>
-                    <div className="wow animate__animated animate__fadeIn four_ block">
+                    <div className="wow animate__animated animate__fadeIn animate__slow four_ block">
                         <p>6</p>
                         <p>Максимальный размер группы</p>
                     </div>
