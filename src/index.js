@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './source/fonts/stylesheet.css';
 import './source/styles/index.scss';
+import './source/styles/normalize.min.css';
 import { Provider } from 'react-redux'
 import store from './components/store/store';
 
