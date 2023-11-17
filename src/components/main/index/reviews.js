@@ -80,13 +80,13 @@ export default function Reviews(){
             1599: {
                 slidesPerView: 2.23,
                 spaceBetween: 20,
-                slidesOffsetBefore: 8 / 100 * width,
+                slidesOffsetBefore: 8.9 / 100 * width,
 
             },
             1921: {
-                slidesPerView: 2.6,
+                slidesPerView: 2.8,
                 spaceBetween: 20,
-                slidesOffsetBefore: 19 / 100 * width,
+                slidesOffsetBefore: 19.5 / 100 * width,
 
             },
         }
