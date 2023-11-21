@@ -12,7 +12,7 @@ export default  function SucsesPopUp() {
     }, [])
 
     return(
-        <div onClick={()=> {dispatch(incrementSucses()); unlockScroll()}}className="modalWraper wow animate__animated animate__fadeIn" style={count === true ? {display: 'flex'}: {display: 'none'}}>
+        <div onClick={()=> {dispatch(incrementSucses()); unlockScroll(); dispatch(dataIncrement({dataLang: null, dataLess: null, dataTeach: null}))}}className="modalWraper wow animate__animated animate__fadeIn" style={count === true ? {display: 'flex'}: {display: 'none'}}>
             <div className="sucsesPopUp">
                 <img src={galochka} alt="" />
                 <div className="description">

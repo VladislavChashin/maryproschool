@@ -51,7 +51,7 @@ export default function AboutTeacherPopup(){
                         </div>
                     </div>
                     <div className="TeacherPopUp_footer">
-                        <a onClick={() => {dispatch(increment()); dispatch(dataIncrement({ dataLang: NaN, dataLess: NaN, dataTeach: data.name}))}}>Записаться на пробное занятие</a>
+                        <a onClick={() => {dispatch(increment()); dispatch(dataIncrement({ dataLang: null, dataLess: null, dataTeach: data.name}))}}>Записаться на пробное занятие</a>
                     </div>
                     
                 </div>
