@@ -24,7 +24,7 @@ export default function TeachersPage(){
             </main>
                 <Reviews/>
             <main>
-                <Banner/>
+                <Banner props = 'Изучайте языки с легкостью!' />  
             </main>
             <Footer/>
         </>

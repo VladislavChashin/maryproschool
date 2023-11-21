@@ -4,7 +4,7 @@ import './styles/banner.scss';
 import { decrement, increment } from '../../header/modalReduser'
 import { useSelector, useDispatch } from 'react-redux'
 import { useCallback } from 'react';
-export default function Banner(){
+export default function Banner(props){
     const dispatch = useDispatch() 
     return(
         <>
@@ -12,7 +12,7 @@ export default function Banner(){
                 <div className="banner_content">
                     <div className="banner_text">
                         <h4>
-                        Изучайте языки <br/> с легкостью!
+                        {props.props}
                         </h4>
                         <p>Освойте иностранный язык с нами: <br/> коммуникативная методики, онлайн и офлайн <br/>обучение, индивидуальный и групповой формат<br/> занятий.  Начинайте сегодня!</p>
                     </div>

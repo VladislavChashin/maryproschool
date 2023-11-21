@@ -84,7 +84,7 @@ export default function Reviews(){
 
             },
             1921: {
-                slidesPerView: 2.8,
+                slidesPerView: 3.3,
                 spaceBetween: 20,
                 slidesOffsetBefore: 19.5 / 100 * width,
 

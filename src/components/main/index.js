@@ -24,13 +24,13 @@ export default function MainPage(){
                 <FlexMethod/>
                 <Learning/>
                 <ChooseCourse/>
-                <Banner/>  
+                <Banner props = 'Изучайте языки с легкостью!' />  
                 <SchoolImage/>
                 <Teachers/>
             </main>
             <Reviews/>
             <main>
-                <Banner/>
+                <Banner props = 'Запишитесь на пробное занятие'/>
             </main>
             <Footer/>
         </>
