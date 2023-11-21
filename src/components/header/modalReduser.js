@@ -4,9 +4,9 @@ export const counterSlice = createSlice({
   name: 'modalWindow',
   initialState: {
     value: false,
-    dataLang: NaN,
-    dataLess: NaN,
-    dataTeach: NaN,
+    dataLang: null,
+    dataLess: null,
+    dataTeach: null,
     valueSucses: false
   },
   reducers: {

@@ -6,6 +6,7 @@ import AllTeachers from "./teachers.js"
 import AboutTeacherPopup from "../../pop-ap/aboutTeacherPopUp.js"
 import {useSelector} from 'react-redux'
 import PopApCourse from "../../pop-ap/PopUpCourse.js"
+import SucsesPopUp from "../../pop-ap/sucsesPopUp.js"
 
 
 export default function TeachersPage(){
@@ -15,11 +16,14 @@ export default function TeachersPage(){
     return(
         <>  
             {count === true ? <AboutTeacherPopup/> : <></>}
+            <SucsesPopUp/>
             <PopApCourse/>
             <HeaderTeach/>
             <main>
                 <AllTeachers/>
+            </main>
                 <Reviews/>
+            <main>
                 <Banner/>
             </main>
             <Footer/>

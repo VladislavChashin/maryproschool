@@ -41,14 +41,16 @@ function TeacherBlocks(props){
                     <img src={teachersData.image} alt="" />
                 </div>
                 <div className="blockContent_description">
-                    <h3>{teachersData.name}</h3>
-                    <div className="descriprion_tags">
-                        <p>{teachersData.tag[0]}</p>
-                        <p>{teachersData.tag[1]}</p>
-                        <p>{teachersData.tag[2]}</p>
-                    </div>
-                    <div className="description_text">
-                        <p>{teachersData.text}</p>
+                    <div className="description_content">
+                        <h3>{teachersData.name}</h3>
+                        <div className="descriprion_tags">
+                            <p>{teachersData.tag[0]}</p>
+                            <p>{teachersData.tag[1]}</p>
+                            <p>{teachersData.tag[2]}</p>
+                        </div>
+                        <div className="description_text">
+                            <p>{teachersData.text}</p>
+                        </div>
                     </div>
                     <a onClick={() => {dispatch(incrementTeacher(teachersData)); lockScroll()}}>Подробнее</a>
                 </div>
