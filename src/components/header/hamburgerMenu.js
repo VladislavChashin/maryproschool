@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import './styles/hamburger.scss'
 import menu from '../../source/images/header/Menu.svg'
 import menuX from '../../source/images/header/MenuX.svg'
+import { NavLink } from 'react-router-dom';
 
 function HamburgerMenu() {
   const [click, setClick] = useState(false);
@@ -20,8 +21,8 @@ function HamburgerMenu() {
         </div>
         <div className={`menu_content ${click === true ? 'open' : ''}`}>
             <ul>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>О нас</li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>Преподаватели</li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/maryproschool/">О нас</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/teacher/">Преподаватели</NavLink></li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>Цены</li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>Отзывы</li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>Контакты</li>
