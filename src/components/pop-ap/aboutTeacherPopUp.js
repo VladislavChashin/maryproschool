@@ -20,35 +20,42 @@ export default function AboutTeacherPopup(){
     const dataAbout = data.about
     return(
         <>
-            <div className="modalWraper_teacher">
-                <div className="TeacherPopAp">
-                    <div className="TeacherPopAp_header">
+            <div className=" modalWraper_teacher">
+                <div className=" TeacherPopAp">
+                    <div className=" TeacherPopAp_header">
                         <p>О преподавателе</p>
                         <img src={Close} alt="" onClick={()=> {dispatch(incrementTeacher()); unlockScroll()}}/>
                     </div>
                     <div className="TeacherPopAp_content">
                         <div className="TeacherPopAp_about">
-                            <img src={data.popImage} alt="" />
+                            <div className="images">
+                                <img src={data.popImage} alt="" />
+                            </div>
+                            
                             <div className="description">
                                 <h4>{data.popName}</h4>
                                 <div className="tags">
                                     {dataTags.map(array => <TagsBlock data={array} key={array.level}/>)}
                                 </div>
                             </div>
+                                
+                        </div>
+                        <div className="scroll_block">
                             
+                            <div className="block_info">
+                                <h5>Образование</h5>
+                                <p>{dataAbout.education}</p>
+                            </div>
+                            <div className="block_info internships">
+                                <h5>Стажировки</h5>
+                                {dataAbout.internships.map(array => <p>{array}</p> )}
+                            </div>
+                            <div className="block_info sertificate">
+                                <h5>Сертификаты</h5>
+                                {dataAbout.sertificate.map(array => <p>{array}</p> )}
+                            </div>
                         </div>
-                        <div className="block_info">
-                            <h5>Образование</h5>
-                            <p>{dataAbout.education}</p>
-                        </div>
-                        <div className="block_info internships">
-                            <h5>Стажировки</h5>
-                            {dataAbout.internships.map(array => <p>{array}</p> )}
-                        </div>
-                        <div className="block_info sertificate">
-                            <h5>Сертификаты</h5>
-                            {dataAbout.sertificate.map(array => <p>{array}</p> )}
-                        </div>
+                        
                     </div>
                     <div className="TeacherPopUp_footer">
                         <a onClick={() => {dispatch(increment()); dispatch(dataIncrement({ dataLang: null, dataLess: null, dataTeach: data.name}))}}>Записаться на пробное занятие</a>

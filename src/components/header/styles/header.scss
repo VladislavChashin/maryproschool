@@ -167,6 +167,9 @@ header{
             .header_content{
                 align-items: flex-start;
                 justify-content: flex-end;
+                @media (max-width: 568px){
+                    margin: 0; 
+                }
                 h1{
                     color: #FFF;
                     font-family: InterMed;
@@ -177,12 +180,31 @@ header{
                     letter-spacing: -9.8px;
                     text-transform: none;
                     margin: 40px 30px 40px;
+                    @media (max-width: 1024px){
+                        font-size: 100px;
+                    }
+                    @media (max-width: 768px){
+                        font-size: 70px;
+                        letter-spacing: -3.8px;
+                    }
+                    @media (max-width: 568px){
+                        font-size: 42px;
+                        letter-spacing: -2.1px;
+                        line-height: 100%;
+                        margin: 30px 0 15px 10px; 
+                    }
+                    @media (max-width: 330px){
+                        font-size: 37px;
+                    }
                 }
                 .nav{
                     margin: 100px 0 0 40px;
                     width: 170px;
                     display: flex;
                     justify-content: space-between;
+                    @media (max-width: 568px){
+                        margin: 50px 0 0 10px; 
+                    }
                     a{
                         padding: 0;
                         width: 50px;

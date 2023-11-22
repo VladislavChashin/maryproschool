@@ -7,11 +7,11 @@ import {incrementTeacher } from './aboutTeacherReduser'
 export default function AllTeachers(){
     const [count, setCount] = useState(1)
     const [lenguage, setLenguage] = useState('eng')
-
+    
     return(
         <>
             <div className="AllTeachers">
-                <div className="chooseCourse_tabs">
+                <div className=" wow animate__animated animate__fadeIn chooseCourse_tabs">
                     <button className={count === 1 ? 'active': ''} onClick={() => {setLenguage('eng'); setCount(1)}}>Английский</button>
                     <button className={count === 2 ? 'active': ''} onClick={() => {setLenguage('italy'); setCount(2)}}>Итальянский</button>
                     <button className={count === 3 ? 'active': ''} onClick={() => {setLenguage('franch'); setCount(3)}}>Французкий</button>
@@ -26,6 +26,17 @@ export default function AllTeachers(){
 
 function TeacherBlocks(props){
     const dispatch = useDispatch()
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = (event) => {
+          setWidth(event.target.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
     const lockScroll = useCallback(() => {
         document.body.style.overflow = "hidden"
@@ -37,10 +48,10 @@ function TeacherBlocks(props){
             {teachersData.categories.includes(props.lang) ? 
 
             <div className={`teacherBlocks_blockContent .item-${teachersData.id}`}>
-                <div className="blockContent_image">
-                    <img src={teachersData.image} alt="" />
+                <div className=" wow animate__animated animate__fadeIn blockContent_image">
+                    <img src={width <= 450 ? teachersData.popImage : teachersData.image} alt="" />
                 </div>
-                <div className="blockContent_description">
+                <div className=" wow animate__animated animate__fadeIn blockContent_description">
                     <div className="description_content">
                         <h3>{teachersData.name}</h3>
                         <div className="descriprion_tags">
@@ -49,7 +60,7 @@ function TeacherBlocks(props){
                             <p>{teachersData.tag[2]}</p>
                         </div>
                         <div className="description_text">
-                            <p>{teachersData.text}</p>
+                            <p>{width <= 450 ? teachersData.mobtext: teachersData.text}</p>
                         </div>
                     </div>
                     <a onClick={() => {dispatch(incrementTeacher(teachersData)); lockScroll()}}>Подробнее</a>
