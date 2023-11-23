@@ -153,6 +153,7 @@
                     font-weight: 400;
                     line-height: 130%; /* 19.5px */
                     letter-spacing: -0px;
+                    white-space: pre-wrap;
                     @media (max-width: 425px){
                         font-size: 14px;
                         letter-spacing: -0.42px;

@@ -86,7 +86,7 @@ export function HeaderTeach(){
                         <Navbar/>
                     </div>
                     <div className="header_content ">
-                        <div className="nav"><Link to={'/maryproschool'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>Преподаватели</Link></div>
+                        <div className="nav"><Link to={'/maryproschool/'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>Преподаватели</Link></div>
                         <h1>Преподаватели</h1>
                     </div>
                 </div>
