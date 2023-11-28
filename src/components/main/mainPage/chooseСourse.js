@@ -6,8 +6,9 @@ import indivFranch from '../../../source/images/main/indivFranch.svg'
 import speackFranch from '../../../source/images/main/speckFranch.svg'
 import group from '../../../source/images/main/twoClassroom.svg'
 import './styles/chooseCourse.scss';
-import {useDispatch } from 'react-redux'
+import {useDispatch, useSelector } from 'react-redux'
 import {increment, dataIncrement } from '../../header/modalReduser'
+import { incrementChoseCurse } from "../loadReduser"
 
 
 export default function ChooseCourse(){
@@ -46,6 +47,7 @@ function Course(props){
     }, [])
 
     useEffect(() => {
+        dispatch(incrementChoseCurse({choseCurse: true}))
       const handleResize = (event) => {
         setWidth(event.target.innerWidth);
       };

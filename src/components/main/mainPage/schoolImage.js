@@ -2,6 +2,8 @@ import { schoolImage, schoolImage_two } from "../data/course";
 import strelkaRight from '../../../source/images/index/arrowRight.svg'
 import strelkaLeft from '../../../source/images/index/arrowLeft.svg'
 import { useState, useRef, useEffect } from "react";
+import { incrementSchool } from "../loadReduser"
+import { useSelector, useDispatch } from 'react-redux'
 import Swiper from "react-id-swiper";
 import 'swiper/css';
 import './styles/schoolImage.scss';
@@ -9,7 +11,9 @@ import './styles/schoolImage.scss';
 export default function SchoolImage(){
    const [activi, setActive] = useState(1)
    const [width, setWidth] = useState(window.innerWidth);
+   const dispatch = useDispatch()
     useEffect(() => {
+        window.addEventListener('load', dispatch(incrementSchool({school: true})));
         
         const handleResize = (event) => {
           setWidth(event.target.innerWidth);
@@ -17,6 +21,7 @@ export default function SchoolImage(){
         window.addEventListener('resize', handleResize);
         return () => {
           window.removeEventListener('resize', handleResize);
+          window.removeEventListener('load', dispatch(incrementSchool({school: true})));
         };
         
       }, []);

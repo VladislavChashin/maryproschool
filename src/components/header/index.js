@@ -11,6 +11,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './modalReduser'
+import { incrementHeader } from "../main/loadReduser"
 
 
 export default function Header(){
@@ -23,13 +24,14 @@ export default function Header(){
       }, [])
 
     useEffect(() => {
-      const handleResize = (event) => {
-        setWidth(event.target.innerWidth);
-      };
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
+        dispatch(incrementHeader({header: true}))
+        const handleResize = (event) => {
+            setWidth(event.target.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []); 
 
     return(
@@ -64,7 +66,7 @@ export default function Header(){
     )
 }
 
-export function HeaderTeach(){
+export function HeaderTeach(props){
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -86,8 +88,8 @@ export function HeaderTeach(){
                         <Navbar/>
                     </div>
                     <div className="header_content ">
-                        <div className="nav"><Link to={'/maryproschool/'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>Преподаватели</Link></div>
-                        <h1>Преподаватели</h1>
+                        <div className="nav"><Link to={'/maryproschool/'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>{props.props === 'Стоимость занятий'?'Цены': props.props}</Link></div>
+                        <h1>{props.props}</h1>
                     </div>
                 </div>
             </header>

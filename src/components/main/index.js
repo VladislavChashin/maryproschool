@@ -9,6 +9,7 @@ import Header from '../header/index.js'
 import Footer from '../footer/index.js'
 import PopApCourse from "../pop-ap/PopUpCourse"
 import SucsesPopUp from "../pop-ap/sucsesPopUp.js"
+import Load from "./load.js"
 
 // import {course} from "./data/course.js"
 
@@ -17,6 +18,7 @@ export default function MainPage(){
     // const count = useSelector(state => state.counter.value)
     return(
         <>
+        {/*<Load/> */}
             <PopApCourse/>
             <SucsesPopUp/>
             <Header/>

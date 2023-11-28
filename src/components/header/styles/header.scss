@@ -199,15 +199,16 @@ header{
                 }
                 .nav{
                     margin: 100px 0 0 40px;
-                    width: 170px;
+                    width: -webkit-fill-available;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
+                    gap: 10px;
                     @media (max-width: 568px){
                         margin: 50px 0 0 10px; 
                     }
                     a{
                         padding: 0;
-                        width: 50px;
+                        width: auto;
                         text-align: center;
                         border-radius: 0;
                         border: none;
@@ -223,7 +224,7 @@ header{
                         cursor: pointer;
                         &:nth-child(3){
                             color: rgb(255, 255, 255);
-                            width: 95px;
+                            width: auto;
                         }
                     }
                 }

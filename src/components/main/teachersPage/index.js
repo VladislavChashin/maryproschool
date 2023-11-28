@@ -18,7 +18,7 @@ export default function TeachersPage(){
             {count === true ? <AboutTeacherPopup/> : <></>}
             <SucsesPopUp/>
             <PopApCourse/>
-            <HeaderTeach/>
+            <HeaderTeach props='Преподаватели'/>
             <main>
                 <AllTeachers/>
             </main>

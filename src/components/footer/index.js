@@ -1,7 +1,15 @@
 import vk from '../../source/images/footer/vk.svg'
 import inst from '../../source/images/footer/inst.svg'
 import './styles/footer.scss'
+import { incrementFooter } from "../main/loadReduser"
+import { useSelector, useDispatch } from 'react-redux'
+import { useEffect } from 'react'
 export default function Footer(){
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(incrementFooter({footer: true}))
+        return
+    }, []); 
     return(
         <>
             <footer>

@@ -14,6 +14,8 @@ export default  function PopApCourse(){
     const dataLang = useSelector(state => state.counter.dataLang)
     const dataLess = useSelector(state => state.counter.dataLess)
     const dataTeach = useSelector(state => state.counter.dataTeach)
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [letters, setLetters] = useState('');
     const dispatch = useDispatch()
     const form = useRef();
     const handleSubmit = (e) => {
@@ -27,8 +29,18 @@ export default  function PopApCourse(){
         }
     );
     };
-      
-    
+    const handlePhoneNumberChange = (event) => {
+        const inputPhoneNumber = event.target.value;
+        // Удалите все символы, кроме цифр и плюса
+        const cleanedPhoneNumber = inputPhoneNumber.replace(/[^0-9+]/g, '');
+        setPhoneNumber(cleanedPhoneNumber);
+    };
+    const handleLetterChange = (event) => {
+        const inputLetters = event.target.value;
+        // Удалите все символы, кроме букв
+        const cleanedLetters = inputLetters.replace(/[^a-zA-Zа-яА-Я]/g, '');
+        setLetters(cleanedLetters);
+      };
       
     const [dropdown, setDropdown] = useState(0)
     console.log(isNaN(dataTeach));
@@ -104,8 +116,8 @@ export default  function PopApCourse(){
                         <select name="less" id="" style={{display: 'none'}}>
                             <option value={dataLess}>{dataLess}</option>
                         </select>
-                        <input type="name" name="firstname" maxLength='11' placeholder="Ваше имя"/>
-                        <input type="tel" name="telephone" placeholder="Номер телефона"/>
+                        <input type="name" name="firstname" value={letters} pattern="[A-Za-zА-Яа-я]*"  onChange={handleLetterChange} required maxLength='30' placeholder="Ваше имя"/>
+                        <input type="tel" name="telephone"  value={phoneNumber} pattern="^\+?[0-9]{0,12}$" onChange={handlePhoneNumberChange} required placeholder="Номер телефона"/>
                     </div>
                     <button className='but' onClick={()=> {dispatch(increment());   dispatch(incrementSucses())}} type="submit">Записаться <img src={strelka} alt="" /></button>
                 </form>
