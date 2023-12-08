@@ -16,9 +16,13 @@
     @media (max-width: 768px){
         margin: 10px;
     }
+    @media (max-width: 568px){
+        border-radius: 16px;
+    }
     @media (max-width: 425px){
         padding: 20px 10px;
         background-image: url('../../../../source/images/header/CTA.png');
+        background-size: cover;
     }
     .banner_content{
         display: flex;

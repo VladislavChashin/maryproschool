@@ -1,0 +1,157 @@
+.AllPrice{
+    .chooseCourse_tabs{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 20px 0 30px;
+        @media (max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 425px){
+            margin: 0;
+            gap: 8px;
+        }
+        button{
+            width: 487px;
+            padding: 15px 20px;
+            border-radius: 500px;
+            border: 1px solid var(--color-blue, #60BFE1);
+            background: #3f89f000;
+            color: var(--color-blue, #60BFE1);
+            font-family: ManroSemBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 19.8px */
+            letter-spacing: -0.36px;
+            transition: 0.3s;
+            @media (max-width: 768px){
+                margin: 0;
+                font-size: 16px;
+                padding: 10px 15px;
+                width: 100%;
+            }
+            &:hover{
+                background: #60BFE1;
+                cursor: pointer;
+                color: #FFF;
+            }
+        }
+        .active{
+            background: #60BFE1;
+            color: #FFF;
+        }
+    }
+    .priceBlock_less{
+        h2{
+            color: #424344;
+            font-family: ManroSemBold;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 52.8px */
+            letter-spacing: -2.4px;
+        }
+        .less_group{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 32px;
+            background: #FFF;
+            gap: 15px;
+            .groupBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .groupBlock_choice{
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 1253px;
+                    margin:  0 0 20px 0;
+                    p{
+                        color: var(--color-light-black, #424344);
+                        font-family: ManroSemBold;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 110%; /* 28.6px */
+                        letter-spacing: -1.3px;
+                        opacity: 0.5;
+                        margin: 0;
+                        width: 34.7%;
+                        &:nth-child(1){
+                            opacity: 1;
+                            width: 42.4%;
+                        }
+                        &:nth-child(3){
+                            width: auto;
+                            flex-grow: 1;
+                        }
+                    }
+                }
+                .groupBlock_blockPrice{
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 12px;
+                    padding: 15px;
+                    background: var(--color-light-blue, #F3F6FB);
+                    align-items: center;
+                    .blockPrice_prices{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-grow: 2;
+                        max-width: 1110px;
+                        .prices_name{
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            img{
+                                height: fit-content;
+                            }
+                            p{
+                                color: var(--light-mode-label-primary, #222);
+                                font-family: InterSemBold;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 100%; /* 18px */
+                                letter-spacing: -0.9px;
+                            }
+                        }
+                        p{
+                            color: var(--color-light-black, #424344);
+                            font-family: InterMed;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 100%; /* 36px */
+                            letter-spacing: -1.8px;
+                            margin: 0;
+                        }
+                    }
+                    .blockPrice_button{
+                        
+                        a{
+                            border-radius: 431px;
+                            background: #FFF;
+                            display: flex;
+                            padding: 10px 15px;
+                            align-items: center;
+                            gap: 10px;
+                            text-decoration: none;
+                            color: #60BFE0;
+                            font-family: InterReg;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%; /* 18px */
+                            letter-spacing: -0.54px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

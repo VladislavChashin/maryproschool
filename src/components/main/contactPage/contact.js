@@ -26,7 +26,7 @@ export default function Contact(){
             <div className="contact_map">
          <  YMaps>
                 
-                <Map defaultState={{ center: [55.158164, 37.467500], zoom: 13 }} style={{width: '100%', height: '100%'}}>
+                <Map defaultState={{ center: [55.158164, 37.467500], zoom: 13 }} style={{width: '100%', height: '100%', borderRadius: '16px'}}>
                     {cords === 1 ? 
                     <Placemark geometry={[55.158164, 37.467500]} />:
                     <Placemark geometry={[55.167493, 37.463377]} />
