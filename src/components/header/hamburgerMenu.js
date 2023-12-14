@@ -23,9 +23,9 @@ function HamburgerMenu() {
             <ul>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/maryproschool/">О нас</NavLink></li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/teacher/">Преподаватели</NavLink></li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/price/">Преподаватели</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/price/">Цены</NavLink></li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>Отзывы</li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/contacts/">Преподаватели</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/contacts/">Контакты</NavLink></li>
             </ul>
         </div>
     </>
