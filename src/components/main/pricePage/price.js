@@ -61,14 +61,28 @@ function PriceBlock_less(props){
 
 function GroupBlock(props){
     const less = props.props.less
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+      const handleResize = (event) => {
+        setWidth(event.target.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     return(
         <div className="groupBlock">
             <div className="groupBlock_choice">
                 <p>{props.props.typeLess}</p>
-                <p>Одно занятие</p>
-                <p>{props.props.quant}</p>
+                {width > 425?
+                <>
+                    <p>Одно занятие</p>
+                    <p>{props.props.quant}</p>
+                </>
+                : <></>}
             </div>
-            {less.map(array => <GroupBlock_blockPrice props={array} key={array.id}/>)}
+            {less.map(array => <GroupBlock_blockPrice props={array} typeLess={width<=425? props.props.typeLess: ''} quant={width<=425? props.props.quant: ''} key={array.id}/>)}
         </div>
     )
 }
@@ -97,8 +111,24 @@ function GroupBlock_blockPrice(props){
                     <img src={oval} alt="" />
                     <p>{props.props.teachName}</p>
                 </div>
-                <p>{props.props.onePrice}</p>
-                <p>{props.props.twoPrice}</p>
+                {width>425? 
+                <>
+                    <p>{props.props.onePrice}</p>
+                    <p>{props.props.twoPrice}</p>
+                </>
+                :
+                <>
+                    <div className="prices_mobile_onePrice">
+                        <p>{props.typeLess}</p>
+                        <p>{props.props.onePrice}</p>
+                    </div>
+                    <div className="prices_mobile_onePrice">
+                        <p>{props.quant}</p>
+                        <p>{props.props.twoPrice}</p>
+                    </div>
+                </>
+                
+                }
             </div>
             <div className="blockPrice_button">
                 <a onClick={() => {dispatch(incrementTeacher(data)); lockScroll()}}>Подробнее</a>

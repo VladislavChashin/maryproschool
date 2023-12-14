@@ -5,7 +5,7 @@ import classrom from '../../../source/images/main/Digitalclassroom.svg'
 import indivFranch from '../../../source/images/main/indivFranch.svg'
 import speackFranch from '../../../source/images/main/speckFranch.svg'
 import group from '../../../source/images/main/twoClassroom.svg'
-import './styles/chooseCourse.scss';
+import './styles/chooseCourseD.scss';
 import {useDispatch, useSelector } from 'react-redux'
 import {increment, dataIncrement } from '../../header/modalReduser'
 import { incrementChoseCurse } from "../loadReduser"

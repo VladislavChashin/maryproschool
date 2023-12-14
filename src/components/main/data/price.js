@@ -72,20 +72,20 @@ const price = [
                     {
                         img:'',
                         teachName: 'Анастасия Болотова',
-                        onePrice: '1400 руб.',
-                        twoPrice: '1400 руб.'
+                        onePrice: '1000₽ руб.',
+                        twoPrice: '3600 руб.'
                     }
                 ]
             },
             {
-                typeLess: 'Групповые занятия',
+                typeLess: 'Индивидуальные занятия',
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
                         teachName: 'Мария Кричевская',
-                        onePrice: '1400 руб.',
-                        twoPrice: '1400 руб.'
+                        onePrice: '2200 руб.',
+                        twoPrice: '8500 руб.'
                     }
                 ]
             },
@@ -95,25 +95,25 @@ const price = [
         nameLess: 'Подготовка к экзаменам (ОГЭ, ЕГЭ, PET, FCE)',
         type:[
             {
-                typeLess: 'vГрупповые занятия',
+                typeLess: 'Групповые занятия(онлайн)',
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
                         teachName: 'Анастасия Болотова',
-                        onePrice: '1400 руб.',
-                        twoPrice: '1400 руб.'
+                        onePrice: '700 руб.',
+                        twoPrice: '2500 руб.'
                     }
                 ]
             },
             {
-                typeLess: 'Групповые занятия',
+                typeLess: 'Групповые занятия(офлайн)',
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
                         teachName: 'Павел Кричевский',
-                        onePrice: '1400 руб.',
+                        onePrice: '900 руб.',
                         twoPrice: '1400 руб.'
                     }
                 ]
@@ -124,26 +124,26 @@ const price = [
         nameLess: 'Speaking Club',
         type:[
             {
-                typeLess: 'Групповые занятия',
+                typeLess: 'Speaking club (A2-B1)',
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
                         teachName: 'Анастасия Болотова',
-                        onePrice: '1400 руб.',
-                        twoPrice: '1400 руб.'
+                        onePrice: '700 руб.',
+                        twoPrice: '2500 руб.'
                     }
                 ]
             },
             {
-                typeLess: 'Групповые занятия',
+                typeLess: 'Speaking club (B2-C1)',
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
                         teachName: 'Анастасия Болотова',
-                        onePrice: '1400 руб.',
-                        twoPrice: '1400 руб. '
+                        onePrice: '800 руб.',
+                        twoPrice: '3000 руб. '
                     }
                 ]
             },
