@@ -67,7 +67,7 @@
         justify-content: space-between;
         margin-top: 55px;
         gap: 10px;
-        @media (max-width: 768px){
+        @media (max-width: 450px){
             flex-direction: column;
             align-items: center;
         }
@@ -353,7 +353,7 @@
             "speak speak"
             "ege ege";
         }
-        @media (max-width: 425px){
+        @media (max-width: 450px){
             grid-template-columns: 1fr; 
             grid-template-rows: 1fr auto auto auto 1fr;
             grid-template-areas: 
@@ -378,7 +378,7 @@
                         max-width: 538.903px;
                         // height: auto;
                     }
-                    @media (max-width: 425px){
+                    @media (max-width: 450px){
                         max-width: 250px;
                         height: auto;
                     }
@@ -417,7 +417,7 @@
             "indiv indiv"
             "cils cils";
         }
-        @media (max-width: 425px){
+        @media (max-width: 450px){
             grid-template-columns: 1fr; 
             grid-template-rows: 1fr auto auto 1fr;
             grid-template-areas: 
@@ -446,7 +446,7 @@
             "speak speak"
             "indiv indiv";
         }
-        @media (max-width: 425px){
+        @media (max-width: 450px){
             grid-template-columns: 1fr; 
             grid-template-rows: 1fr auto auto auto;
             grid-template-areas: 

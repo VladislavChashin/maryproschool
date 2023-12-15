@@ -34,6 +34,15 @@
             width: auto;
             margin: 20px  0;
         }
+        @media (max-width: 1440px){
+            margin: 20px  30px;
+        }
+        @media (max-width: 1280px){
+            margin: 20px  25px;
+        }
+        @media (max-width: 768px){
+            margin: 20px  0;
+        }
             &:hover{
                 background: #60BFE1;
                 color: #FFF;
