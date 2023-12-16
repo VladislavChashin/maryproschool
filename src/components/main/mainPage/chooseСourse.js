@@ -1,13 +1,14 @@
 import { course } from "../data/course";
 import {useState, useEffect, useCallback} from "react"
 import strelka from '../../../source/images/main/arrow-right.svg'
-import classrom from '../../../source/images/main/Digitalclassroom.png'
-import indivFranch from '../../../source/images/main/indivFranch.png'
-import speackFranch from '../../../source/images/main/speckFranch.png'
-import group from '../../../source/images/main/twoClassroom.png'
-import './styles/chooseCourse.scss';
-import {useDispatch } from 'react-redux'
+import classrom from '../../../source/images/main/Digitalclassroom.svg'
+import indivFranch from '../../../source/images/main/indivFranch.svg'
+import speackFranch from '../../../source/images/main/speckFranch.svg'
+import group from '../../../source/images/main/twoClassroom.svg'
+import './styles/chooseCourseD.scss';
+import {useDispatch, useSelector } from 'react-redux'
 import {increment, dataIncrement } from '../../header/modalReduser'
+import { incrementChoseCurse } from "../loadReduser"
 
 
 export default function ChooseCourse(){
@@ -46,6 +47,7 @@ function Course(props){
     }, [])
 
     useEffect(() => {
+        dispatch(incrementChoseCurse({choseCurse: true}))
       const handleResize = (event) => {
         setWidth(event.target.innerWidth);
       };
@@ -58,7 +60,7 @@ function Course(props){
     return(
         <> 
         {courseData.categories.includes(props.lang) ? 
-            <div className={`chooseCourse_course ${courseData.class}` }>
+            <div className={`wow animate__animated animate__fadeIn chooseCourse_course ${courseData.class}` }>
                 <div className="course_textBlock">
                     <p>{courseData.tag}</p>
                     <div className="course_imageBlock" 
@@ -78,7 +80,7 @@ function Course(props){
                 <div className="course_imageBlock" 
                 style={courseData.image == true || 
                 (props.lang == 'franch' && (courseData.class == 'indiv' || courseData.class == 'speak') && width > 1216)
-                ? width > 768 ? {display: 'flex'} : {display: 'none'} 
+                ? width > 768 && courseData.class != 'group' ? {display: 'flex'} : {display: 'none'} 
                 : {display: 'none'}}>
 
                     <img src={courseData.class == 'indiv' ? indivFranch : courseData.class == 'speak' ? speackFranch : (courseData.class == 'group' && width < 768) ? group : courseData.class == 'cils' ? classrom : courseData.class == 'ege' ? classrom: ''} alt="" />

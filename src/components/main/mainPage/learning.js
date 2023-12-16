@@ -7,17 +7,17 @@ export default function Learning(){
             <h2>
                 Как начать занятия?
             </h2>
-            <div className="block">
+            <div className="wow animate__animated animate__fadeIn block">
                 <p>01</p>
-                <p>Определяем ваши цели и знания</p>
+                <p>Определяем ваши <br/>цели и уровень языка</p>
                 <p>Мы проводим тестирование. Оно необходимо <br /> для определения стратегий занятий в соответсвии <br /> с вашими целями</p>                   
             </div>
-            <div className="block">
+            <div className="wow animate__animated animate__fadeIn block">
                 <p>02</p>
                 <p>Выбираете удобный формат обучения</p>
                 <p>У нас можно заниматься онлайн и офлайн в групповом, парном и индивидуальных форматах</p>
             </div>
-            <div className="block">
+            <div className="wow animate__animated animate__fadeIn block">
                 <p>03</p>
                 <p>Занимаетесь <br/> по персональному плану</p>
                 <p>Выбираете удобную дату и время занятий <br />и достигаете своих целей </p>

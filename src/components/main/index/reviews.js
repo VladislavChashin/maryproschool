@@ -55,9 +55,14 @@ export default function Reviews(){
         slidesPerView: 'auto',
         spaceBetween: 5,
         slidesPerView: 1,
+        slidesOffsetBefore: 0,
         modules: Navigation,
         // autoHeight: true,
         breakpoints: {
+            374: {
+                slidesPerView: 1.1,
+                spaceBetween: 10,
+            },
             500: {
                 slidesPerView: 1.3,
                 spaceBetween: 10,
@@ -67,16 +72,30 @@ export default function Reviews(){
                 spaceBetween: 15,
             },
             1000: {
-                slidesPerView: 2,
+                slidesPerView: 2.23,
                 spaceBetween: 20,
-            }
+                slidesOffsetBefore: 2 / 100 * width,
+
+            },
+            1599: {
+                slidesPerView: 2.23,
+                spaceBetween: 20,
+                slidesOffsetBefore: 8.9 / 100 * width,
+
+            },
+            1921: {
+                slidesPerView: 3.3,
+                spaceBetween: 20,
+                slidesOffsetBefore: 19.5 / 100 * width,
+
+            },
         }
       };
 
 
     return(
         <>
-            <div className="reviews wow animate__animated animate__fadeIn">
+            <div className="reviews ">
                 <div className="reviews_header">
                     <h2>Отзывы</h2>
                     <div className="reviews_navigate">
@@ -86,9 +105,9 @@ export default function Reviews(){
                 
                 <div className="reviews_content" >
                     <Swiper {...params} ref={ref}>
-                        <div><ReviewBlocks/></div> 
-                        <div><ReviewBlocks/></div> 
-                        <div><ReviewBlocks/></div> 
+                        <div className="wow animate__animated animate__fadeIn"><ReviewBlocks/></div> 
+                        <div className="wow animate__animated animate__fadeIn"><ReviewBlocks/></div> 
+                        <div className="wow animate__animated animate__fadeIn"><ReviewBlocks/></div> 
                     </Swiper>
                 </div>
                 <a>Читать все отзывы</a>

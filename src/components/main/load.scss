@@ -1,0 +1,23 @@
+.load{
+    overflow:hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    z-index: 10000;
+    .load_timer{
+        display: flex;
+        width: 120px;
+        height: 150px;
+        p{
+            font-style: InterSemBold;
+            font-size: 120px;
+            color: #fff;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,7 +1,7 @@
-import classChildren from '../../../source/images/main/classChildren.jpg'
-import dorinclass from '../../../source/images/main/dorinclass.jpg'
-import classes from '../../../source/images/main/class.jpg'
-import womenClass from '../../../source/images/main/womenClass.jpg'
+import classChildren from '../../../source/images/main/classChildren.png'
+import dorinclass from '../../../source/images/main/dorinclass.png'
+import classes from '../../../source/images/main/class.png'
+import womenClass from '../../../source/images/main/womenClass.png'
 import  komnata1 from '../../../source/images/main/komnata1.png'
 import komnata2 from '../../../source/images/main/komnata2.png'
 import man1 from '../../../source/images/main/man1.jpg'
@@ -26,13 +26,13 @@ export const course = [
         text: 'Можно заниматься в паре или в группе до 4 человек',
         tag: 'ПУТЕШЕСТВИЯ',
         image: false,
-        class: ''
+        class: 'put'
     },
     {
         id: 3,
         categories: ['eng', 'franch', 'italy'],
         title: 'ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ',
-        text: 'В MaryPro School вы можете заниматься индивидуально с преподавателем. Это отличная возможность достигнутьсвоих целей в кратчайшие сроки',
+        text: 'В MaryPro School вы можете заниматься индивидуально с преподавателем. Это отличная возможность достигнуть своих целей в кратчайшие сроки',
         tag: 'для детей и взрослых',
         image: false,
         class: 'indiv'
@@ -105,22 +105,22 @@ export const schoolImage_two = [
 export const teachers = {
     one:{
         src: women2,
-        name: 'Мария Кричевская',
-        description: 'Основатель центра. Преподаватель английского, итальянкого и французского языков'
+        name: 'Мария Павловна Кричевская',
+        description: 'Основатель центра. Преподаватель английского, итальянcкого и французского языков'
     },
     two:{
         src: women3,
-        name: 'Ксения Лагутина',
+        name: 'Ксения Александровна Лагутина',
         description: `Преподаватель английского и французского языка`
     },
     three:{
         src: women1,
-        name: 'Анастасия Болотова',
+        name: 'Анастасия Юрьевна Болотова',
         description: `Преподаватель английского и французского языка`
     },
     four:{
         src: man1,
-        name: 'Павел Кричевский',
+        name: 'Павел Зиновьевич Кричевский',
         description: 'Преподаватель английского языка'
     },
 

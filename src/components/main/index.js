@@ -8,23 +8,31 @@ import Reviews from "./index/reviews.js"
 import Header from '../header/index.js'
 import Footer from '../footer/index.js'
 import PopApCourse from "../pop-ap/PopUpCourse"
+import SucsesPopUp from "../pop-ap/sucsesPopUp.js"
+import Load from "./load.js"
 
 // import {course} from "./data/course.js"
 
 export default function MainPage(){
+    // const countSucses = useSelector(state => state.counter.valueSucses)
+    // const count = useSelector(state => state.counter.value)
     return(
         <>
+        {/*<Load/> */}
             <PopApCourse/>
+            <SucsesPopUp/>
             <Header/>
             <main>
                 <FlexMethod/>
                 <Learning/>
                 <ChooseCourse/>
-                <Banner/>  
+                <Banner props = 'Изучайте языки с легкостью!' />  
                 <SchoolImage/>
                 <Teachers/>
-                <Reviews/>
-                <Banner/>
+            </main>
+            <Reviews/>
+            <main>
+                <Banner props = 'Запишитесь на пробное занятие'/>
             </main>
             <Footer/>
         </>

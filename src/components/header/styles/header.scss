@@ -3,7 +3,12 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto ;
+    padding: 20px 0 0 ;
+    @media (max-width: 768px){
+        padding: 0;
+        
+     }
     .navbar_container{
         width: 95%;
         margin: 0 auto;
@@ -13,6 +18,9 @@ header{
             justify-content: space-between;
             align-items: center;
             margin: 30px 0 0 0;
+            @media (max-width: 768px){
+                margin: 15px 0 0 0;
+             }
             .backgroundFon{
                 padding: 15px;
                 background-color: rgba(255, 255, 255, 1);
@@ -66,6 +74,12 @@ header{
                         font-weight: 400;
                         line-height: normal;
                         border-radius: 500px;
+                        &.active{
+                            background: #60BFE1;
+                            a{
+                                color: #FFF;
+                            }    
+                        }
                         a{  
                             display: inline-block;
                             padding: 10px 15px;
@@ -128,31 +142,40 @@ header{
             .mobile_nav{
                 display: none;
                 max-height: 36px;
+                
                 &.backgroundFon{
                     padding: 0;
+                    
                 }
                 @media (max-width: 1359px){
                     display: inline-block;
 
                 }
+                
             }
         }
     }
     .header_container{
         width: 100%;
         height: 759px;
-        margin: 20px 20px 10px;
+        margin: 0px 20px 10px;
         background-image: url('../../../source/images/header/shutterstoc.png');
         background-size: no-repeat;
         background-size: cover;
         border-radius: 32px;
         display: flex;
         flex-direction: column;
+        @media (max-width: 568px){
+            border-radius: 16px;
+        }
         &.teach{
             height: auto;
             .header_content{
                 align-items: flex-start;
                 justify-content: flex-end;
+                @media (max-width: 568px){
+                    margin: 0; 
+                }
                 h1{
                     color: #FFF;
                     font-family: InterMed;
@@ -163,15 +186,35 @@ header{
                     letter-spacing: -9.8px;
                     text-transform: none;
                     margin: 40px 30px 40px;
+                    @media (max-width: 1024px){
+                        font-size: 100px;
+                    }
+                    @media (max-width: 768px){
+                        font-size: 70px;
+                        letter-spacing: -3.8px;
+                    }
+                    @media (max-width: 568px){
+                        font-size: 42px;
+                        letter-spacing: -2.1px;
+                        line-height: 100%;
+                        margin: 30px 0 15px 10px; 
+                    }
+                    @media (max-width: 330px){
+                        font-size: 37px;
+                    }
                 }
                 .nav{
                     margin: 100px 0 0 40px;
-                    width: 170px;
+                    width: -webkit-fill-available;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    @media (max-width: 568px){
+                        margin: 50px 0 0 10px; 
+                    }
                     a{
                         padding: 0;
-                        width: 50px;
+                        width: auto;
                         text-align: center;
                         border-radius: 0;
                         border: none;
@@ -187,7 +230,7 @@ header{
                         cursor: pointer;
                         &:nth-child(3){
                             color: rgb(255, 255, 255);
-                            width: 95px;
+                            width: auto;
                         }
                     }
                 }
@@ -234,7 +277,6 @@ header{
                 font-style: normal;
                 font-weight: 600;
                 line-height: 100%; /* 38px */
-                max-width: 501px;
                 @media (max-width: 1024px){
                     font-size: 30px;
                  }
@@ -248,7 +290,7 @@ header{
                 .heading_images_left{
                     position: absolute;
                     top: 40px;
-                    left: 90px;
+                    left: 70px;
                     img{
                         position: relative;
                         z-index: 2;
@@ -284,13 +326,13 @@ header{
                 h2{
                     color: #FFF;
                     text-align: center;
-                    font-family: ManroSemBold;
+                    font-family: InterSemBold;
                     font-size: 140px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 100%; /* 140px */
                     letter-spacing: -7px;
-                    max-width: 975px;
+                    max-width: 990px;
                     margin: 0;
                     @media (max-width: 1024px){
                        font-size: 105px;
@@ -307,7 +349,7 @@ header{
                 
                 .heading_images_right{
                     position: absolute;
-                    right: -10px;
+                    right: -40px;
                     top: 40px;
                     img{
                         position: relative;

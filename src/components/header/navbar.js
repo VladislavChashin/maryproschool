@@ -4,9 +4,11 @@ import menu from '../../source/images/header/Menu.svg'
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavLink as Link } from "react-router-dom";
+import HamburgerMenu from './hamburgerMenu';
 
 export default function Navbar(){
     const [width, setWidth] = useState(window.innerWidth);
+    const [active, setActive] = useState(1)
 
     useEffect(() => {
       const handleResize = (event) => {
@@ -25,18 +27,18 @@ export default function Navbar(){
             </div>
             <nav>
                 <ul>
-                    <li><NavLink to="/maryproschool">О нас</NavLink></li>
-                    <li><NavLink to="/teacher">Преподаватели</NavLink></li>
-                    <li><NavLink to="/price">Цены</NavLink></li>
-                    <li><NavLink to="/revews">Отзывы</NavLink></li>
-                    <li><NavLink to="/contacts">Контакты</NavLink></li>
+                    <li className={window.location.pathname == '/maryproschool/' ? 'active' : ''} onClick={()=> setActive(1)}><NavLink to="/maryproschool/">О нас</NavLink></li>
+                    <li className={window.location.pathname == '/teacher/' ? 'active' : ''} onClick={()=> setActive(2)}><NavLink to="/teacher/">Преподаватели</NavLink></li>
+                    <li className={window.location.pathname == '/price/' ? 'active' : ''} onClick={()=> setActive(3)}><NavLink to="/price/">Цены</NavLink></li>
+                    <li className={window.location.pathname == '/revews/' ? 'active' : ''} onClick={()=> setActive(4)}><NavLink to="/revews/">Отзывы</NavLink></li>
+                    <li className={window.location.pathname == '/contacts/' ? 'active' : ''} onClick={()=> setActive(5)}><NavLink to="/contacts/">Контакты</NavLink></li>
                 </ul>
             </nav>
             <div className="phone backgroundFon">
                 {width >= 1600 ? <p>+7 (977) 541-16-33 </p>: <img src={call} alt="" />}
             </div>
             <div className="mobile_nav backgroundFon">
-                <img src={menu} alt="" />
+                <HamburgerMenu/>
             </div>
         </div>
         

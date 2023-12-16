@@ -4,8 +4,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './source/fonts/stylesheet.css';
 import './source/styles/index.scss';
+import './source/styles/normalize.min.css';
 import { Provider } from 'react-redux'
 import store from './components/store/store';
+// import * as ymaps3 from 'ymaps3';
+// const ymaps3Reactify = await ymaps3.import('@yandex/ymaps3-reactify');
+// const reactify = ymaps3Reactify.reactify.bindTo(React, ReactDOM);
+// const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = reactify.module(ymaps3);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
