@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import oval from '../../../source/images/main/oval.png'
-import price from '../data/price.js' 
+import {price_eng, price_italy, price_franch} from '../data/price.js' 
 import {useSelector, useDispatch } from 'react-redux'
 import {incrementTeacher } from '../teachersPage/aboutTeacherReduser'
 
@@ -8,6 +8,11 @@ import {incrementTeacher } from '../teachersPage/aboutTeacherReduser'
 export default function Price(){
     const [count, setCount] = useState(1)
     const [lenguage, setLenguage] = useState('eng')
+    const priceMap = {
+        eng: price_eng,
+        italy: price_italy,
+        franch: price_franch
+      };
     return(
         <>
             <div className="AllPrice">
@@ -16,32 +21,7 @@ export default function Price(){
                     <button className={count === 2 ? 'active': ''} onClick={() => {setLenguage('italy'); setCount(2)}}>Итальянский</button>
                     <button className={count === 3 ? 'active': ''} onClick={() => {setLenguage('franch'); setCount(3)}}>Французкий</button>
                 </div>
-                {price.map(array => <PriceBlock_less props={array} key={array.id}/>)}
-                {/* <div className="priceBlock_less">
-                    <h2>Занятие для детей</h2>
-                    <div className="less_group">
-                        <div className="groupBlock">
-                            <div className="groupBlock_choice">
-                                <p>Груповые занятия</p>
-                                <p>Одно занятие</p>
-                                <p>Абонемент</p>
-                            </div>
-                            <div className="groupBlock_blockPrice">
-                                <div className="blockPrice_prices">
-                                    <div className="prices_name">
-                                        <img src={oval} alt="" />
-                                        <p>Мария Кричевская</p>
-                                    </div>
-                                    <p>1000 руб.</p>
-                                    <p>7200 руб.</p>
-                                </div>
-                                <div className="blockPrice_button">
-                                    <a href="">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                {priceMap[lenguage].map(array => <PriceBlock_less props={array} key={array.id}/>)}
             </div>
         </>
     )

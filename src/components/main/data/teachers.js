@@ -58,8 +58,8 @@ export const teachers = [
         popImage: popwomen1,
         about: {
             education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
-            internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
-            sertificate: ['FCE (First Certificate in English) — C1', "DELF (Diplôme d'études en langue française) — B2"],
+            internships: ['Lancing College (2017-2018) — Великобритания', 'Ca’Foscari University of Venice (2022) — Италия'],
+            sertificate: ['FCE (First Certificate in English) — C1 (180/190) ⠀', "TOEFL — C2 (110/120)", "IELTS — C1 (8.0/9.0)⠀", "CILS — B2"],
             levelLang: [
                 {
                     level: '6',
@@ -91,7 +91,7 @@ export const teachers = [
         about: {
             education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
             internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
-            sertificate: ['FCE (First Certificate in English) — C1', "DELF (Diplôme d'études en langue française) — B2"],
+            sertificate: ['PET (Preliminary English Test) — B2', "DELF (Diplôme d'études en langue française) — С1"],
             levelLang: [
                 {
                     level: '3',
@@ -155,8 +155,8 @@ export const teachers = [
         popImage: popwomen4,
         about: {
             education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
-            internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
-            sertificate: ['FCE (First Certificate in English) — C1', "DELF (Diplôme d'études en langue française) — B2"],
+            internships: ['Lancing College (2017-2018) — Великобритания', 'Ca’Foscari University of Venice (2022) — Италия'],
+            sertificate: ['FCE (First Certificate in English) — C1 (180/190) ⠀', "TOEFL — C2 (110/120)", "IELTS — C1 (8.0/9.0)⠀", "CILS — B2"],
             levelLang: [
                 {   
                     level: '2',

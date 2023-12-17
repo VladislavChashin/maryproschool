@@ -4,6 +4,18 @@ import classes from '../../../source/images/main/class.png'
 import womenClass from '../../../source/images/main/womenClass.png'
 import  komnata1 from '../../../source/images/main/komnata1.png'
 import komnata2 from '../../../source/images/main/komnata2.png'
+import img1 from '../../../source/images/main/DSC_031.jpg'
+import img2 from '../../../source/images/main/DSC_032.jpg'
+import img3 from '../../../source/images/main/DSC_033.jpg'
+import img4 from '../../../source/images/main/DSC_034.jpg'
+import img5 from '../../../source/images/main/DSC_035.jpg'
+import img6 from '../../../source/images/main/DSC_036.jpg'
+import img7 from '../../../source/images/main/DSC_037.jpg'
+import img8 from '../../../source/images/main/IMG_3059.jpeg'
+import img9 from '../../../source/images/main/IMG_3060.jpeg'
+import img10 from '../../../source/images/main/IMG_3061.jpeg'
+import img11 from '../../../source/images/main/3.png'
+
 import man1 from '../../../source/images/main/man1.jpg'
 import women1 from '../../../source/images/main/women1.jpg'
 import women2 from '../../../source/images/main/women2.jpg'
@@ -79,8 +91,20 @@ export const schoolImage = [
         src: classes,
     },
     {
-        id: 4,
-        src: womenClass,
+        id: 5,
+        src: img8,
+    },
+    {
+        id: 6,
+        src: img9,
+    },
+    {
+        id: 7,
+        src: img10,
+    },
+    {
+        id: 8,
+        src: img11,
     },
 ]
 export const schoolImage_two = [
@@ -100,6 +124,35 @@ export const schoolImage_two = [
         id: 4,
         src: womenClass,
     },
+    {
+        id: 5,
+        src: img1,
+    },
+    {
+        id: 6,
+        src: img2,
+    },
+    {
+        id: 7,
+        src: img3,
+    },
+    {
+        id: 8,
+        src: img4,
+    },
+    {
+        id: 9,
+        src: img5,
+    },
+    {
+        id: 10,
+        src: img6,
+    },
+    {
+        id: 11,
+        src: img7,
+    },
+    
 ]
 
 export const teachers = {

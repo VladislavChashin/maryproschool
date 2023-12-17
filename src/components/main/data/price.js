@@ -1,6 +1,7 @@
 import {teachers} from './teachers.js'
 
-const price = [
+export const price_eng = [
+    
     {
         nameLess: 'Занятия для детей',
         type:[
@@ -240,5 +241,329 @@ const price = [
     //     ]
     // },
 ]
+export const price_italy = [
+    
+    {
+        nameLess: 'Занятия для детей',
+        type:[
+            {
+                typeLess: 'Групповые занятия',
+                quant: 'Абонемент (4 занятия)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '1250 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1000 руб.',
+                        twoPrice: '3600 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Парные занятия',
+                quant: 'Абонемент (4 занятий)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '1500 руб.',
+                        twoPrice: '5600 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1200 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Индивидуальные занятия',
+                quant: 'Абонемент (4 занятий)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '2200 руб.',
+                        twoPrice: '8000 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1400 руб.',
+                        twoPrice: '5000 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+        ]
+    },
+    {
+        nameLess: 'Занятия для взрослых',
+        type:[
+            {
+                typeLess: 'Групповые занятия',
+                quant: 'Абонемент (4 занятия)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1250 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[1]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1000 руб.',
+                        twoPrice: '3600 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Парные занятия',
+                quant: 'Абонемент (4 занятийя)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '1500 руб.',
+                        twoPrice: '5600 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1200 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Индивидуальные занятия',
+                quant: 'Абонемент (4 занятия)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '2200 руб.',
+                        twoPrice: '7900 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1400 руб.',
+                        twoPrice: '4900 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+        ]
+    },
+    {
+        nameLess: 'Подготовка к CILS',
+        type:[
+            {
+                typeLess: 'Курс CILS B1(B2) — 12 занятий',
+                quant: 'Абонемент (12 занятий)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '24000 руб.',
+                        twoPrice: '30000 руб.',
+                        data: teachers[1]
+                    }
+                ]
+            },
+            // {
+            //     typeLess: 'Групповые занятия(офлайн)',
+            //     quant: 'Абонемент (4 занятия)',
+            //     less:[
+            //         {
+            //             img:'',
+            //             teachName: 'Павел Кричевский',
+            //             onePrice: '900 руб.',
+            //             twoPrice: '1400 руб.'
+            //         }
+            //     ]
+            // },
+        ]
+    },
+    // {
+    //     nameLess: 'Speaking Club',
+    //     type:[
+    //         {
+    //             typeLess: 'Speaking club (A2-B1)',
+    //             quant: 'Абонемент (4 занятия)',
+    //             less:[
+    //                 {
+    //                     img:'',
+    //                     teachName: 'Анастасия Болотова',
+    //                     onePrice: '700 руб.',
+    //                     twoPrice: '2500 руб.'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             typeLess: 'Speaking club (B2-C1)',
+    //             quant: 'Абонемент (4 занятия)',
+    //             less:[
+    //                 {
+    //                     img:'',
+    //                     teachName: 'Анастасия Болотова',
+    //                     onePrice: '800 руб.',
+    //                     twoPrice: '3000 руб. '
+    //                 }
+    //             ]
+    //         },
+    //     ]
+    // },
+]
+export const price_franch = [
+    
+    {
+        nameLess: 'Занятия для детей',
+        type:[
+            {
+                typeLess: 'Групповые занятия',
+                quant: 'Абонемент (4 занятия)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '1250 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Ксения Лагутина',
+                        onePrice: '1000 руб.',
+                        twoPrice: '3600 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Парные занятия',
+                quant: 'Абонемент (4 занятий)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '1500 руб.',
+                        twoPrice: '5600 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Ксения Лагутина',
+                        onePrice: '1200 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Индивидуальные занятия',
+                quant: 'Абонемент (4 занятий)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '2200 руб.',
+                        twoPrice: '8000 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Ксения Лагутина',
+                        onePrice: '1400 руб.',
+                        twoPrice: '5000 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+        ]
+    },
+    {
+        nameLess: 'Занятия для взрослых',
+        type:[
+            {
+                typeLess: 'Групповые занятия',
+                quant: 'Абонемент (4 занятия)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Анастасия Болотова',
+                        onePrice: '1250 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[1]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Ксения Лагутина',
+                        onePrice: '1000 руб.',
+                        twoPrice: '3600 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Парные занятия',
+                quant: 'Абонемент (4 занятийя)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '1500 руб.',
+                        twoPrice: '5600 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Ксения Лагутина',
+                        onePrice: '1200 руб.',
+                        twoPrice: '4500 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+            {
+                typeLess: 'Индивидуальные занятия',
+                quant: 'Абонемент (4 занятия)',
+                less:[
+                    {
+                        img:'',
+                        teachName: 'Мария Кричевская',
+                        onePrice: '2200 руб.',
+                        twoPrice: '7900 руб.',
+                        data: teachers[0]
+                    },
+                    {
+                        img:'',
+                        teachName: 'Ксения Лагутина',
+                        onePrice: '1400 руб.',
+                        twoPrice: '4900 руб.',
+                        data: teachers[1]
+                    },
+                ]
+            },
+        ]
+    },
+]
 
-export default price

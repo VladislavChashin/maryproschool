@@ -175,7 +175,11 @@
                 font-weight: 600;
                 line-height: normal;
                 cursor: pointer;
-                
+                transition: .3s;
+                &:hover{
+                    color: #FFF;
+                    background: #60BFE1;
+                }
             }
         }
     }
