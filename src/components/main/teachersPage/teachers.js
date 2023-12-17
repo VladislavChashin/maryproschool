@@ -11,7 +11,7 @@ export default function AllTeachers(){
     return(
         <>
             <div className="AllTeachers">
-                <div className=" wow animate__animated animate__fadeIn chooseCourse_tabs">
+                <div className="chooseCourse_tabs">
                     <button className={count === 1 ? 'active': ''} onClick={() => {setLenguage('eng'); setCount(1)}}>Английский</button>
                     <button className={count === 2 ? 'active': ''} onClick={() => {setLenguage('italy'); setCount(2)}}>Итальянский</button>
                     <button className={count === 3 ? 'active': ''} onClick={() => {setLenguage('franch'); setCount(3)}}>Французкий</button>
