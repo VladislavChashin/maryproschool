@@ -127,7 +127,7 @@ export const price_eng = [
             },
             {
                 typeLess: 'Парные занятия',
-                quant: 'Абонемент (4 занятийя)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
@@ -268,7 +268,7 @@ export const price_italy = [
             },
             {
                 typeLess: 'Парные занятия',
-                quant: 'Абонемент (4 занятий)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
@@ -288,7 +288,7 @@ export const price_italy = [
             },
             {
                 typeLess: 'Индивидуальные занятия',
-                quant: 'Абонемент (4 занятий)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
@@ -333,7 +333,7 @@ export const price_italy = [
             },
             {
                 typeLess: 'Парные занятия',
-                quant: 'Абонемент (4 занятийя)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
@@ -460,7 +460,7 @@ export const price_franch = [
             },
             {
                 typeLess: 'Парные занятия',
-                quant: 'Абонемент (4 занятий)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
@@ -480,7 +480,7 @@ export const price_franch = [
             },
             {
                 typeLess: 'Индивидуальные занятия',
-                quant: 'Абонемент (4 занятий)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
@@ -525,7 +525,7 @@ export const price_franch = [
             },
             {
                 typeLess: 'Парные занятия',
-                quant: 'Абонемент (4 занятийя)',
+                quant: 'Абонемент (4 занятия)',
                 less:[
                     {
                         img:'',
