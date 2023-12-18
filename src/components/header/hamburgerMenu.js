@@ -19,7 +19,7 @@ function HamburgerMenu() {
         <div className={`hamburger_menu ${click === true ? 'open' : ''}`} onClick={()=>{setClick(prev => !prev); lockScroll(click)}}>
             {click === true ? <img src={menuX} alt="" /> : <img src={menu} alt="" />}
         </div>
-        <div className={`menu_content ${click === true ? 'open' : ''}`}>
+        <div className={`menu_content ${click === true ? 'open slide-in-top' : ''}`}>
             <ul>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/maryproschool/">О нас</NavLink></li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/teacher/">Преподаватели</NavLink></li>

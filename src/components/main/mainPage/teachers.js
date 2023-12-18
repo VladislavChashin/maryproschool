@@ -1,6 +1,8 @@
 import { teachers } from "../data/course";
 import strelka from '../../../source/images/index/arrowRightblue.svg'
 import './styles/teacers.scss';
+import { NavLink } from 'react-router-dom';
+import { NavLink as Link } from "react-router-dom";
 
 export default function Teachers(){
     return(
@@ -15,7 +17,7 @@ export default function Teachers(){
                                 6 сильнейших преподавателя, <br />
                                 которые доведут <br />
                                 вас до результатов</p>
-                            <a href="#">О преподавателях <img src={strelka} alt="" /></a>
+                            <NavLink to="/teacher/">О преподавателях<img src={strelka} alt="" /></NavLink>
                         </div>
                     </div>
                     <div className="teachers_otherTeacher ">

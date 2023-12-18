@@ -21,7 +21,7 @@ export default function AboutTeacherPopup(){
     return(
         <>
             <div className=" modalWraper_teacher">
-                <div className="wow animate__animated animate__fadeInRight animate__faster TeacherPopAp">
+                <div className="TeacherPopAp slide-in-right">
                     <div className=" TeacherPopAp_header">
                         <p>О преподавателе</p>
                         <img src={Close} alt="" onClick={()=> {dispatch(incrementTeacher()); unlockScroll()}}/>

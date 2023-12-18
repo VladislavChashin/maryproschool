@@ -36,7 +36,16 @@
                 max-width: min-content;
                 min-width: none;
             }
-            img{border-radius: 16px;
+            img{
+                border-radius: 16px;
+                @media (max-width: 1440px){
+                    max-width: 320px;
+                    
+                }
+                @media (max-width: 1280px){
+                    max-width: 280px;
+                }
+                    
                 @media (max-width: 768px){
                     min-width: -webkit-fill-available;
                 }
@@ -55,6 +64,15 @@
                 line-height: 130%; /* 26px */
                 letter-spacing: -0.6px;
                 margin: 10px 0 0;
+                @media (max-width: 1440px){
+                    max-width: 320px;
+                }
+                @media (max-width: 1280px){
+                    max-width: 280px;
+                }
+                @media (max-width: 500px){
+                    max-width: -webkit-fill-available;
+                }
                 @media (max-width: 768px){
                     font-size: 18px;
                 }
@@ -78,17 +96,25 @@
             display: flex;
             width: 50%;
             @media (max-width: 1464px){
-                flex-wrap: wrap;
+            
                 margin-right: 10px;
             }
             @media (max-width: 1138px){
-                width: -webkit-fill-available;
+                // width: -webkit-fill-available;
                 margin-right: 0;
+                flex-wrap: wrap;
+            }
+            @media (max-width: 500px){
+                width: -webkit-fill-available;
             }
             
             .headTeacher_description{
                 margin-left: 20px;
-                @media (max-width: 1464px){
+                @media (max-width: 1440px){
+                    margin-left: 20px;
+
+                }
+                @media (max-width: 1138px){
                     margin-left: 0;
                 }
                 @media (max-width: 591px){
@@ -103,6 +129,14 @@
                     line-height: 110%; /* 29.7px */
                     letter-spacing: -1.89px;
                     margin: 0 0 30px;
+                    @media (max-width: 1440px){
+                        font-size: 24px;
+                        letter-spacing: -1.68px;
+                    }
+                    @media (max-width: 1280px){
+                        font-size: 20px;
+                        letter-spacing: -1.4px;
+                    }
                     @media (max-width: 768px){
                         font-size: 20px;
                         br{
@@ -148,13 +182,22 @@
             flex-wrap: wrap;
             justify-content: space-between;
             max-width: 740px;
+            @media (max-width: 1440px){
+                max-width: 660px;
+            }
+            @media (max-width: 1280px){
+                max-width: 580px;
+            }
             @media (max-width: 1138px){
-                max-width: 100%;
+                max-width: min-content;
                 justify-content: space-around;
             }
             @media (max-width: 756px){
                 margin-top: 30px;
                 justify-content: center;
+            }
+            @media (max-width: 500px){
+                max-width: -webkit-fill-available;
             }
             .imageBlock{
                 // p{

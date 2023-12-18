@@ -163,7 +163,9 @@
                                 width: 100%;
                             }
                             img{
-                                height: fit-content;
+                                max-width: 64px;
+                                max-height: 64px;
+                                border-radius: 50% 50%;
                             }
                             p{
                                 color: var(--light-mode-label-primary, #222);
@@ -232,6 +234,12 @@
                             font-weight: 400;
                             line-height: 100%; /* 18px */
                             letter-spacing: -0.54px;
+                            transition: .3s;
+                            cursor: pointer;
+                            &:hover{
+                                background: #60BFE0;
+                                color: #FFF;
+                            }
                         }
                     }
                 }

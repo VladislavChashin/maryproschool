@@ -1,4 +1,9 @@
 import {teachers} from './teachers.js'
+import women1 from '../../../source/images/main/women1о.png'
+import women2 from '../../../source/images/main/oval.png'
+import women3 from '../../../source/images/main/women3o.png'
+import women4 from '../../../source/images/main/women4o.png'
+import women5 from '../../../source/images/main/women5o.png'
 
 export const price_eng = [
     
@@ -10,21 +15,21 @@ export const price_eng = [
                 quant: 'Абонемент (8 занятий)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1000 руб.',
                         twoPrice: '7200 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '800 руб.',
                         twoPrice: '4800 руб.',
                         data: teachers[2]
                     },
                     {
-                        img:'',
+                        img:women4,
                         teachName: 'Джамилия Аслановна',
                         onePrice: '800 руб.',
                         twoPrice: '4800 руб.',
@@ -37,21 +42,21 @@ export const price_eng = [
                 quant: 'Абонемент (8 занятий)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1350 руб.',
                         twoPrice: '10000 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1100 руб.',
                         twoPrice: '6400 руб.',
                         data: teachers[2]
                     },
                     {
-                        img:'',
+                        img: women4,
                         teachName: 'Джамилия Аслановна',
                         onePrice: '1000 руб.',
                         twoPrice: '6400 руб.',
@@ -64,28 +69,28 @@ export const price_eng = [
                 quant: 'Абонемент (8 занятий)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '2300 руб.',
                         twoPrice: '17600 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1400 руб.',
                         twoPrice: '10500 руб.',
                         data: teachers[2]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1400 руб.',
                         twoPrice: '10500 руб.',
                         data: teachers[1]
                     },
                     {
-                        img:'',
+                        img: women4,
                         teachName: 'Джамилия Аслановна',
                         onePrice: '1400 руб.',
                         twoPrice: '10500 руб.',
@@ -103,21 +108,21 @@ export const price_eng = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1000₽ руб.',
                         twoPrice: '3600 руб.',
                         data: teachers[1]
                     },
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1250 руб.',
                         twoPrice: '4500 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1000 руб.',
                         twoPrice: '3600 руб.',
@@ -130,21 +135,21 @@ export const price_eng = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1500 руб.',
                         twoPrice: '5600 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1200 руб.',
                         twoPrice: '4500 руб.',
                         data: teachers[2]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1200 руб.',
                         twoPrice: '4500 руб.',
@@ -157,21 +162,21 @@ export const price_eng = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '2200 руб.',
                         twoPrice: '8500 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1400 руб.',
                         twoPrice: '5200 руб.',
                         data: teachers[2]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1400 руб.',
                         twoPrice: '5200 руб.',
@@ -189,7 +194,7 @@ export const price_eng = [
                 quant: 'Абонемент (8 занятий)',
                 less:[
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '800 руб.',
                         twoPrice: '6000 руб.',
@@ -202,7 +207,7 @@ export const price_eng = [
             //     quant: 'Абонемент (4 занятия)',
             //     less:[
             //         {
-            //             img:'',
+            //             img: women3,
             //             teachName: 'Павел Кричевский',
             //             onePrice: '900 руб.',
             //             twoPrice: '1400 руб.'
@@ -219,7 +224,7 @@ export const price_eng = [
     //             quant: 'Абонемент (4 занятия)',
     //             less:[
     //                 {
-    //                     img:'',
+    //                     img: women3,
     //                     teachName: 'Анастасия Болотова',
     //                     onePrice: '700 руб.',
     //                     twoPrice: '2500 руб.'
@@ -231,7 +236,7 @@ export const price_eng = [
     //             quant: 'Абонемент (4 занятия)',
     //             less:[
     //                 {
-    //                     img:'',
+    //                     img: women3,
     //                     teachName: 'Анастасия Болотова',
     //                     onePrice: '800 руб.',
     //                     twoPrice: '3000 руб. '
@@ -251,14 +256,14 @@ export const price_italy = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1250 руб.',
                         twoPrice: '4500 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1000 руб.',
                         twoPrice: '3600 руб.',
@@ -271,14 +276,14 @@ export const price_italy = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1500 руб.',
                         twoPrice: '5600 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1200 руб.',
                         twoPrice: '4500 руб.',
@@ -291,14 +296,14 @@ export const price_italy = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '2200 руб.',
                         twoPrice: '8000 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1400 руб.',
                         twoPrice: '5000 руб.',
@@ -316,14 +321,14 @@ export const price_italy = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1250 руб.',
                         twoPrice: '4500 руб.',
                         data: teachers[1]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1000 руб.',
                         twoPrice: '3600 руб.',
@@ -336,14 +341,14 @@ export const price_italy = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1500 руб.',
                         twoPrice: '5600 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1200 руб.',
                         twoPrice: '4500 руб.',
@@ -356,14 +361,14 @@ export const price_italy = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '2200 руб.',
                         twoPrice: '7900 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1400 руб.',
                         twoPrice: '4900 руб.',
@@ -381,7 +386,7 @@ export const price_italy = [
                 quant: 'Абонемент (12 занятий)',
                 less:[
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '24000 руб.',
                         twoPrice: '30000 руб.',
@@ -394,7 +399,7 @@ export const price_italy = [
             //     quant: 'Абонемент (4 занятия)',
             //     less:[
             //         {
-            //             img:'',
+            //             img: women3,
             //             teachName: 'Павел Кричевский',
             //             onePrice: '900 руб.',
             //             twoPrice: '1400 руб.'
@@ -411,7 +416,7 @@ export const price_italy = [
     //             quant: 'Абонемент (4 занятия)',
     //             less:[
     //                 {
-    //                     img:'',
+    //                     img: women3,
     //                     teachName: 'Анастасия Болотова',
     //                     onePrice: '700 руб.',
     //                     twoPrice: '2500 руб.'
@@ -423,7 +428,7 @@ export const price_italy = [
     //             quant: 'Абонемент (4 занятия)',
     //             less:[
     //                 {
-    //                     img:'',
+    //                     img: women3,
     //                     teachName: 'Анастасия Болотова',
     //                     onePrice: '800 руб.',
     //                     twoPrice: '3000 руб. '
@@ -443,14 +448,14 @@ export const price_franch = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1250 руб.',
                         twoPrice: '4500 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1000 руб.',
                         twoPrice: '3600 руб.',
@@ -463,14 +468,14 @@ export const price_franch = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1500 руб.',
                         twoPrice: '5600 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1200 руб.',
                         twoPrice: '4500 руб.',
@@ -483,14 +488,14 @@ export const price_franch = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '2200 руб.',
                         twoPrice: '8000 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1400 руб.',
                         twoPrice: '5000 руб.',
@@ -508,14 +513,14 @@ export const price_franch = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women1,
                         teachName: 'Анастасия Болотова',
                         onePrice: '1250 руб.',
                         twoPrice: '4500 руб.',
                         data: teachers[1]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1000 руб.',
                         twoPrice: '3600 руб.',
@@ -528,14 +533,14 @@ export const price_franch = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '1500 руб.',
                         twoPrice: '5600 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1200 руб.',
                         twoPrice: '4500 руб.',
@@ -548,14 +553,14 @@ export const price_franch = [
                 quant: 'Абонемент (4 занятия)',
                 less:[
                     {
-                        img:'',
+                        img: women2,
                         teachName: 'Мария Кричевская',
                         onePrice: '2200 руб.',
                         twoPrice: '7900 руб.',
                         data: teachers[0]
                     },
                     {
-                        img:'',
+                        img: women3,
                         teachName: 'Ксения Лагутина',
                         onePrice: '1400 руб.',
                         twoPrice: '4900 руб.',

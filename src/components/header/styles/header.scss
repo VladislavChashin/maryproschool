@@ -110,7 +110,7 @@ header{
                 }
             }
             .phone{
-                p{
+                a{
                     margin: 5px 0;
                     color: var(--color-blue, #60BFE1);
                     font-family: InterReg;
@@ -119,6 +119,8 @@ header{
                     font-weight: 500;
                     line-height: normal;
                     transition: 0.3s;
+                    padding: 0px;
+                    border: none;
                     &:hover{  
                         cursor: pointer;
                     }

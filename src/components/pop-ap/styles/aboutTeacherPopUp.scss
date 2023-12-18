@@ -1,3 +1,28 @@
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .modalWraper_teacher{
     position: fixed;
     top: 0;
@@ -16,6 +41,7 @@
         justify-content: center;
         align-items: center;
     }
+    
     .TeacherPopAp{
         flex-shrink:0;
         display: flex;
@@ -30,6 +56,10 @@
         @media (max-width: 768px){
             width: -webkit-fill-available;
             max-height: 568px;
+        }
+        &.slide-in-right {
+            -webkit-animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
         .TeacherPopAp_header{
             display: flex;
@@ -362,9 +392,7 @@
                     padding: 16px 15px;
                 }
                 &:hover{
-                   
-                    background: #FFF;
-                    color: #60BFE1;
+                    font-size: 16.6px;
                 }
             }
         }

@@ -84,7 +84,7 @@ function GroupBlock_blockPrice(props){
         <div className="groupBlock_blockPrice">
             <div className="blockPrice_prices">
                 <div className="prices_name">
-                    <img src={oval} alt="" />
+                    <img src={props.props.img} alt="" />
                     <p>{props.props.teachName}</p>
                 </div>
                 <p className="one">{props.props.onePrice}</p>

@@ -30,12 +30,11 @@ export default function Navbar(){
                     <li className={window.location.pathname == '/maryproschool/' ? 'active' : ''} onClick={()=> setActive(1)}><NavLink to="/maryproschool/">О нас</NavLink></li>
                     <li className={window.location.pathname == '/teacher/' ? 'active' : ''} onClick={()=> setActive(2)}><NavLink to="/teacher/">Преподаватели</NavLink></li>
                     <li className={window.location.pathname == '/price/' ? 'active' : ''} onClick={()=> setActive(3)}><NavLink to="/price/">Цены</NavLink></li>
-                    <li className={window.location.pathname == '/revews/' ? 'active' : ''} onClick={()=> setActive(4)}><NavLink to="/revews/">Отзывы</NavLink></li>
                     <li className={window.location.pathname == '/contacts/' ? 'active' : ''} onClick={()=> setActive(5)}><NavLink to="/contacts/">Контакты</NavLink></li>
                 </ul>
             </nav>
             <div className="phone backgroundFon">
-                {width >= 1600 ? <p>+7 (977) 541-16-33 </p>: <img src={call} alt="" />}
+                {width >= 1600 ? <a href="tel:+79775411633">+7 (977) 541-16-33</a>: <img src={call} alt="" />}
             </div>
             <div className="mobile_nav backgroundFon">
                 <HamburgerMenu/>

@@ -4,6 +4,10 @@ import './styles/footer.scss'
 import { incrementFooter } from "../main/loadReduser"
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
+import { NavLink as Link } from "react-router-dom";
+
+
 export default function Footer(){
     const dispatch = useDispatch()
     useEffect(() => {
@@ -17,25 +21,25 @@ export default function Footer(){
                     <div className="nav_home">
                         <p>Главная</p>
                         <ul>
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Преподаватели</a></li>
-                            <li><a href="">Занятия для детей</a></li>
-                            <li><a href="">Занятия для взрослых</a></li>
+                            <li><NavLink to="/maryproschool/">О нас</NavLink></li>
+                            <li><NavLink to="/teacher/">Преподаватели</NavLink></li>
+                            <li><a href="#">Занятия для детей</a></li>
+                            <li><a href="#">Занятия для взрослых</a></li>
                         </ul>
                     </div>
                     <div className="nav_contacts">
                         <p>Контакты</p>
                         <ul>
-                            <li><a href="">Цены</a></li>
-                            <li><a href="">Отзывы</a></li>
+                            <li><NavLink to="/price/">Цены</NavLink></li>
+                           
                         </ul>
                     </div>
                     <div className="nav_contact_text">
                         <ul>
-                            <li><a href="">+7 (977) 541-16-33</a></li>
-                            <li><a href="">marypro.school@yandex.ru</a></li>
-                            <li><a href="">г. Чехов, ул. Полиграфистов 1с2</a></li>
-                            <li><a href="">г. Чехов, мкр. Губернский, ул. Земская, д.3</a></li>
+                            <li><a href="tel:+79775411633">+7 (977) 541-16-33</a></li>
+                            <li><a href="mailto:marypro.school@yandex.ru">marypro.school@yandex.ru</a></li>
+                            <li><NavLink to="/contacts/">г. Чехов, ул. Полиграфистов 1с2</NavLink></li>
+                            <li><NavLink to="/contacts/">г. Чехов, мкр. Губернский, ул. Земская, д.3</NavLink></li>
                             <li> <img src={vk} alt="" /><img src={inst} alt="" /> </li>
                         </ul>
                     </div>
