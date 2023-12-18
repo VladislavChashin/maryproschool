@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/maryproschool/static/css/main.4903125e.css",
-    "main.js": "/maryproschool/static/js/main.e464dae6.js",
+    "main.css": "/maryproschool/static/css/main.a84520cd.css",
+    "main.js": "/maryproschool/static/js/main.f6c40bb0.js",
     "static/js/787.55ba843b.chunk.js": "/maryproschool/static/js/787.55ba843b.chunk.js",
     "static/media/IMG_3060.jpeg": "/maryproschool/static/media/IMG_3060.9941d6e4369ab3c7082c.jpeg",
     "static/media/IMG_3061.jpeg": "/maryproschool/static/media/IMG_3061.164b75d2e40334f602d4.jpeg",
@@ -40,8 +40,12 @@
     "static/media/women1.jpg": "/maryproschool/static/media/women1.c0a45704b4d6de78c3a0.jpg",
     "static/media/3.png": "/maryproschool/static/media/3.f519739e70707bb3bcc2.png",
     "static/media/speckFranch.svg": "/maryproschool/static/media/speckFranch.d47e53b4975eb07efc7825a5bc72545f.svg",
+    "static/media/women4o.png": "/maryproschool/static/media/women4o.8f953ea55e1adb82ee33.png",
+    "static/media/women3o.png": "/maryproschool/static/media/women3o.65d0bfbc85dbe02571b7.png",
     "static/media/CTA.png": "/maryproschool/static/media/CTA.63f4d3fb332845533ca7.png",
     "static/media/indivFranch.svg": "/maryproschool/static/media/indivFranch.057246dc53dd92aa30b02e1f56ed6161.svg",
+    "static/media/women1о.png": "/maryproschool/static/media/women1о.4abb4a7979f0cf801cc3.png",
+    "static/media/women5o.png": "/maryproschool/static/media/women5o.08498be22e0393d0d904.png",
     "static/media/twoClassroom.svg": "/maryproschool/static/media/twoClassroom.3329d9dd2164e99a220bb828874d69cb.svg",
     "static/media/Manrope-Medium.woff2": "/maryproschool/static/media/Manrope-Medium.9cccfee0f8d3153ae547.woff2",
     "static/media/Manrope-Regular.woff2": "/maryproschool/static/media/Manrope-Regular.cb78aabfaaf5d95c8665.woff2",
@@ -69,12 +73,12 @@
     "static/media/galochka.svg": "/maryproschool/static/media/galochka.56c9fea9fe93d1f5fe0cc9982fbf61d1.svg",
     "static/media/arrowRight.svg": "/maryproschool/static/media/arrowRight.9e467a6f7ac80d19c23ce2bda410d067.svg",
     "static/media/Arrow.svg": "/maryproschool/static/media/Arrow.8d2e77db70658198bd3e95d97f8cd28e.svg",
-    "main.4903125e.css.map": "/maryproschool/static/css/main.4903125e.css.map",
-    "main.e464dae6.js.map": "/maryproschool/static/js/main.e464dae6.js.map",
+    "main.a84520cd.css.map": "/maryproschool/static/css/main.a84520cd.css.map",
+    "main.f6c40bb0.js.map": "/maryproschool/static/js/main.f6c40bb0.js.map",
     "787.55ba843b.chunk.js.map": "/maryproschool/static/js/787.55ba843b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4903125e.css",
-    "static/js/main.e464dae6.js"
+    "static/css/main.a84520cd.css",
+    "static/js/main.f6c40bb0.js"
   ]
 }
