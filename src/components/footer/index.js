@@ -23,8 +23,8 @@ export default function Footer(){
                         <ul>
                             <li><NavLink to="/maryproschool/">О нас</NavLink></li>
                             <li><NavLink to="/teacher/">Преподаватели</NavLink></li>
-                            <li><a href="#">Занятия для детей</a></li>
-                            <li><a href="#">Занятия для взрослых</a></li>
+                            <li><NavLink to="/price/">Занятия для детей</NavLink></li>
+                            <li><NavLink to="/price/">Занятия для взрослых</NavLink></li>
                         </ul>
                     </div>
                     <div className="nav_contacts">
