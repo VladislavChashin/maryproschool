@@ -73,7 +73,7 @@
             padding: 30px;
             border-radius: 32px;
             background: #FFF;
-            gap: 15px;
+            gap: 40px;
             @media (max-width: 1024px){
                 padding: 16px;
             }
@@ -85,7 +85,7 @@
                     display: flex;
                     justify-content: space-between;
                     max-width: 1253px;
-                    margin:  0 0 20px 0;
+                    margin:  0 0 5px 0;
                     
                     p{
                         color: var(--color-light-black, #424344);

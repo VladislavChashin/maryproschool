@@ -21,7 +21,7 @@ export default function Footer(){
                     <div className="nav_home">
                         <p>Главная</p>
                         <ul>
-                            <li><NavLink to="/maryproschool/">О нас</NavLink></li>
+                            <li><NavLink to="/">О нас</NavLink></li>
                             <li><NavLink to="/teacher/">Преподаватели</NavLink></li>
                             <li><NavLink to="/price/">Занятия для детей</NavLink></li>
                             <li><NavLink to="/price/">Занятия для взрослых</NavLink></li>

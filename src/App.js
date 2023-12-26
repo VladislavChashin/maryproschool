@@ -14,10 +14,10 @@ function App() {
     <> 
     <Router>
       <Routes>
-        <Route path='/maryproschool/' element={<MainPage/>} />
-        <Route path='/teacher/' element={<TeachersPage/>} />
-        <Route path='/price/' element={<PricePage/>} />
-        <Route path='/contacts/' element={<ContactPage/>} />
+        <Route path='/' element={<MainPage/>} />
+        <Route path='/teacher' element={<TeachersPage/>} />
+        <Route path='/price' element={<PricePage/>} />
+        <Route path='/contacts' element={<ContactPage/>} />
       </Routes>
     </Router>
       

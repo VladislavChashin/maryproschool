@@ -21,10 +21,9 @@ function HamburgerMenu() {
         </div>
         <div className={`menu_content ${click === true ? 'open slide-in-top' : ''}`}>
             <ul>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/maryproschool/">О нас</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/">О нас</NavLink></li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/teacher/">Преподаватели</NavLink></li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/price/">Цены</NavLink></li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}>Отзывы</li>
                 <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/contacts/">Контакты</NavLink></li>
             </ul>
         </div>

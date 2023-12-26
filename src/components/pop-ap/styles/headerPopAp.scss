@@ -1,3 +1,25 @@
+// @-webkit-keyframes slide-bottom {
+//     0% {
+//       -webkit-transform: translateY(0);
+//               transform: translateY(0);
+//     }
+//     100% {
+//       -webkit-transform: translateY(100px);
+//               transform: translateY(100px);
+//     }
+//   }
+//   @keyframes slide-bottom {
+//     0% {
+//       -webkit-transform: translateY(-100px);
+//               transform: translateY(-100px);
+//     }
+//     100% {
+//       -webkit-transform: translateY(0);
+//               transform: translateY(0);
+//     }
+//   }
+  
+
 
 .modalWraper{
     position: fixed;
@@ -64,6 +86,7 @@
                 cursor: pointer;
                 @media (max-width: 425px){
                     padding: 10px;
+                    margin: 0 10px;
                 }
             }
         }
@@ -73,7 +96,11 @@
             padding: 0 20px;
             @media (max-width: 425px){
                 padding: 0 10px;
-
+                
+            }
+            .chooses{
+                display: flex;
+                flex-direction: column;
             }
             .dropdown {
                 position: relative;
@@ -86,6 +113,10 @@
                 width: -webkit-fill-available;
                 z-index: 1;
                 border-radius: 16px;
+                .slide-bottom {
+                    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
                     a {
                         color: var(--color-light-blue-main, #60BFE1);;
                         padding: 12px 20px;
@@ -126,6 +157,10 @@
                     display: flex;
                     flex-direction: column;
                 }
+                // &.slide-bottom {
+                //     -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                //             animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                // }
               }
               .dropdown-content_two {
                 display: none;
@@ -355,10 +390,10 @@
             border: 1px solid var(--color-light-blue-main, #60BFE1);
             cursor: pointer;
             transition: 0.3s;
-            margin: 0 20px 20px;
+            margin: 0 0 20px;
             @media (max-width: 425px){
                 font-size: 14px;
-                margin: 0 10px 10px;
+                margin: 0 0 10px;
             }
             &:hover{
                 border: 1px solid var(--color-light-blue-main, #60BFE1);

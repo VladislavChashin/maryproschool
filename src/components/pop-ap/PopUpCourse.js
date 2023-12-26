@@ -9,7 +9,7 @@ import emailjs, { init } from "@emailjs/browser";
 import {incrementTeacher } from '../main/teachersPage/aboutTeacherReduser'
 
 export default  function PopApCourse(){
-    init("dLtHI5bX9VtTECP7q");
+    init("iB0P9GFFuQN87rpKe");
     const count = useSelector(state => state.counter.value)
     const dataLang = useSelector(state => state.counter.dataLang)
     const dataLess = useSelector(state => state.counter.dataLess)
@@ -20,7 +20,7 @@ export default  function PopApCourse(){
     const form = useRef();
     const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm("service_shzqosg", "template_0z9rm9r", form.current, 'dLtHI5bX9VtTECP7q').then(
+    emailjs.sendForm("service_xz8hpzs", "template_d6a9rk6", form.current, 'iB0P9GFFuQN87rpKe').then(
         (result) => {
         console.log(result.text);
         },
@@ -59,7 +59,7 @@ export default  function PopApCourse(){
                     <img src={Close} alt="" onClick={()=> {dispatch(increment()); dispatch(dataIncrement({ dataLang: null, dataLess: null, dataTeach: null})); unlockScroll()}}/>
                 </div>
                 <form className="choose" onSubmit={handleSubmit} ref={form}>
-                    <div className="choose">
+                    <div className="chooses">
                         <div className="dropdown">
                             <div className = {`button ${(dataLang && dropdown == 1) ? 'active focus_one': dataLang ? 'active' : dropdown == 1 ? 'focus_one': ''}`} >
                                 <a onClick={()=>{setDropdown(dropdown == 1 ? 0 : 1)}}> 
@@ -69,7 +69,7 @@ export default  function PopApCourse(){
                             </div>
                                     
                                     
-                            <div className={`wow animate__animated animate__fadeIn dropdown-content_one ${dropdown == 1 ? 'active' : ''}`}>
+                            <div className={` dropdown-content_one ${dropdown == 1 ? 'active slide-bottom' : ''}`}>
                                 <a onClick={() => (dispatch(dataIncrement({ dataLang: 'eng', dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}>Английский</a>
                                 <a style={dataTeach === 'Анастасия Юрьевна Болотова' || dataTeach === null ? {} : {display: 'none'}} onClick={() => (dispatch(dataIncrement({ dataLang: 'italy', dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}>Итальянский</a>
                                 <a style={dataTeach === 'Мария Павловна Кричевская' || dataTeach === 'Ксения Александровна Лагутина' || dataTeach === null ? {} : {display: 'none'}} onClick={() => (dispatch(dataIncrement({ dataLang: 'franch', dataLess: dataLess, dataTeach: dataTeach})), setDropdown(0))}>Французкий</a>

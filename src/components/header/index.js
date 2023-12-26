@@ -88,7 +88,7 @@ export function HeaderTeach(props){
                         <Navbar/>
                     </div>
                     <div className="header_content ">
-                        <div className="nav"><Link to={'/maryproschool/'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>{props.props === 'Стоимость занятий'?'Цены': props.props}</Link></div>
+                        <div className="nav"><Link to={'/'}>Главная</Link> <img src={strelkaRight} alt="" /> <Link>{props.props === 'Стоимость занятий'?'Цены': props.props}</Link></div>
                         <h1>{props.props}</h1>
                     </div>
                 </div>

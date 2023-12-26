@@ -83,10 +83,6 @@ export const schoolImage = [
         src: classChildren,
     },
     {
-        id: 2,
-        src: dorinclass,
-    },
-    {
         id: 3,
         src: classes,
     },
@@ -113,16 +109,8 @@ export const schoolImage_two = [
         src: komnata1,
     },
     {
-        id: 2,
-        src: dorinclass,
-    },
-    {
         id: 3,
         src: komnata2,
-    },
-    {
-        id: 4,
-        src: womenClass,
     },
     {
         id: 5,

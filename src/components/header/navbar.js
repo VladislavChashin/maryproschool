@@ -27,7 +27,7 @@ export default function Navbar(){
             </div>
             <nav>
                 <ul>
-                    <li className={window.location.pathname == '/maryproschool/' ? 'active' : ''} onClick={()=> setActive(1)}><NavLink to="/maryproschool/">О нас</NavLink></li>
+                    <li className={window.location.pathname == '/' ? 'active' : ''} onClick={()=> setActive(1)}><NavLink to="/">О нас</NavLink></li>
                     <li className={window.location.pathname == '/teacher/' ? 'active' : ''} onClick={()=> setActive(2)}><NavLink to="/teacher/">Преподаватели</NavLink></li>
                     <li className={window.location.pathname == '/price/' ? 'active' : ''} onClick={()=> setActive(3)}><NavLink to="/price/">Цены</NavLink></li>
                     <li className={window.location.pathname == '/contacts/' ? 'active' : ''} onClick={()=> setActive(5)}><NavLink to="/contacts/">Контакты</NavLink></li>
