@@ -28,17 +28,50 @@ header{
                 
             }
             .logo{
-                img{
-                    margin-top: 5px;
-                    @media (max-width: 1024px){
-                        width: 166px;
-                        
-                     }
-                     @media (max-width: 768px){
-                        width: 126px;
-                        
-                     }
+                cursor: pointer;
+                a{
+                    display: inline-block;
+                    padding: 0;
+                    width: auto;
+                    text-align: center;
+                    border-radius: 500px;
+                    border: 0;
+                    background: none;
+                    color: #000;
+                    font-family: InterReg;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    @media (max-width: 1599px){
+                        padding: 0;
+                    }
+                    &:hover{
+                        all:initial;
+                        img{
+                            all: initial;
+                            margin-top: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                     img{
+                        cursor: pointer;
+                        margin-top: 5px;
+                        @media (max-width: 1024px){
+                            width: 166px;
+                            
+                         }
+                         @media (max-width: 768px){
+                            width: 126px;
+                            
+                         }
+                    }
+                   
                 }
+                
                 @media (max-width: 1599px){
                     padding: 15px;
                 }

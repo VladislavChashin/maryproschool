@@ -51,21 +51,8 @@ footer{
             line-height: normal;
             letter-spacing: -1px;
             width: fit-content;
-            cursor: pointer;
             @media (max-width: 425px){
                 font-size: 18px
-            }
-            &:after{
-                display: block;
-                content:" ";
-                height: 2px;
-                background-color: #ffffff;
-                width: 0%; 
-                transition: width 0.4s ease-in-out;
-            }
-            &:hover:after,
-            &:focus:after {
-                width: 100%;
             }
         }
         ul{

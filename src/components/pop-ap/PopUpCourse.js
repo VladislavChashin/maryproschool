@@ -99,7 +99,7 @@ export default  function PopApCourse(){
                                 <img onClick={() => {dispatch(dataIncrement({ dataLang: dataLang, dataLess: NaN, dataTeach: dataTeach})); setDropdown(0)}}src={dataLess ? Close :arrowDown} alt="" />
                             </div>
                             <div className={`wow animate__animated animate__fadeIn dropdown-content_three ${dropdown == 3 ? 'active' : ''}`}>
-                                <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Занятия в групе', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Занятия в группе</a>
+                                <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Занятия в группе', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Занятия в группе</a>
                                 <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Для путешествий', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Для путешествий</a>
                                 <a onClick={() => (dispatch(dataIncrement({ dataLess: 'Индивидуальные занятия', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Индивидуальные занятия</a>
                                 <a style={dataLang === 'eng' || dataLang === 'franch' || dataLang == null? {} : {display: 'none'}} onClick={() => (dispatch(dataIncrement({ dataLess: 'SPEAKING CLUB', dataLang: dataLang, dataTeach: dataTeach})), setDropdown(0))}>Speaking Club</a>

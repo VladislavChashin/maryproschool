@@ -23,7 +23,8 @@ export default function Navbar(){
     return(
         <div className="navbar_content">
             <div className="logo backgroundFon">
-                <img src={logo} alt="logo" />
+                <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
+                
             </div>
             <nav>
                 <ul>
