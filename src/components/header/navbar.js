@@ -9,6 +9,17 @@ import HamburgerMenu from './hamburgerMenu';
 export default function Navbar(){
     const [width, setWidth] = useState(window.innerWidth);
     const [active, setActive] = useState(1)
+    // const [scrollHeight, setScrollHeight] = useState(0)
+
+    // const handleScroll = () => {
+    //     const element = document.getElementById('root');
+    //     const rect = element.getBoundingClientRect();
+    //     const difference = rect.top;
+    //     setScrollHeight(difference)
+    //   };
+      
+    //   window.addEventListener('scroll', handleScroll);
+      
 
     useEffect(() => {
       const handleResize = (event) => {
@@ -21,7 +32,7 @@ export default function Navbar(){
     }, []);
 
     return(
-        <div className="navbar_content">
+        <div className="navbar_content" style = {width >= 1600 ? {width: "1465px"} :  width <= 425 ? {width:`${width-70}px`} :  width <= 768 ? {width:`${width-93}px`} : width <= 1024 ? {width:`${width-80}px`} : {width:`${width-120}px`}}>
             <div className="logo backgroundFon">
                 <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
                 

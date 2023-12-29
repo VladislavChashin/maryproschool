@@ -12,19 +12,35 @@ header{
     .navbar_container{
         width: 95%;
         margin: 0 auto;
+        position: relative;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        height: 85px;
+        @media (max-width: 768px){
+            padding: 16px;
+        }
+        @media (max-width: 425px){
+            padding: 10px;
+            width: 90%;
+        }
         
         .navbar_content{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 30px 0 0 0;
-            @media (max-width: 768px){
-                margin: 15px 0 0 0;
-             }
+            position: fixed;
+            // @media (max-width: 768px){
+            //     margin: 15px 0 0 0;
+            //  }
             .backgroundFon{
                 padding: 15px;
                 background-color: rgba(255, 255, 255, 1);
                 border-radius: 500px;
+                -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+                box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
                 
             }
             .logo{
@@ -88,6 +104,9 @@ header{
                 margin: 0 15px 0;
                 max-width: 643px;
                 padding: 10px;
+                -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+                box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
                 @media (max-width: 1359px){
                     display: none;
                 }
@@ -446,10 +465,6 @@ header{
             transition: .3s;
             img{
                 transition: .3s;
-                @media (max-width: 425px){
-                    display: none;
-                
-                 }
             }
             &:hover{
                 background: #60bfe100;

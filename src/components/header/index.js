@@ -7,7 +7,7 @@ import right_women1 from '../../source/images/header/right_women1.png'
 import group_people from '../../source/images/header/group.svg'
 import strelka from '../../source/images/index/strelka_big.svg'
 import strelkaRight from '../../source/images/header/Vector.svg'
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './modalReduser'
@@ -37,10 +37,10 @@ export default function Header(){
     return(
         <>
         {/* {count === true ? <HeaderPopAp/>: <></>} */}
-            <header className="wow animate__animated animate__fadeIn animate__slow">
+            <header className="wow animate__animated animate__fadeIn animate__slow" >
                 <div className="header_container">
-                    <div className="navbar_container">
-                        <Navbar/>
+                    <div className="navbar_container" >
+                        <Navbar  />
                     </div>
                     <div className="header_content">
                         <h1>Центр иностранных языков марии кричевской</h1>
@@ -84,7 +84,7 @@ export function HeaderTeach(props){
         {/* {count === true ? <HeaderPopAp/>: <></>} */}
             <header>
                 <div className="header_container teach">
-                    <div className="navbar_container">
+                    <div className="navbar_container" >
                         <Navbar/>
                     </div>
                     <div className="header_content ">
