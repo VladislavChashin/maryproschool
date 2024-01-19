@@ -14,6 +14,12 @@ function HamburgerMenu() {
     }
         
     }, [])
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    };
   return (
     <>
         <div className={`hamburger_menu ${click === true ? 'open' : ''}`} onClick={()=>{setClick(prev => !prev); lockScroll(click)}}>
@@ -21,10 +27,10 @@ function HamburgerMenu() {
         </div>
         <div className={`menu_content ${click === true ? 'open slide-in-top' : ''}`}>
             <ul>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/">О нас</NavLink></li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/teacher/">Преподаватели</NavLink></li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/price/">Цены</NavLink></li>
-                <li onClick={() => {setClick(prev => !prev); lockScroll(click)}}><NavLink to="/contacts/">Контакты</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click); scrollToTop()}}><NavLink to="/">О нас</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click); scrollToTop()}}><NavLink to="/teacher/">Преподаватели</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click); scrollToTop()}}><NavLink to="/price/">Цены</NavLink></li>
+                <li onClick={() => {setClick(prev => !prev); lockScroll(click); scrollToTop()}}><NavLink to="/contacts/">Контакты</NavLink></li>
             </ul>
         </div>
     </>

@@ -30,6 +30,12 @@ export default function Navbar(){
         window.removeEventListener('resize', handleResize);
       };
     }, []);
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
 
     return(
         <div className="navbar_content" style = {width >= 1600 ? {width: "1465px"} :  width <= 425 ? {width:`${width-70}px`} :  width <= 768 ? {width:`${width-93}px`} : width <= 1024 ? {width:`${width-80}px`} : {width:`${width-120}px`}}>
@@ -39,10 +45,10 @@ export default function Navbar(){
             </div>
             <nav>
                 <ul>
-                    <li className={window.location.pathname == '/' ? 'active' : ''} onClick={()=> setActive(1)}><NavLink to="/">О нас</NavLink></li>
-                    <li className={window.location.pathname == '/teacher/' ? 'active' : ''} onClick={()=> setActive(2)}><NavLink to="/teacher/">Преподаватели</NavLink></li>
-                    <li className={window.location.pathname == '/price/' ? 'active' : ''} onClick={()=> setActive(3)}><NavLink to="/price/">Цены</NavLink></li>
-                    <li className={window.location.pathname == '/contacts/' ? 'active' : ''} onClick={()=> setActive(5)}><NavLink to="/contacts/">Контакты</NavLink></li>
+                    <li className={window.location.pathname == '/' ? 'active' : ''} onClick={()=> {setActive(1); scrollToTop()}}><NavLink to="/">О нас</NavLink></li>
+                    <li className={window.location.pathname == '/teacher/' ? 'active' : ''} onClick={()=> {setActive(2); scrollToTop()}}><NavLink to="/teacher/">Преподаватели</NavLink></li>
+                    <li className={window.location.pathname == '/price/' ? 'active' : ''} onClick={()=> {setActive(3); scrollToTop()}}><NavLink to="/price/">Цены</NavLink></li>
+                    <li className={window.location.pathname == '/contacts/' ? 'active' : ''} onClick={()=> {setActive(5); scrollToTop()}}><NavLink to="/contacts/">Контакты</NavLink></li>
                 </ul>
             </nav>
             <div className="phone backgroundFon">

@@ -14,6 +14,13 @@ export default function Footer(){
         dispatch(incrementFooter({footer: true}))
         return
     }, []); 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+    
     return(
         <>
             <footer>
@@ -21,16 +28,16 @@ export default function Footer(){
                     <div className="nav_home">
                         <p>Главная</p>
                         <ul>
-                            <li><NavLink to="/">О нас</NavLink></li>
-                            <li><NavLink to="/teacher/">Преподаватели</NavLink></li>
-                            <li><NavLink to="/price/">Занятия для детей</NavLink></li>
-                            <li><NavLink to="/price/">Занятия для взрослых</NavLink></li>
+                            <li onClick={scrollToTop}><NavLink to="/">О нас</NavLink></li>
+                            <li onClick={scrollToTop}><NavLink to="/teacher/">Преподаватели</NavLink></li>
+                            <li onClick={scrollToTop}><NavLink to="/price/">Занятия для детей</NavLink></li>
+                            <li onClick={scrollToTop}><NavLink to="/price/">Занятия для взрослых</NavLink></li>
                         </ul>
                     </div>
                     <div className="nav_contacts">
                         <p>Контакты</p>
                         <ul>
-                            <li><NavLink to="/price/">Цены</NavLink></li>
+                            <li onClick={scrollToTop}><NavLink to="/price/">Цены</NavLink></li>
                            
                         </ul>
                     </div>
@@ -40,7 +47,7 @@ export default function Footer(){
                             <li><a href="mailto:marypro.school@yandex.ru">marypro.school@yandex.ru</a></li>
                             <li><NavLink to="/contacts/">г. Чехов, ул. Полиграфистов 1с2</NavLink></li>
                             <li><NavLink to="/contacts/">г. Чехов, мкр. Губернский, ул. Земская, д.3</NavLink></li>
-                            <li> <img src={vk} alt="" /><img src={inst} alt="" /> </li>
+                            <li> <a href="https://vk.com/maryproschool"><img src={vk} alt="" /></a> <a href="https://instagram.com/marypro_school?igshid=MzRlODBiNWFlZA=="><img src={inst} alt="" /></a> </li>
                         </ul>
                     </div>
                 </div>
