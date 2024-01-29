@@ -17,6 +17,7 @@ import { incrementHeader } from "../main/loadReduser"
 export default function Header(){
     const [width, setWidth] = useState(window.innerWidth);
     const count = useSelector(state => state.counter.value)
+   
     const dispatch = useDispatch()
 
     const lockScroll = useCallback(() => {

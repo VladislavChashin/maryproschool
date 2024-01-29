@@ -18,6 +18,9 @@ export default  function PopApCourse(){
     const [letters, setLetters] = useState('');
     const dispatch = useDispatch()
     const form = useRef();
+    const inputName = useRef()
+    const inputTel = useRef()
+
     const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm("service_xz8hpzs", "template_d6a9rk6", form.current, 'iB0P9GFFuQN87rpKe').then(
@@ -45,11 +48,28 @@ export default  function PopApCourse(){
     const [dropdown, setDropdown] = useState(0)
     console.log(isNaN(dataTeach));
 
-    
-
     const unlockScroll = useCallback(() => {
         document.body.style.overflow = ""
     }, [])
+    // inputRef.current.value;
+    
+    const checFill = () =>{
+        if (inputName.current.value === ''){
+            inputName.current.style.borderColor  = 'red';
+        } else {
+            inputName.current.style.borderColor  = '#60bfe1';
+        }
+        if (inputTel.current.value === ''){
+            inputTel.current.style.borderColor  = 'red';
+        } else {
+            inputTel.current.style.borderColor  = '#60bfe1';
+        }
+        if (inputName.current.value !== '' && inputTel.current.value !== ''){
+            dispatch(increment());   
+            dispatch(incrementSucses())
+        }
+                
+    }
 
     return(
         <div className="modalWraper wow animate__animated animate__fadeIn" style={count === true ? {display: 'flex'}: {display: 'none'}}>
@@ -116,10 +136,10 @@ export default  function PopApCourse(){
                         <select name="less" id="" style={{display: 'none'}}>
                             <option value={dataLess}>{dataLess}</option>
                         </select>
-                        <input type="name" name="firstname" value={letters} pattern="[A-Za-zА-Яа-я]*"  onChange={handleLetterChange} required maxLength='30' placeholder="Ваше имя"/>
-                        <input type="tel" name="telephone"  value={phoneNumber} pattern="^\+?[0-9]{0,12}$" onChange={handlePhoneNumberChange} required placeholder="Номер телефона"/>
+                        <input ref={inputName} type="name" name="firstname" value={letters} pattern="[A-Za-zА-Яа-я]*"  onChange={handleLetterChange} required maxLength='30' placeholder="Ваше имя"/>
+                        <input ref={inputTel} type="tel" name="telephone"  value={phoneNumber} pattern="^\+?[0-9]{0,12}$" onChange={handlePhoneNumberChange} required placeholder="Номер телефона"/>
                     </div>
-                    <button className='but' onClick={()=> {dispatch(increment());   dispatch(incrementSucses())}} type="submit">Записаться <img src={strelka} alt="" /></button>
+                    <button className='but' onClick={()=> checFill()} type="submit">Записаться <img src={strelka} alt="" /></button>
                 </form>
                 {/* <a className='but'onClick={()=> {handleSubmit(); dispatch(increment());   dispatch(incrementSucses())}}>Записаться</a> */}
             </div>

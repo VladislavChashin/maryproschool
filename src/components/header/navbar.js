@@ -9,6 +9,8 @@ import HamburgerMenu from './hamburgerMenu';
 export default function Navbar(){
     const [width, setWidth] = useState(window.innerWidth);
     const [active, setActive] = useState(1)
+    const [scroll, setScroll] = useState(0);
+    const [fixed, setFixed] = useState(true);
     // const [scrollHeight, setScrollHeight] = useState(0)
 
     // const handleScroll = () => {
@@ -26,10 +28,25 @@ export default function Navbar(){
         setWidth(event.target.innerWidth);
       };
       window.addEventListener('resize', handleResize);
+      
+      const handleScroll = () => {
+        const currentScroll = window.scrollY;
+        console.log(currentScroll);
+        console.log(fixed);
+        console.log(scroll);
+        if (currentScroll === 0 || currentScroll < scroll) {
+          setFixed(true);
+        } else {
+          setFixed(false);
+        }
+        setScroll(currentScroll);
+      };
+      window.addEventListener('scroll', handleScroll);
       return () => {
         window.removeEventListener('resize', handleResize);
+        window.removeEventListener('scroll', handleScroll);
       };
-    }, []);
+    }, [scroll]);
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
@@ -38,7 +55,7 @@ export default function Navbar(){
       };
 
     return(
-        <div className="navbar_content" style = {width >= 1600 ? {width: "1465px"} :  width <= 425 ? {width:`${width-70}px`} :  width <= 768 ? {width:`${width-93}px`} : width <= 1024 ? {width:`${width-80}px`} : {width:`${width-120}px`}}>
+        <div className={`navbar_content ${fixed === true ? 'fixed' : ''}`} style = {width >= 1600 ? {width: "1465px"} :  width <= 425 ? {width:`${width-70}px`} :  width <= 768 ? {width:`${width-93}px`} : width <= 1024 ? {width:`${width-80}px`} : {width:`${width-120}px`}}>
             <div className="logo backgroundFon">
                 <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
                 
