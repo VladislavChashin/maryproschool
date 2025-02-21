@@ -1,0 +1,111 @@
+.schoolImage{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    padding:  0 20px;
+    overflow: hidden;
+    @media (max-width: 768px){
+        margin: 60px 0px;
+        padding:  0 20px;
+    }
+    .swiper-container{
+        .swiper-wrapper{
+            // @media (max-width:840px){
+            //     max-width: 280px;
+            // }
+            .swiper-slide{
+                width: max-content;
+                max-height: 380px;
+                border-radius: 16px;    
+                @media (max-width:425px){
+                    // max-width: 280px;
+                    height: 310px;
+                }
+            }
+        }
+    }
+    .schoolImage_header{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            color: #424344;
+            font-family: InterMed;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 54px */
+            letter-spacing: -3.78px;
+            margin: 0 0 20px;
+            @media (max-width: 768px){
+                font-size: 24px;
+                letter-spacing: -1.6px;
+            }
+        }
+        .schoolImage_navigate{
+
+            img{
+                margin: 0 10px;
+                cursor: pointer;
+                @media (max-width: 768px){
+                    max-width: 32px;
+                }
+            }
+        }
+    }
+    .bottom_block{
+        display: flex;
+        gap: 20px;
+        padding: 10px 0 30px;
+        @media (max-width: 768px){
+            flex-wrap: wrap;   
+        }
+        a{
+            border-radius: 500px;
+            padding: 15px 20px;
+            width: 100%;
+            text-align: center;
+            background: var(--color-light-blue-main, #ffffff00);
+            color: var(--color-light-blue-main, #60BFE1);;
+            font-family: ManroSemBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 19.8px */
+            letter-spacing: -0.36px;
+            border: 1px solid var(--color-light-blue-main, #60BFE1);
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
+            &:hover{
+                background: var(--color-light-blue-main, #60BFE1);
+            color: #FFF;
+            }
+
+        }
+        a.active{
+            background: var(--color-light-blue-main, #60BFE1);
+            color: #FFF;
+        }
+        
+        
+    }
+    .schoolImage_content{
+        display: flex;
+        transition: 0.7s;
+        width: fit-content;
+        img{
+            border-radius: 17px;
+            @media (max-width: 1024px){
+                height: 300px;
+            }
+            &:nth-child(even){
+                margin: 0 20px;
+            }
+        }
+        
+            
+    }
+}

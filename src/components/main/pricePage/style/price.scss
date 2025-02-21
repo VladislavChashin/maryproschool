@@ -1,0 +1,249 @@
+.AllPrice{
+    margin: 60px 49px;
+    .one{
+        @media (max-width: 425px){
+            display: none;
+        }
+    }
+    @media (max-width: 768px){
+        margin: 30px 19px;
+    }
+    .chooseCourse_tabs{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px 0 30px;
+        @media (max-width: 425px){
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 425px){
+            margin: 0;
+            gap: 8px;
+        }
+        button{
+            width: -webkit-fill-available;
+            padding: 15px 20px;
+            border-radius: 500px;
+            border: 1px solid var(--color-blue, #60BFE1);
+            background: #3f89f000;
+            color: var(--color-blue, #60BFE1);
+            font-family: ManroSemBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 19.8px */
+            letter-spacing: -0.36px;
+            transition: 0.3s;
+            @media (max-width: 768px){
+                margin: 0;
+                font-size: 16px;
+                padding: 10px 15px;
+                width: 100%;
+            }
+            &:hover{
+                background: #60BFE1;
+                cursor: pointer;
+                color: #FFF;
+            }
+        }
+        .active{
+            background: #60BFE1;
+            color: #FFF;
+        }
+    }
+    .priceBlock_less{
+        h2{
+            color: #424344;
+            font-family: ManroSemBold;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 52.8px */
+            letter-spacing: -2.4px;
+            margin: 60px 0 30px;
+            @media (max-width: 1024px){
+                font-size: 32px;
+                margin: 30px 0 16px;
+            }
+        }
+        .less_group{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 32px;
+            background: #FFF;
+            gap: 40px;
+            @media (max-width: 1024px){
+                padding: 16px;
+            }
+            .groupBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .groupBlock_choice{
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 1253px;
+                    margin:  0 0 5px 0;
+                    
+                    p{
+                        color: var(--color-light-black, #424344);
+                        font-family: ManroSemBold;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 110%; /* 28.6px */
+                        letter-spacing: -1.3px;
+                        opacity: 0.5;
+                        margin: 0;
+                        width: 34.7%;
+                        @media (max-width: 1024px){
+                            font-size: 18px;
+                        }
+                        &:nth-child(1){
+                            opacity: 1;
+                            width: 42.4%;
+                            @media (max-width: 1280px){
+                                    width: 35.4%;
+                            }
+                            @media (max-width: 425px){
+                                width: 100%;
+                            }
+                        }
+                        &:nth-child(3){
+                            width: auto;
+                            flex-grow: 1;
+                        }
+                    }
+                }
+                .groupBlock_blockPrice{
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 12px;
+                    padding: 15px;
+                    background: var(--color-light-blue, #F3F6FB);
+                    align-items: center;
+                    @media (max-width: 1280px){
+                        gap: 67px;
+                    }
+                    .blockPrice_prices{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-grow: 2;
+                        max-width: 1110px;
+
+                        @media (max-width: 425px){
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 30px;
+                            
+                        }
+                        .prices_mobile_onePrice{
+                            display: none;
+                            @media (max-width: 425px){
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;}
+
+                        }
+                        .prices_name{
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            width: 517px;
+                            @media (max-width: 1280px){
+                                width: 41.8%;
+                            }
+                            @media (max-width: 1024px){
+                                width: 34.8%;
+                            }
+                            @media (max-width: 425px){
+                                width: 100%;
+                            }
+                            img{
+                                max-width: 64px;
+                                max-height: 64px;
+                                border-radius: 50% 50%;
+                            }
+                            p{
+                                color: var(--light-mode-label-primary, #222);
+                                font-family: InterSemBold;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 100%; /* 18px */
+                                letter-spacing: -0.9px;
+                                @media (max-width: 1024px){
+                                    padding: 0 15px;
+                                }
+                            }
+                        }
+                        p{
+                            color: var(--color-light-black, #424344);
+                            font-family: InterMed;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 100%; /* 36px */
+                            letter-spacing: -1.8px;
+                            margin: 0;
+                            @media (max-width: 1024px){
+                                font-size: 24px;
+                                &:nth-child(3){
+                                    flex-grow: 1.4;
+
+                                }
+                            }
+                            @media (max-width: 425px){
+                                font-size: 18px;
+                                opacity: 0.5;
+                                
+                            }
+                            &:nth-child(2){
+                                flex-grow: 1;
+                                @media (max-width: 1024px){
+                                    flex-grow: 2;
+                                    
+                                }
+                                @media (max-width: 425px){
+                                    flex-grow: 0;
+                                    opacity: 1;
+                                }
+                            }
+                            
+                        }
+                    }
+                    .blockPrice_button{
+                        @media (max-width: 1024px){
+                            display: none;
+                        }
+                        a{
+                            border-radius: 431px;
+                            background: #FFF;
+                            display: flex;
+                            padding: 10px 15px;
+                            align-items: center;
+                            gap: 10px;
+                            text-decoration: none;
+                            color: #60BFE0;
+                            font-family: InterReg;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%; /* 18px */
+                            letter-spacing: -0.54px;
+                            transition: .3s;
+                            cursor: pointer;
+                            &:hover{
+                                background: #60BFE0;
+                                color: #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
