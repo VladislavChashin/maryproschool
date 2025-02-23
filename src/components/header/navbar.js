@@ -31,9 +31,6 @@ export default function Navbar(){
       
       const handleScroll = () => {
         const currentScroll = window.scrollY;
-        console.log(currentScroll);
-        console.log(fixed);
-        console.log(scroll);
         if (currentScroll === 0 || currentScroll < scroll) {
           setFixed(true);
         } else {
@@ -55,7 +52,7 @@ export default function Navbar(){
       };
 
     return(
-        <div className={`navbar_content ${fixed === true ? 'fixed' : ''}`} style = {width >= 1600 ? {width: "1465px"} :  width <= 425 ? {width:`${width-70}px`} :  width <= 768 ? {width:`${width-93}px`} : width <= 1024 ? {width:`${width-80}px`} : {width:`${width-120}px`}}>
+        <div className={`navbar_content ${fixed === true ? 'fixed' : ''} ${scroll > 20 ? 'back' : ''}`}   style = {width >= 1600 ? {width: "1465px"} :  width <= 425 ? {width:`${width-70}px`} :  width <= 768 ? {width:`${width-93}px`} : width <= 1024 ? {width:`${width-80}px`} : {width:`${width-120}px`}}>
             <div className="logo backgroundFon">
                 <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
                 

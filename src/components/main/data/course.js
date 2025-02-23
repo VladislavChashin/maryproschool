@@ -17,7 +17,7 @@ import img10 from '../../../source/images/main/IMG_3061.jpeg'
 import img11 from '../../../source/images/main/3.png'
 
 import man1 from '../../../source/images/main/man1.jpg'
-import women1 from '../../../source/images/main/women1.jpg'
+import women1 from '../../../source/images/main/women4.jpg'
 import women2 from '../../../source/images/main/women2.jpg'
 import women3 from '../../../source/images/main/women3.jpg'
 
@@ -145,24 +145,19 @@ export const schoolImage_two = [
 
 export const teachers = {
     one:{
-        src: women2,
-        name: 'Мария Павловна Кричевская',
-        description: 'Основатель центра. Преподаватель английского, итальянcкого и французского языков'
-    },
-    two:{
         src: women3,
         name: 'Ксения Александровна Лагутина',
         description: `Преподаватель английского и французского языка`
     },
-    three:{
-        src: women1,
-        name: 'Анастасия Юрьевна Болотова',
-        description: `Преподаватель английского и французского языка`
-    },
-    four:{
+    two:{
         src: man1,
         name: 'Павел Зиновьевич Кричевский',
         description: 'Преподаватель английского языка'
+    },
+    three:{
+        src: women1,
+        name: 'Иванова Джамиля Аслановна',
+        description: `Преподаватель Английского языка для детей дошкольного и младшего школьного возраста`
     },
 
 }

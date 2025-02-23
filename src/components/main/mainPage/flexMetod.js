@@ -39,7 +39,7 @@ export default function FlexMethod(){
                         <p>Учеников прошло через нашу школу</p>
                     </div>
                     <div className="wow animate__animated animate__fadeIn animate__slow three_ block">
-                        <p>6</p>
+                        <p>8</p>
                         <p>Сильных преподавателя</p>
                     </div>
                     <div className="wow animate__animated animate__fadeIn animate__slow four_ block">

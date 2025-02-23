@@ -10,76 +10,45 @@ import popwomen2 from '../../../source/images/main/women2.jpg'
 import popwomen3 from '../../../source/images/main/women3.jpg'
 import popwomen4 from '../../../source/images/main/women4.jpg'
 import popwomen5 from '../../../source/images/main/women5.jpg'
-
+import newwomen from '../../../source/images/main/newwomen.png'
+import popnewwomen from '../../../source/images/main/popnewwomen.png'
 
 export const teachers = [
-    {
-        id: 1,
-        categories: ['eng', 'franch'],
-        name: 'Мария Павловна Кричевская',
-        popName: 'Мария Павловна',
-        text: 'Руководитель центра MaryPro School и человек, по уши влюбленный в иностранные языки. Мария Павловна преподает английский, итальянский и французский. Это преподаватель, который любит дисциплину, системность и знает всех учеников нашего центра по именам вне зависимости от того, у какого преподавателя они занимаются. \n\nИ более того — к каждому из них Мария Павловна знает свой подход, что безусловно подтверждается их результатами в школе, на олимпиадах и в жизни.',
-        mobtext: 'Руководитель центра MaryPro School и человек, по уши влюбленный в иностранные языки. Мария Павловна преподает английский, итальянский и французский....',
-        tag: ['9 лет опыта', 'Английский: C1', 'Французский: B2'],
-        image: women2,
-        popImage: popwomen2,
-        about: {
-            education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
-            internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
-            sertificate: ['FCE (First Certificate in English) — C1', "DELF (Diplôme d'études en langue française) — B2"],
-            levelLang: [
-                {
-                    level: '9',
-                    description: 'лет опыта'
-                },
-                {
-                    level: 'C1',
-                    description: 'уровень английского языка'
-                },
-                {
-                    level: 'B2',
-                    description: 'уровень французкого языка'
-                }
+    // {
+    //     id: 1,
+    //     categories: ['eng', 'franch'],
+    //     name: 'Мария Павловна Кричевская',
+    //     popName: 'Мария Павловна',
+    //     text: 'Руководитель центра MaryPro School и человек, по уши влюбленный в иностранные языки. Мария Павловна преподает английский, итальянский и французский. Это преподаватель, который любит дисциплину, системность и знает всех учеников нашего центра по именам вне зависимости от того, у какого преподавателя они занимаются. \n\nИ более того — к каждому из них Мария Павловна знает свой подход, что безусловно подтверждается их результатами в школе, на олимпиадах и в жизни.',
+    //     mobtext: 'Руководитель центра MaryPro School и человек, по уши влюбленный в иностранные языки. ',
+    //     tag: ['9 лет опыта', 'Английский: C1', 'Французский: B2', 'Итольянский B2'],
+    //     image: women2,
+    //     popImage: popwomen2,
+    //     about: {
+    //         education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
+    //         internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
+    //         sertificate: ['FCE (First Certificate in English) — C1', "DELF (Diplôme d'études en langue française) — B2"],
+    //         levelLang: [
+    //             {
+    //                 level: '9',
+    //                 description: 'лет опыта'
+    //             },
+    //             {
+    //                 level: 'C1',
+    //                 description: 'уровень английского языка'
+    //             },
+    //             {
+    //                 level: 'B2',
+    //                 description: 'уровень французкого языка'
+    //             }
 
-            ]
-        },
+    //         ]
+    //     },
         
 
-    },
+    // },
     {
         id: 2,
-        categories: ['eng', 'italy'],
-        name: 'Анастасия Юрьевна Болотова',
-        popName: 'Анастасия Юрьевна',
-        text: 'Преподаватель английского и итальянского языков онлайн. Если вы думаете, что онлайн занятия менее эффективны, чем очные, то Анастасия Юрьевна полностью разрушает этот стереотип. Как со взрослым, так и с детьми, ее занятия проходят интенсивно, но очень подробно и максимально интерактивно. \n\nАнастасия Юрьевна умеет делать так, что даже самый неусидчивый ребенок может час усердно заниматься и получать удовольствие от английского.',
-        mobtext: 'Анастасия Юрьевна умеет делать так, что даже самый неусидчивый ребенок может час усердно заниматься и получать удовольствие от английского.',
-        tag: ['6 лет опыта', 'Английский: C2', 'Итальянский: B2'],
-        image: women1,
-        popImage: popwomen1,
-        about: {
-            education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
-            internships: ['Lancing College (2017-2018) — Великобритания', 'Ca’Foscari University of Venice (2022) — Италия'],
-            sertificate: ['FCE (First Certificate in English) — C1 (180/190) ⠀', "TOEFL — C2 (110/120)", "IELTS — C1 (8.0/9.0)⠀", "CILS — B2"],
-            levelLang: [
-                {
-                    level: '6',
-                    description: 'лет опыта'
-                },
-                {
-                    level: 'C2',
-                    description: 'уровень английского языка'
-                },
-                {
-                    level: 'B2',
-                    description: 'уровень итальянского языка'
-                }
-
-            ]
-        },
-        
-    },
-    {
-        id: 3,
         categories: ['eng', 'franch'],
         name: 'Ксения Александровна Лагутина',
         popName: 'Ксения Александровна',
@@ -89,7 +58,7 @@ export const teachers = [
         image: women3,
         popImage: popwomen3,
         about: {
-            education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
+            education: 'В 2023 году окончила Московский городской педагогический университет по направлению “Педагогическое образование. Французский язык”. Проходила педагогическуб практику в топ-300 школ России. ',
             internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
             sertificate: ['PET (Preliminary English Test) — B2', "DELF (Diplôme d'études en langue française) — С1"],
             levelLang: [
@@ -111,7 +80,7 @@ export const teachers = [
         
     },
     {
-        id: 4,
+        id: 3,
         categories: ['eng'],
         name: 'Павел Зиновьевич Кричевский',
         popName: 'Павел Зиновьевич',
@@ -121,7 +90,7 @@ export const teachers = [
         image: man1,
         popImage: popman1,
         about: {
-            education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
+            education: 'Проходил курс повышения квалификации для учителей в элитной школе Cambridge Studio.',
             internships: ['Università degli studi Roma III (2011-2012). Dipartimento di Studi', 'Dipartimento di Studi UmanisticiFacoltà di Lettera e Filosofia — Италия', 'Universite Paris-X-Nanterre (2013). La Faculté des Lettres⠀— Франция'],
             sertificate: ['FCE (First Certificate in English) — C1', "DELF (Diplôme d'études en langue française) — B2"],
             levelLang: [
@@ -144,7 +113,7 @@ export const teachers = [
         
     },
     {
-        id: 5,
+        id: 4,
         categories: ['eng'],
         name: 'Джамиля Аслановна Иванова',
         popName: 'Джамиля Аслановна',
@@ -154,7 +123,7 @@ export const teachers = [
         image: women4,
         popImage: popwomen4,
         about: {
-            education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
+            education: '',
             internships: ['Lancing College (2017-2018) — Великобритания', 'Ca’Foscari University of Venice (2022) — Италия'],
             sertificate: ['FCE (First Certificate in English) — C1 (180/190) ⠀', "TOEFL — C2 (110/120)", "IELTS — C1 (8.0/9.0)⠀", "CILS — B2"],
             levelLang: [
@@ -175,7 +144,7 @@ export const teachers = [
         }
     },
     {
-        id: 6,
+        id: 5,
         categories: ['eng'],
         name: 'Юлия Дмитриевна Колобова',
         popName: 'Юлия Дмитриевна',
@@ -185,7 +154,7 @@ export const teachers = [
         image: women5,
         popImage: popwomen5,
         about: {
-            education: 'МГУ им. Ломоносова. (2010-2015). Филологический факультет. Специальность: Романо-германские языки.',
+            education: '',
             internships: ['Стажировка в Лондоне (Stay Campus London), 2019 ', 'Педагогическая практика в детском языковом лагере «Хаглар» города Санкт-Петербург, вожатый-преподаватель, 2022', 'Педагогическая практика в общеобразовательной школе с углубленным изучением английского языка в Санкт-Петербурге, 2023 '],
             sertificate: ['Кембриджский сертификат PET B1, 2018', "Сертификат о посещении языкового курса в Лондоне (Stay Campus London, course of 15 hours per week, C1 CEFR level), 2019"],
             levelLang: [
@@ -202,6 +171,32 @@ export const teachers = [
                     description: 'Английский для детей'
                 }
     
+            ]
+        }
+    },
+    {
+        id: 6,
+        categories: ['eng'],
+        name: 'Караваева Татьяна Дмитриевна',
+        popName: 'Караваева Татьяна',
+        text: 'Сила Караваева Татьяна в том, что благодаря своему опыту она умеет выстраивать максимально точные стратегии занятий, чтобы из точки А прийти в точку Б. Чаще всего наши преподаватели проводят тестирования по 30-45 минут. Юлия Дмитриевна проводит тестирование 90 минут. Оно досконально и тщательно. Если вы пришли, чтобы подтянуть английский до пятерки в школе, Юлия Дмитриевна точно скажет, сколько занятий вам понадобится. А дисциплина, интерактивные занятия и открытость миру делают так, что дети буквально просятся заниматься английским чаще.',
+        mobtext: 'Сила Караваева Татьяна в том, что благодаря своему опыту она умеет выстраивать максимально точные стратегии занятий, чтобы из точки А прийти в точку Б.',
+        tag: ['5 лет опыта', 'Английский: C1', ''],
+        image: newwomen,
+        popImage: popnewwomen,
+        about: {
+            education: 'Высшее педагогическое, учитель иностранного языка (английский) ',
+            internships: ['2 года преподавания в частном лингвистическом центре « Полиглотики» , город Чехов', '3 года педагогической деятельности в общеобразовательной школе , учитель английского языка и классный руководитель, МБОУ СОШ номер 3, город Чехов ', '1 год работы в частной языковой школе и языковом центре «Bright» город Чехов '],
+            sertificate: ['Кембриджский сертификат PET B1, 2018', "Сертификат о посещении языкового курса в Лондоне (Stay Campus London, course of 15 hours per week, C1 CEFR level), 2019"],
+            levelLang: [
+                {   
+                    level: '5',
+                    description: 'лет опыта'
+                },
+                {
+                    level: 'C1',
+                    description: 'уровень английского языка'
+                }
             ]
         }
     },

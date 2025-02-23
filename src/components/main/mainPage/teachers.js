@@ -23,7 +23,6 @@ export default function Teachers(){
                     <div className="teachers_otherTeacher ">
                         <ImageBlock props = {teachers.two} key = {2}/>
                         <ImageBlock props = {teachers.three} key = {3} />
-                        <ImageBlock props = {teachers.four} key = {4}/>
                     </div>
                 </div>
             </div>

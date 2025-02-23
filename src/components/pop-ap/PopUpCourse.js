@@ -46,7 +46,6 @@ export default  function PopApCourse(){
       };
       
     const [dropdown, setDropdown] = useState(0)
-    console.log(isNaN(dataTeach));
 
     const unlockScroll = useCallback(() => {
         document.body.style.overflow = ""

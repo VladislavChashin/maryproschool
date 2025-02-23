@@ -326,7 +326,7 @@
                 height: 373px;
                 
                 @media (max-width: 1024px){
-                    max-width: 270px;
+                    max-width: 538px;
                     height: auto;
                 }
                 @media (max-width: 425px){
@@ -342,15 +342,22 @@
         grid-template-columns: 0.74fr 0.74fr 1.54fr; 
         grid-template-rows: 1fr 1fr; 
         grid-template-areas: 
-        "group put indiv"
-        "speak ege ege";
+        "group speak indiv"
+        "ege ege ege";
         @media (max-width: 1024px){
             grid-template-columns: 1fr 1fr; 
-            grid-template-rows: auto auto auto auto; 
+            grid-template-rows: 1fr 1fr 1fr; 
             grid-template-areas: 
-            "group put" 
+            "group speak" 
             "indiv indiv"
-            "speak speak"
+            "ege ege";
+        }
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: auto 1fr auto; 
+            grid-template-areas: 
+            "group speak" 
+            "indiv indiv"
             "ege ege";
         }
         @media (max-width: 450px){
@@ -411,7 +418,7 @@
         "cils cils cils";
         @media (max-width: 1024px){
             grid-template-columns: 1fr 1fr; 
-            grid-template-rows: auto auto auto; 
+            grid-template-rows: 1fr 1fr 1fr; 
             grid-template-areas: 
             "group put" 
             "indiv indiv"
@@ -440,7 +447,7 @@
         "indiv indiv indiv";
         @media (max-width: 1024px){
             grid-template-columns: 1fr 1fr; 
-            grid-template-rows: auto auto auto; 
+            grid-template-rows: 338px 338px 338px; 
             grid-template-areas: 
             "group put" 
             "speak speak"
