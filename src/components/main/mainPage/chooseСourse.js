@@ -60,7 +60,7 @@ function Course(props){
     return(
         <> 
         {courseData.categories.includes(props.lang) ? 
-            <div className={`wow animate__animated animate__fadeIn chooseCourse_course ${courseData.class}` }>
+            <div className={`wow animate__animated animate__fadeIn chooseCourse_course ${courseData.class}` } style={(props.lang == 'eng' && courseData.class == 'put' && width >= 426) ? {display: 'none'} : {display: 'flex'}}>
                 <div className="course_textBlock">
                     <p>{courseData.tag}</p>
                     <div className="course_imageBlock" 

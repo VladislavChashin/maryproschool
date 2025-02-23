@@ -41,7 +41,8 @@ function TeacherBlocks(props){
     const lockScroll = useCallback(() => {
         document.body.style.overflow = "hidden"
     }, [])
-
+   
+    
     let teachersData = props.courses
     return (
         <>
@@ -57,7 +58,7 @@ function TeacherBlocks(props){
                         <div className="descriprion_tags">
                             <p>{teachersData.tag[0]}</p>
                             <p>{teachersData.tag[1]}</p>
-                            <p>{teachersData.tag[2]}</p>
+                           {teachersData.tag[2] == '' ? <b></b> : <p>{teachersData.tag[2]}</p>}
                         </div>
                         <div className="description_text">
                             <p>{width <= 450 ? teachersData.mobtext: teachersData.text}</p>

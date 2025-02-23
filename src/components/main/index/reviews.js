@@ -6,6 +6,7 @@ import {useSwiper} from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Swiper from "react-id-swiper";
 import 'swiper/css';
+import {ReviewsData} from "../data/reviews.js";
 
 export default function Reviews(){
     const [width, setWidth] = useState(window.innerWidth);
@@ -105,20 +106,21 @@ export default function Reviews(){
                 
                 <div className="reviews_content" >
                     <Swiper {...params} ref={ref}>
-                        <div className="wow animate__animated animate__fadeIn"><ReviewBlocks/></div> 
-                        <div className="wow animate__animated animate__fadeIn"><ReviewBlocks/></div> 
-                        <div className="wow animate__animated animate__fadeIn"><ReviewBlocks/></div> 
+                        {ReviewsData.map((item, idx) =>
+                            <div className="wow animate__animated animate__fadeIn"><ReviewBlocks data={item} key={idx}/></div> 
+                        )}
+                        
                     </Swiper>
                 </div>
-                <a>Читать все отзывы</a>
             </div>
         </>
     )
 }
 
-function ReviewBlocks(){
+function ReviewBlocks(data){
+    const dates = data.data
     const [width, setWidth] = useState(window.innerWidth);
-
+    console.log(typeof dates.img)
     useEffect(() => {
       const handleResize = (event) => {
         setWidth(event.target.innerWidth);
@@ -132,20 +134,15 @@ function ReviewBlocks(){
         <>
             <div className="reviews_reviewBlock" >
                 <div className="reviewBlock_info">
-                    <img src={women} alt="" />
+                    {<img src={dates.img} alt="" />}
                     <div className="info_name">
-                        <p>Елена Пономарева</p>
+                        <p>{dates.nameRew}</p>
                         <p>г. Чехов</p>
                     </div>
                 </div>
                 <div className="reviewBlock_description">
-                    <h5>Поступила в Академию внешней торговли <br/> с высоким баллом</h5>
-                    <p>Павел Зиновьевич отлично подает грамматическую систему языка, <br />
-                        лексическое наполнение для каждого уровня, а также готовит к международным экзаменам в соответствии с их структурой. Повезло заниматься с ним еще в обычной школе <br />
-                        и индивидуально, а также на групповых занятиях для подготовки к экзамену FCE, <br />
-                        который сдала с первого раза. <br />
-                        Через год поступила в Академию внешней торговли с высоким баллом по английскому <br />
-                        без подготовки</p>
+                    <h5>{dates.headReviews}</h5>
+                    <p>{dates.reviews}</p>
                 </div>
             </div>
         </>

@@ -123,11 +123,13 @@
                 //     max-width: 280px;
                 // }
                 .swiper-slide{
-                    width: max-content;
+                    display: flex;
+                    height: auto;
                 }
             }
         }
         .reviews_reviewBlock{
+            min-height: 300px;
             min-width: -webkit-fill-available;
             border-radius: 16px;
             background: #FFF;
@@ -141,6 +143,7 @@
                 img{
                     width: 71px;
                     height:71px;
+                    border-radius: 200px;
                     @media (max-width: 768px){
                         width: 57px;
                         height: 57px;

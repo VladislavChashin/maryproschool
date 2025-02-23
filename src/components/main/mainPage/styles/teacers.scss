@@ -22,17 +22,19 @@
     .teachers_allTeachers{
         display: flex;
         justify-content: space-between;
-        @media (max-width: 1138px){
+        @media (max-width: 520px){
             flex-wrap: wrap;
         }
         .imageBlock{
             max-width: 360px;
             margin: 0 0 30px 0;
-            @media (max-width: 768px){
+            @media (max-width: 550px){
                 max-width: max-content;
+                text-align: center;
                 min-width: -webkit-fill-available;
             }
             @media (max-width: 400px){
+               text-align: left;
                 max-width: min-content;
                 min-width: none;
             }
@@ -47,11 +49,10 @@
                 }
                     
                 @media (max-width: 768px){
-                    min-width: -webkit-fill-available;
+                    max-width: 200px;
                 }
-                @media (max-width: 768px){
-                    min-width: none;
-                    width: -webkit-fill-available;
+                @media (max-width: 550px){
+                    max-width: 280px;
                 }
             }
                 
@@ -179,17 +180,11 @@
         }
         .teachers_otherTeacher{
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: space-between;
-            max-width: 740px;
-            @media (max-width: 1440px){
-                max-width: 660px;
-            }
-            @media (max-width: 1280px){
-                max-width: 580px;
-            }
+            flex-grow: 1;
             @media (max-width: 1138px){
-                max-width: min-content;
+                // max-width: min-content;
                 justify-content: space-around;
             }
             @media (max-width: 756px){
@@ -198,6 +193,7 @@
             }
             @media (max-width: 500px){
                 max-width: -webkit-fill-available;
+                flex-wrap: wrap;
             }
             .imageBlock{
                 // p{

@@ -45,7 +45,7 @@ export default function Footer(){
                         <ul>
                             <li><a href="tel:+79775411633">+7 (977) 541-16-33</a></li>
                             <li><a href="mailto:marypro.school@yandex.ru">marypro.school@yandex.ru</a></li>
-                            <li><NavLink to="/contacts/">г. Чехов, ул. Полиграфистов 1с2</NavLink></li>
+                            <li><NavLink to="/contacts/">г. Чехов, ул. Овражная 11</NavLink></li>
                             <li><NavLink to="/contacts/">г. Чехов, мкр. Губернский, ул. Земская, д.3</NavLink></li>
                             <li> <a href="https://vk.com/maryproschool"><img src={vk} alt="" /></a> <a href="https://instagram.com/marypro_school?igshid=MzRlODBiNWFlZA=="><img src={inst} alt="" /></a> </li>
                         </ul>

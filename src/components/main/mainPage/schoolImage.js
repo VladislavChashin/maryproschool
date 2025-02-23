@@ -30,7 +30,6 @@ export default function SchoolImage(){
     useEffect(() => {
         const observer = new ResizeObserver((entries) => {
         const { width, height } = entries[0].contentRect;
-        console.log(`Размер блока: ${width}px x ${height}px`);
         });
 
         if (targetRef.current) {
@@ -56,7 +55,7 @@ export default function SchoolImage(){
                     <h2>У нас 2 филиала</h2>
                 </div>
                 <div className="bottom_block">
-                        <a className = {activi == 1 ? 'active animate__animated animate__fadeIn' : 'animate__animated animate__fadeIn'} onClick={() => setActive(1)}>г. Чехов, ул. Полиграфистов 1с2</a><a className = {activi == 2 ? 'active animate__animated animate__fadeIn' : 'animate__animated animate__fadeIn'} onClick={() => setActive(2)}>г. Чехов, ул. Земская, д.3</a>
+                        <a className = {activi == 1 ? 'active animate__animated animate__fadeIn' : 'animate__animated animate__fadeIn'} onClick={() => setActive(1)}>г. Чехов, ул. Овражная 11</a><a className = {activi == 2 ? 'active animate__animated animate__fadeIn' : 'animate__animated animate__fadeIn'} onClick={() => setActive(2)}>г. Чехов, ул. Земская, д.3</a>
                     </div>
                 {/* <div className="schoolImage_content" >
                         {schoolImage.map(array => <img src={array.src} alt="" key={array.id} /> )} 
